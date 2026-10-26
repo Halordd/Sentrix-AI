@@ -1,0 +1,11 @@
+id,title,http_status,content_type,rule_hint,human_decision,reviewer,note
+b2-head-05,Missing content-security-policy on /basket,200,text/html; charset=UTF-8,1,,,
+b2-head-06,Missing content-security-policy on /order-history,200,text/html; charset=UTF-8,1,,,
+b2-head-07,Missing content-security-policy on /admin,200,text/html; charset=UTF-8,1,,,
+b2-head-08,Missing content-security-policy on /accounting,200,text/html; charset=UTF-8,1,,,
+b2-head-14,Missing content-security-policy on /robots.txt,200,text/plain; charset=utf-8,1,,,
+b2-head-15,Missing content-security-policy on /security.txt,200,text/plain; charset=utf-8,1,,,
+b2-head-17,Missing x-frame-options on /metrics,200,text/plain; version=0.0.4; charset=utf-8,1,,,
+b2-head-19,Missing content-security-policy on /rest/memories,200,application/json; charset=utf-8,1,,,
+b2-head-20,Missing content-security-policy on /api/Challenges,200,application/json; charset=utf-8,1,,,
+b2-head-21,Missing content-security-policy on /login.html,200,text/html; charset=UTF-8,1,,,

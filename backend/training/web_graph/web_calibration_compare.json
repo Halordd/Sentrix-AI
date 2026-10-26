@@ -1,0 +1,66 @@
+{
+  "train_batch1_test_batch2": {
+    "validationSize": 8,
+    "temperature": {
+      "precision": 0.5652,
+      "recall": 0.65,
+      "f1": 0.6047,
+      "ece": 0.233,
+      "brier": 0.2732
+    },
+    "platt": {
+      "precision": 0.5172,
+      "recall": 0.75,
+      "f1": 0.6122,
+      "ece": 0.4495,
+      "brier": 0.4354
+    },
+    "isotonicBlocks": 7,
+    "uncalibrated": {
+      "precision": 0.5652,
+      "recall": 0.65,
+      "f1": 0.6047,
+      "ece": 0.2001,
+      "brier": 0.2447
+    },
+    "isotonic": {
+      "precision": 0.5172,
+      "recall": 0.75,
+      "f1": 0.6122,
+      "ece": 0.2709,
+      "brier": 0.2885
+    }
+  },
+  "train_batch2_test_batch1": {
+    "validationSize": 9,
+    "temperature": {
+      "precision": 0.4348,
+      "recall": 1.0,
+      "f1": 0.6061,
+      "ece": 0.3098,
+      "brier": 0.3121
+    },
+    "platt": {
+      "precision": 0.4348,
+      "recall": 1.0,
+      "f1": 0.6061,
+      "ece": 0.3245,
+      "brier": 0.3244
+    },
+    "isotonicBlocks": 9,
+    "uncalibrated": {
+      "precision": 0.4348,
+      "recall": 1.0,
+      "f1": 0.6061,
+      "ece": 0.1978,
+      "brier": 0.1935
+    },
+    "isotonic": {
+      "precision": 0.4348,
+      "recall": 1.0,
+      "f1": 0.6061,
+      "ece": 0.3041,
+      "brier": 0.3055
+    }
+  }
+}

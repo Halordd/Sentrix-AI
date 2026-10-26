@@ -1,0 +1,1791 @@
+{
+  "dataset": "sentrix-web-lab-corpus",
+  "source": "http://10.20.20.20:8080",
+  "labels": {
+    "b3-head-01": 1,
+    "b3-head-02": 1,
+    "b3-head-03": 1,
+    "b3-head-04": 1,
+    "b3-head-05": 1,
+    "b3-head-06": 1,
+    "b3-head-07": 1,
+    "b3-head-08": 1,
+    "b3-head-09": 1,
+    "b3-head-10": 1,
+    "b3-head-11": 1,
+    "b3-head-12": 1,
+    "b3-head-13": 1,
+    "b3-head-14": 1,
+    "b3-head-15": 1,
+    "b3-head-16": 1,
+    "b3-head-17": 1,
+    "b3-head-18": 1,
+    "b3-head-19": 1,
+    "b3-head-20": 1,
+    "b3-path-01": 1,
+    "b3-path-02": 1,
+    "b3-path-03": 0,
+    "b3-path-04": 1,
+    "b3-path-05": 0,
+    "b3-path-06": 0,
+    "b3-path-07": 0,
+    "b3-path-08": 0,
+    "b3-path-09": 1,
+    "b3-path-10": 0,
+    "b3-path-11": 0,
+    "b3-path-12": 0,
+    "b3-path-13": 0,
+    "b3-path-14": 0,
+    "b3-path-15": 0,
+    "b3-path-16": 0,
+    "b3-path-17": 0,
+    "b3-path-18": 0,
+    "b3-path-19": 0,
+    "b3-path-20": 0
+  },
+  "nodes": [
+    {
+      "id": "target:lab",
+      "type": "Target",
+      "name": "Juice Shop lab"
+    },
+    {
+      "id": "endpoint:/WebGoat/login",
+      "type": "Endpoint",
+      "path": "/WebGoat/login"
+    },
+    {
+      "id": "finding:b3-head-01",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /WebGoat/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "cwe:CWE-693",
+      "type": "CWE",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-01",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/WebGoat/registration",
+      "type": "Endpoint",
+      "path": "/WebGoat/registration"
+    },
+    {
+      "id": "finding:b3-head-02",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /WebGoat/registration",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-02",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+    },
+    {
+      "id": "verification:b3-head-02",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/WebGoat/",
+      "type": "Endpoint",
+      "path": "/WebGoat/"
+    },
+    {
+      "id": "finding:b3-head-03",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /WebGoat/",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-03",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-03",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-04",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /WebGoat/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-04",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-04",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-05",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /WebGoat/registration",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-05",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+    },
+    {
+      "id": "verification:b3-head-05",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-06",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /WebGoat/",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-06",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-06",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-07",
+      "type": "Finding",
+      "title": "Missing x-frame-options on /WebGoat/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-07",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-07",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-08",
+      "type": "Finding",
+      "title": "Missing x-frame-options on /WebGoat/registration",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-08",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+    },
+    {
+      "id": "verification:b3-head-08",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-09",
+      "type": "Finding",
+      "title": "Missing x-frame-options on /WebGoat/",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-09",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-09",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-10",
+      "type": "Finding",
+      "title": "Missing referrer-policy on /WebGoat/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-10",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-10",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-11",
+      "type": "Finding",
+      "title": "Missing referrer-policy on /WebGoat/registration",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-11",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+    },
+    {
+      "id": "verification:b3-head-11",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-12",
+      "type": "Finding",
+      "title": "Missing referrer-policy on /WebGoat/",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-12",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-12",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-13",
+      "type": "Finding",
+      "title": "Missing strict-transport-security on /WebGoat/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-13",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-13",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-14",
+      "type": "Finding",
+      "title": "Missing strict-transport-security on /WebGoat/registration",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-14",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+    },
+    {
+      "id": "verification:b3-head-14",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-15",
+      "type": "Finding",
+      "title": "Missing strict-transport-security on /WebGoat/",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-15",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-15",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-16",
+      "type": "Finding",
+      "title": "Missing permissions-policy on /WebGoat/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-16",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-16",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-17",
+      "type": "Finding",
+      "title": "Missing permissions-policy on /WebGoat/registration",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-17",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+    },
+    {
+      "id": "verification:b3-head-17",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-18",
+      "type": "Finding",
+      "title": "Missing permissions-policy on /WebGoat/",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-18",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-18",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-19",
+      "type": "Finding",
+      "title": "Missing cache-control on /WebGoat/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-19",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "verification:b3-head-19",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b3-head-20",
+      "type": "Finding",
+      "title": "Missing cache-control on /WebGoat/registration",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b3-head-20",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+    },
+    {
+      "id": "verification:b3-head-20",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator"
+    },
+    {
+      "id": "finding:b3-path-01",
+      "type": "Finding",
+      "title": "Actuator root",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "cwe:CWE-200",
+      "type": "CWE",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "09bff2002148396b87fa32310a70e860b639d91d06eb740150a2a63eaa3ed301"
+    },
+    {
+      "id": "verification:b3-path-01",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/health",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/health"
+    },
+    {
+      "id": "finding:b3-path-02",
+      "type": "Finding",
+      "title": "Actuator health",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-02",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "d31db8c48c9381ad3c2679423d8e7bdf04b25425a3e7b77dc9ca26d7eb43a66c"
+    },
+    {
+      "id": "verification:b3-path-02",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/info",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/info"
+    },
+    {
+      "id": "finding:b3-path-03",
+      "type": "Finding",
+      "title": "Actuator info",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-03",
+      "type": "Evidence",
+      "status": 302,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/env",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/env"
+    },
+    {
+      "id": "finding:b3-path-04",
+      "type": "Finding",
+      "title": "Actuator env",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-04",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "917f6a857ab04b6de4f119cdcda920e202b8f8639cc6b5a32d68286ac9528379"
+    },
+    {
+      "id": "verification:b3-path-04",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/mappings",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/mappings"
+    },
+    {
+      "id": "finding:b3-path-05",
+      "type": "Finding",
+      "title": "Actuator mappings",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-05",
+      "type": "Evidence",
+      "status": 302,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/beans",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/beans"
+    },
+    {
+      "id": "finding:b3-path-06",
+      "type": "Finding",
+      "title": "Actuator beans",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-06",
+      "type": "Evidence",
+      "status": 302,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/metrics",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/metrics"
+    },
+    {
+      "id": "finding:b3-path-07",
+      "type": "Finding",
+      "title": "Actuator metrics",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-07",
+      "type": "Evidence",
+      "status": 302,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/loggers",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/loggers"
+    },
+    {
+      "id": "finding:b3-path-08",
+      "type": "Finding",
+      "title": "Actuator loggers",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-08",
+      "type": "Evidence",
+      "status": 302,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/configprops",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/configprops"
+    },
+    {
+      "id": "finding:b3-path-09",
+      "type": "Finding",
+      "title": "Actuator configprops",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-09",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "48969b2dbf93a86fb949a44287b20e34ab700487021ae30de32d26dd5f6de7cf"
+    },
+    {
+      "id": "verification:b3-path-09",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/threaddump",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/threaddump"
+    },
+    {
+      "id": "finding:b3-path-10",
+      "type": "Finding",
+      "title": "Actuator threaddump",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-10",
+      "type": "Evidence",
+      "status": 302,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/heapdump",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/heapdump"
+    },
+    {
+      "id": "finding:b3-path-11",
+      "type": "Finding",
+      "title": "Actuator heapdump",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-11",
+      "type": "Evidence",
+      "status": 302,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "endpoint:/WebGoat/actuator/prometheus",
+      "type": "Endpoint",
+      "path": "/WebGoat/actuator/prometheus"
+    },
+    {
+      "id": "finding:b3-path-12",
+      "type": "Finding",
+      "title": "Actuator prometheus",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-12",
+      "type": "Evidence",
+      "status": 302,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "endpoint:/WebGoat/robots.txt",
+      "type": "Endpoint",
+      "path": "/WebGoat/robots.txt"
+    },
+    {
+      "id": "finding:b3-path-13",
+      "type": "Finding",
+      "title": "Robots file",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-13",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "endpoint:/WebGoat/.git/config",
+      "type": "Endpoint",
+      "path": "/WebGoat/.git/config"
+    },
+    {
+      "id": "finding:b3-path-14",
+      "type": "Finding",
+      "title": "Git metadata",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-538"
+    },
+    {
+      "id": "cwe:CWE-538",
+      "type": "CWE",
+      "cwe": "CWE-538"
+    },
+    {
+      "id": "evidence:b3-path-14",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "finding:b3-path-15",
+      "type": "Finding",
+      "title": "Registration page",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-15",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+    },
+    {
+      "id": "endpoint:/WebGoat/login?error",
+      "type": "Endpoint",
+      "path": "/WebGoat/login?error"
+    },
+    {
+      "id": "finding:b3-path-16",
+      "type": "Finding",
+      "title": "Login error page",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-16",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ee154e6377c8b6afe1f461caab44a8ca9e358e134d94d5484a2f08a6f6a5868d"
+    },
+    {
+      "id": "endpoint:/WebGoat/js/main.js",
+      "type": "Endpoint",
+      "path": "/WebGoat/js/main.js"
+    },
+    {
+      "id": "finding:b3-path-17",
+      "type": "Finding",
+      "title": "Static JS bundle",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-540"
+    },
+    {
+      "id": "cwe:CWE-540",
+      "type": "CWE",
+      "cwe": "CWE-540"
+    },
+    {
+      "id": "evidence:b3-path-17",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "b52e9d7c0532329ddf743813586ce5002ea3417c82b67af083be4d9be6c53206"
+    },
+    {
+      "id": "endpoint:/WebGoat/css/main.css",
+      "type": "Endpoint",
+      "path": "/WebGoat/css/main.css"
+    },
+    {
+      "id": "finding:b3-path-18",
+      "type": "Finding",
+      "title": "Static CSS bundle",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-540"
+    },
+    {
+      "id": "evidence:b3-path-18",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "344f60b2135ddaedb56f907aabb06e6e55a53f570f664241fed9a180bc29a889"
+    },
+    {
+      "id": "endpoint:/WebGoat/swagger-ui/index.html",
+      "type": "Endpoint",
+      "path": "/WebGoat/swagger-ui/index.html"
+    },
+    {
+      "id": "finding:b3-path-19",
+      "type": "Finding",
+      "title": "Swagger UI check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-19",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    },
+    {
+      "id": "endpoint:/WebGoat/h2-console",
+      "type": "Endpoint",
+      "path": "/WebGoat/h2-console"
+    },
+    {
+      "id": "finding:b3-path-20",
+      "type": "Finding",
+      "title": "H2 console check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b3-path-20",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+    }
+  ],
+  "edges": [
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/login",
+      "target": "finding:b3-head-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-01",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-01",
+      "target": "evidence:b3-head-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-01",
+      "target": "verification:b3-head-01",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/registration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/registration",
+      "target": "finding:b3-head-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-02",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-02",
+      "target": "evidence:b3-head-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-02",
+      "target": "verification:b3-head-02",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/",
+      "target": "finding:b3-head-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-03",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-03",
+      "target": "evidence:b3-head-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-03",
+      "target": "verification:b3-head-03",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/login",
+      "target": "finding:b3-head-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-04",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-04",
+      "target": "evidence:b3-head-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-04",
+      "target": "verification:b3-head-04",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/registration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/registration",
+      "target": "finding:b3-head-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-05",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-05",
+      "target": "evidence:b3-head-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-05",
+      "target": "verification:b3-head-05",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/",
+      "target": "finding:b3-head-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-06",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-06",
+      "target": "evidence:b3-head-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-06",
+      "target": "verification:b3-head-06",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/login",
+      "target": "finding:b3-head-07",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-07",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-07",
+      "target": "evidence:b3-head-07",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-07",
+      "target": "verification:b3-head-07",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/registration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/registration",
+      "target": "finding:b3-head-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-08",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-08",
+      "target": "evidence:b3-head-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-08",
+      "target": "verification:b3-head-08",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/",
+      "target": "finding:b3-head-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-09",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-09",
+      "target": "evidence:b3-head-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-09",
+      "target": "verification:b3-head-09",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/login",
+      "target": "finding:b3-head-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-10",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-10",
+      "target": "evidence:b3-head-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-10",
+      "target": "verification:b3-head-10",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/registration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/registration",
+      "target": "finding:b3-head-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-11",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-11",
+      "target": "evidence:b3-head-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-11",
+      "target": "verification:b3-head-11",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/",
+      "target": "finding:b3-head-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-12",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-12",
+      "target": "evidence:b3-head-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-12",
+      "target": "verification:b3-head-12",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/login",
+      "target": "finding:b3-head-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-13",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-13",
+      "target": "evidence:b3-head-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-13",
+      "target": "verification:b3-head-13",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/registration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/registration",
+      "target": "finding:b3-head-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-14",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-14",
+      "target": "evidence:b3-head-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-14",
+      "target": "verification:b3-head-14",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/",
+      "target": "finding:b3-head-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-15",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-15",
+      "target": "evidence:b3-head-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-15",
+      "target": "verification:b3-head-15",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/login",
+      "target": "finding:b3-head-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-16",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-16",
+      "target": "evidence:b3-head-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-16",
+      "target": "verification:b3-head-16",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/registration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/registration",
+      "target": "finding:b3-head-17",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-17",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-17",
+      "target": "evidence:b3-head-17",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-17",
+      "target": "verification:b3-head-17",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/",
+      "target": "finding:b3-head-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-18",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-18",
+      "target": "evidence:b3-head-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-18",
+      "target": "verification:b3-head-18",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/login",
+      "target": "finding:b3-head-19",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-19",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-19",
+      "target": "evidence:b3-head-19",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-19",
+      "target": "verification:b3-head-19",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/registration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/registration",
+      "target": "finding:b3-head-20",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-head-20",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-head-20",
+      "target": "evidence:b3-head-20",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-head-20",
+      "target": "verification:b3-head-20",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator",
+      "target": "finding:b3-path-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-01",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-01",
+      "target": "evidence:b3-path-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-path-01",
+      "target": "verification:b3-path-01",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/health",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/health",
+      "target": "finding:b3-path-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-02",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-02",
+      "target": "evidence:b3-path-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-path-02",
+      "target": "verification:b3-path-02",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/info",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/info",
+      "target": "finding:b3-path-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-03",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-03",
+      "target": "evidence:b3-path-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/env",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/env",
+      "target": "finding:b3-path-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-04",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-04",
+      "target": "evidence:b3-path-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-path-04",
+      "target": "verification:b3-path-04",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/mappings",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/mappings",
+      "target": "finding:b3-path-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-05",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-05",
+      "target": "evidence:b3-path-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/beans",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/beans",
+      "target": "finding:b3-path-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-06",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-06",
+      "target": "evidence:b3-path-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/metrics",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/metrics",
+      "target": "finding:b3-path-07",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-07",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-07",
+      "target": "evidence:b3-path-07",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/loggers",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/loggers",
+      "target": "finding:b3-path-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-08",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-08",
+      "target": "evidence:b3-path-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/configprops",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/configprops",
+      "target": "finding:b3-path-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-09",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-09",
+      "target": "evidence:b3-path-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b3-path-09",
+      "target": "verification:b3-path-09",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/threaddump",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/threaddump",
+      "target": "finding:b3-path-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-10",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-10",
+      "target": "evidence:b3-path-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/heapdump",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/heapdump",
+      "target": "finding:b3-path-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-11",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-11",
+      "target": "evidence:b3-path-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/actuator/prometheus",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/actuator/prometheus",
+      "target": "finding:b3-path-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-12",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-12",
+      "target": "evidence:b3-path-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/robots.txt",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/robots.txt",
+      "target": "finding:b3-path-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-13",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-13",
+      "target": "evidence:b3-path-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/.git/config",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/.git/config",
+      "target": "finding:b3-path-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-14",
+      "target": "cwe:CWE-538",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-14",
+      "target": "evidence:b3-path-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/registration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/registration",
+      "target": "finding:b3-path-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-15",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-15",
+      "target": "evidence:b3-path-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/login?error",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/login?error",
+      "target": "finding:b3-path-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-16",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-16",
+      "target": "evidence:b3-path-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/js/main.js",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/js/main.js",
+      "target": "finding:b3-path-17",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-17",
+      "target": "cwe:CWE-540",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-17",
+      "target": "evidence:b3-path-17",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/css/main.css",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/css/main.css",
+      "target": "finding:b3-path-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-18",
+      "target": "cwe:CWE-540",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-18",
+      "target": "evidence:b3-path-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/swagger-ui/index.html",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/swagger-ui/index.html",
+      "target": "finding:b3-path-19",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-19",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-19",
+      "target": "evidence:b3-path-19",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/WebGoat/h2-console",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/WebGoat/h2-console",
+      "target": "finding:b3-path-20",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b3-path-20",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b3-path-20",
+      "target": "evidence:b3-path-20",
+      "type": "HAS_EVIDENCE"
+    }
+  ],
+  "counts": {
+    "findings": 40,
+    "verified": 24,
+    "human_rejected": 16,
+    "pending_review": 0
+  }
+}

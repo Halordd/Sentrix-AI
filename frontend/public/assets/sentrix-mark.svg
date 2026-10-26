@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Brand mark" clip-path="url(#clip0_0_4)">
+<circle id="Signal" cx="14" cy="14" r="2" fill="#20D3EE"/>
+<path id="Core" d="M9.76777 10.4749L14.0104 14.7175C14.9867 15.6938 14.9867 17.2767 14.0104 18.2531L9.76777 22.4957C8.79146 23.472 7.20854 23.472 6.23223 22.4957L1.98959 18.2531C1.01328 17.2767 1.01328 15.6938 1.98959 14.7175L6.23223 10.4749C7.20854 9.49856 8.79146 9.49856 9.76777 10.4749Z" fill="#0F3039" stroke="#20D3EE"/>
+<path id="Outer frame" d="M8 2.75H20C22.8995 2.75 25.25 5.10051 25.25 8V20C25.25 22.8995 22.8995 25.25 20 25.25H8C5.10051 25.25 2.75 22.8995 2.75 20V8C2.75 5.10051 5.10051 2.75 8 2.75Z" stroke-width="1.5" stroke="#20D3EE"/>
+</g>
+<defs>
+<clipPath id="clip0_0_4">
+<rect width="28" height="28" fill="white"/>
+</clipPath>
+</defs>
+</svg>

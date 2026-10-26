@@ -1,0 +1,1730 @@
+{
+  "dataset": "sentrix-web-lab-corpus",
+  "source": "http://10.20.20.20:3000",
+  "labels": {
+    "corpus-01": 0,
+    "corpus-02": 1,
+    "corpus-03": 0,
+    "corpus-04": 1,
+    "corpus-05": 0,
+    "corpus-06": 0,
+    "corpus-07": 0,
+    "corpus-08": 0,
+    "corpus-09": 1,
+    "corpus-10": 1,
+    "corpus-11": 1,
+    "corpus-12": 0,
+    "corpus-13": 0,
+    "corpus-14": 0,
+    "corpus-15": 0,
+    "corpus-16": 0,
+    "corpus-17": 0,
+    "corpus-18": 0,
+    "corpus-19": 0,
+    "corpus-20": 0,
+    "corpus-21": 0,
+    "corpus-22": 0,
+    "corpus-23": 0,
+    "corpus-24": 0,
+    "corpus-25": 1,
+    "corpus-26": 0,
+    "corpus-27": 1,
+    "corpus-28": 0,
+    "corpus-29": 0,
+    "corpus-30": 0,
+    "corpus-31": 1,
+    "corpus-32": 0,
+    "corpus-33": 1,
+    "corpus-34": 0,
+    "corpus-35": 0,
+    "corpus-36": 0,
+    "corpus-37": 0,
+    "corpus-38": 0,
+    "corpus-39": 0,
+    "corpus-40": 0
+  },
+  "nodes": [
+    {
+      "id": "target:lab",
+      "type": "Target",
+      "name": "Juice Shop lab"
+    },
+    {
+      "id": "endpoint:/",
+      "type": "Endpoint",
+      "path": "/"
+    },
+    {
+      "id": "finding:corpus-01",
+      "type": "Finding",
+      "title": "Missing X-Content-Type-Options header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "cwe:CWE-693",
+      "type": "CWE",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "finding:corpus-02",
+      "type": "Finding",
+      "title": "Missing Content-Security-Policy header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-02",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:corpus-02",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:corpus-03",
+      "type": "Finding",
+      "title": "Missing X-Frame-Options header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-03",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "finding:corpus-04",
+      "type": "Finding",
+      "title": "Missing Referrer-Policy header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-04",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:corpus-04",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:corpus-05",
+      "type": "Finding",
+      "title": "Server banner disclosure on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "cwe:CWE-200",
+      "type": "CWE",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-05",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/api/Products",
+      "type": "Endpoint",
+      "path": "/api/Products"
+    },
+    {
+      "id": "finding:corpus-06",
+      "type": "Finding",
+      "title": "Unauthenticated API product listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "cwe:CWE-306",
+      "type": "CWE",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-06",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+    },
+    {
+      "id": "endpoint:/api/Feedbacks",
+      "type": "Endpoint",
+      "path": "/api/Feedbacks"
+    },
+    {
+      "id": "finding:corpus-07",
+      "type": "Finding",
+      "title": "Unauthenticated feedback listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-07",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "be4e0c4eadc8ac0b241983e5a0614b5ffc5d38c578dea6a1c9fea4a605f086f9"
+    },
+    {
+      "id": "endpoint:/api/Challenges",
+      "type": "Endpoint",
+      "path": "/api/Challenges"
+    },
+    {
+      "id": "finding:corpus-08",
+      "type": "Finding",
+      "title": "Unauthenticated challenge listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-08",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "f18d985a65ce14226c5f4c7772a5c4148cd86bc00c4e65e3126a740d571a835f"
+    },
+    {
+      "id": "endpoint:/rest/admin/application-configuration",
+      "type": "Endpoint",
+      "path": "/rest/admin/application-configuration"
+    },
+    {
+      "id": "finding:corpus-09",
+      "type": "Finding",
+      "title": "Public application configuration",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-09",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "b7d51dc45f9e081704b015ce1c09ecc605919a3bfb771614973eb00cf7e8f06d"
+    },
+    {
+      "id": "verification:corpus-09",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/SecurityQuestions",
+      "type": "Endpoint",
+      "path": "/api/SecurityQuestions"
+    },
+    {
+      "id": "finding:corpus-10",
+      "type": "Finding",
+      "title": "Public security questions list",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-10",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "cc5c6eb0d2b72018651cd950c6db004c7f846ff0f90ba76693386ae911862b46"
+    },
+    {
+      "id": "verification:corpus-10",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/robots.txt",
+      "type": "Endpoint",
+      "path": "/robots.txt"
+    },
+    {
+      "id": "finding:corpus-11",
+      "type": "Finding",
+      "title": "Robots file discloses paths",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-11",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "09f7c2328189ecdd2e687cccdafb34a16b3d2166f50f0a7962ed4de5b3aaf696"
+    },
+    {
+      "id": "verification:corpus-11",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/.well-known/security.txt",
+      "type": "Endpoint",
+      "path": "/.well-known/security.txt"
+    },
+    {
+      "id": "finding:corpus-12",
+      "type": "Finding",
+      "title": "Security contact file absent",
+      "severity": "INFO",
+      "source": "DAST",
+      "cwe": "CWE-1059"
+    },
+    {
+      "id": "cwe:CWE-1059",
+      "type": "CWE",
+      "cwe": "CWE-1059"
+    },
+    {
+      "id": "evidence:corpus-12",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "c806cc145b31920952ec02c0e02552b8c6067f20092a99eea15d273a0aa59780"
+    },
+    {
+      "id": "endpoint:/main.js.map",
+      "type": "Endpoint",
+      "path": "/main.js.map"
+    },
+    {
+      "id": "finding:corpus-13",
+      "type": "Finding",
+      "title": "Source map exposure check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-540"
+    },
+    {
+      "id": "cwe:CWE-540",
+      "type": "CWE",
+      "cwe": "CWE-540"
+    },
+    {
+      "id": "evidence:corpus-13",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/.git/config",
+      "type": "Endpoint",
+      "path": "/.git/config"
+    },
+    {
+      "id": "finding:corpus-14",
+      "type": "Finding",
+      "title": "Git metadata exposure check",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-538"
+    },
+    {
+      "id": "cwe:CWE-538",
+      "type": "CWE",
+      "cwe": "CWE-538"
+    },
+    {
+      "id": "evidence:corpus-14",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/metrics",
+      "type": "Endpoint",
+      "path": "/metrics"
+    },
+    {
+      "id": "finding:corpus-15",
+      "type": "Finding",
+      "title": "Metrics endpoint exposure check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-15",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "e9fdeb465279a1aff9d32c3a9ca52f8e86b151d48ea56092d523158377401ac2"
+    },
+    {
+      "id": "endpoint:/ftp",
+      "type": "Endpoint",
+      "path": "/ftp"
+    },
+    {
+      "id": "finding:corpus-16",
+      "type": "Finding",
+      "title": "FTP directory exposure check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-548"
+    },
+    {
+      "id": "cwe:CWE-548",
+      "type": "CWE",
+      "cwe": "CWE-548"
+    },
+    {
+      "id": "evidence:corpus-16",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ad3babf56ff3eb1b45082da3dede8f7823b63b37b93e3e186d1298c7ab3095c5"
+    },
+    {
+      "id": "endpoint:/rest/user/authentication-details/1",
+      "type": "Endpoint",
+      "path": "/rest/user/authentication-details/1"
+    },
+    {
+      "id": "finding:corpus-17",
+      "type": "Finding",
+      "title": "User authentication details exposure check",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "cwe:CWE-639",
+      "type": "CWE",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-17",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/rest/basket/1",
+      "type": "Endpoint",
+      "path": "/rest/basket/1"
+    },
+    {
+      "id": "finding:corpus-18",
+      "type": "Finding",
+      "title": "Basket access without session",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-18",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Addresss",
+      "type": "Endpoint",
+      "path": "/api/Addresss"
+    },
+    {
+      "id": "finding:corpus-19",
+      "type": "Finding",
+      "title": "Address listing without session",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-19",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "65fa11a8ab6a0def8eb78f5e03cde550b3415b5b0f528b3f5ce7e7b3c52da532"
+    },
+    {
+      "id": "endpoint:/api/Quantitys",
+      "type": "Endpoint",
+      "path": "/api/Quantitys"
+    },
+    {
+      "id": "finding:corpus-20",
+      "type": "Finding",
+      "title": "Quantity listing without session",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-20",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "00e82790e2f1e11fa4f09dd236b871cdbd6981db474da8698d93baef397375b9"
+    },
+    {
+      "id": "endpoint:/api/Products/1",
+      "type": "Endpoint",
+      "path": "/api/Products/1"
+    },
+    {
+      "id": "finding:corpus-21",
+      "type": "Finding",
+      "title": "Single product lookup",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-21",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "baeddb0900274e9a842d76eb1ffbe7e886a48a33d9cb4d66c1b17b2c11d72fa7"
+    },
+    {
+      "id": "endpoint:/api/Feedbacks/1",
+      "type": "Endpoint",
+      "path": "/api/Feedbacks/1"
+    },
+    {
+      "id": "finding:corpus-22",
+      "type": "Finding",
+      "title": "Single feedback lookup",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-22",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Challenges/1",
+      "type": "Endpoint",
+      "path": "/api/Challenges/1"
+    },
+    {
+      "id": "finding:corpus-23",
+      "type": "Finding",
+      "title": "Single challenge lookup",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-23",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/rest/product/1",
+      "type": "Endpoint",
+      "path": "/rest/product/1"
+    },
+    {
+      "id": "finding:corpus-24",
+      "type": "Finding",
+      "title": "Product detail endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-24",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "03cf2ce37c8f9fc93360f0320206355f3f9c1a200d7aa7c553951c2f6e6b0690"
+    },
+    {
+      "id": "endpoint:/rest/user/whoami",
+      "type": "Endpoint",
+      "path": "/rest/user/whoami"
+    },
+    {
+      "id": "finding:corpus-25",
+      "type": "Finding",
+      "title": "Whoami endpoint without auth",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-25",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "e436ef2b7de06788f8fc4b305c0a08d3ab7ee580ec3c1057cc9f3fdeac867081"
+    },
+    {
+      "id": "verification:corpus-25",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/saveLoginIp",
+      "type": "Endpoint",
+      "path": "/rest/saveLoginIp"
+    },
+    {
+      "id": "finding:corpus-26",
+      "type": "Finding",
+      "title": "Save login IP endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-26",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "d089c8a9fc28e4e50223eb38c9409e362521be9380a37341304fbac7a4cd9e5f"
+    },
+    {
+      "id": "endpoint:/rest/track-order/1",
+      "type": "Endpoint",
+      "path": "/rest/track-order/1"
+    },
+    {
+      "id": "finding:corpus-27",
+      "type": "Finding",
+      "title": "Track order lookup",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-27",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "cb03597e28859274b72fac59404abb8844497bec328c74b645207b89358e6356"
+    },
+    {
+      "id": "verification:corpus-27",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/order-history",
+      "type": "Endpoint",
+      "path": "/rest/order-history"
+    },
+    {
+      "id": "finding:corpus-28",
+      "type": "Finding",
+      "title": "Order history without session",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-28",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "88e6548a2690a41b180b26a5e0695bb01b38653a4b7d570eee9686c2d08db50f"
+    },
+    {
+      "id": "endpoint:/rest/continue-code",
+      "type": "Endpoint",
+      "path": "/rest/continue-code"
+    },
+    {
+      "id": "finding:corpus-29",
+      "type": "Finding",
+      "title": "Continue code endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-29",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "c4d4e70cce4bf17acc4ac761b303faeff9d9efc4116561f257f7251bd60c5a4c"
+    },
+    {
+      "id": "endpoint:/rest/continue-code/apply",
+      "type": "Endpoint",
+      "path": "/rest/continue-code/apply"
+    },
+    {
+      "id": "finding:corpus-30",
+      "type": "Finding",
+      "title": "Continue code apply endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-30",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "c4abfa8bfe2fa979ea75ad00f9d2f044b7ed6a92a54601b5be76f6d371869a25"
+    },
+    {
+      "id": "endpoint:/rest/memories",
+      "type": "Endpoint",
+      "path": "/rest/memories"
+    },
+    {
+      "id": "finding:corpus-31",
+      "type": "Finding",
+      "title": "Memories listing",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-31",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "d5abd77cebea1f716256f07f99c958ebcb25678e52fbfb0cb6928524aa50de6c"
+    },
+    {
+      "id": "verification:corpus-31",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Recycles",
+      "type": "Endpoint",
+      "path": "/api/Recycles"
+    },
+    {
+      "id": "finding:corpus-32",
+      "type": "Finding",
+      "title": "Recycle listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-32",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "5de19184add0e850a8ece1162bdb03b4ccfa9b12e1b6d3cbb2f6c8a150f918c2"
+    },
+    {
+      "id": "endpoint:/api/Deliverys",
+      "type": "Endpoint",
+      "path": "/api/Deliverys"
+    },
+    {
+      "id": "finding:corpus-33",
+      "type": "Finding",
+      "title": "Delivery listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-33",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca658cdfa29e44d2ed93f9b105082ef722d1c0abec70d5ad24dc7e6dcb37c38c"
+    },
+    {
+      "id": "verification:corpus-33",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Cards",
+      "type": "Endpoint",
+      "path": "/api/Cards"
+    },
+    {
+      "id": "finding:corpus-34",
+      "type": "Finding",
+      "title": "Card listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-34",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "65fa11a8ab6a0def8eb78f5e03cde550b3415b5b0f528b3f5ce7e7b3c52da532"
+    },
+    {
+      "id": "endpoint:/api/BasketItems",
+      "type": "Endpoint",
+      "path": "/api/BasketItems"
+    },
+    {
+      "id": "finding:corpus-35",
+      "type": "Finding",
+      "title": "Basket item listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-35",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Complaints",
+      "type": "Endpoint",
+      "path": "/api/Complaints"
+    },
+    {
+      "id": "finding:corpus-36",
+      "type": "Finding",
+      "title": "Complaint listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-36",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/SecurityAnswers",
+      "type": "Endpoint",
+      "path": "/api/SecurityAnswers"
+    },
+    {
+      "id": "finding:corpus-37",
+      "type": "Finding",
+      "title": "Security answer listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-37",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Users",
+      "type": "Endpoint",
+      "path": "/api/Users"
+    },
+    {
+      "id": "finding:corpus-38",
+      "type": "Finding",
+      "title": "User listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-38",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Products/search?q=",
+      "type": "Endpoint",
+      "path": "/api/Products/search?q="
+    },
+    {
+      "id": "finding:corpus-39",
+      "type": "Finding",
+      "title": "Product search endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-39",
+      "type": "Evidence",
+      "status": 404,
+      "bodySha256": "e3816bf52cbe19de91826e46dd362296ea184e1cda15b0d7beb30d136f2b7dec"
+    },
+    {
+      "id": "endpoint:/api/Products?q=",
+      "type": "Endpoint",
+      "path": "/api/Products?q="
+    },
+    {
+      "id": "finding:corpus-40",
+      "type": "Finding",
+      "title": "Product query endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-40",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+    }
+  ],
+  "edges": [
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-01",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-01",
+      "target": "evidence:corpus-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "evidence:corpus-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "verification:corpus-02",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-03",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-03",
+      "target": "evidence:corpus-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-04",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-04",
+      "target": "evidence:corpus-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-04",
+      "target": "verification:corpus-04",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-05",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-05",
+      "target": "evidence:corpus-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products",
+      "target": "finding:corpus-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-06",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-06",
+      "target": "evidence:corpus-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Feedbacks",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks",
+      "target": "finding:corpus-07",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-07",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-07",
+      "target": "evidence:corpus-07",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Challenges",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Challenges",
+      "target": "finding:corpus-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-08",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-08",
+      "target": "evidence:corpus-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/admin/application-configuration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/admin/application-configuration",
+      "target": "finding:corpus-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-09",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-09",
+      "target": "evidence:corpus-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-09",
+      "target": "verification:corpus-09",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/SecurityQuestions",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/SecurityQuestions",
+      "target": "finding:corpus-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-10",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-10",
+      "target": "evidence:corpus-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-10",
+      "target": "verification:corpus-10",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/robots.txt",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/robots.txt",
+      "target": "finding:corpus-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-11",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-11",
+      "target": "evidence:corpus-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-11",
+      "target": "verification:corpus-11",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/.well-known/security.txt",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/.well-known/security.txt",
+      "target": "finding:corpus-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-12",
+      "target": "cwe:CWE-1059",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-12",
+      "target": "evidence:corpus-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/main.js.map",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/main.js.map",
+      "target": "finding:corpus-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-13",
+      "target": "cwe:CWE-540",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-13",
+      "target": "evidence:corpus-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/.git/config",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/.git/config",
+      "target": "finding:corpus-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-14",
+      "target": "cwe:CWE-538",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-14",
+      "target": "evidence:corpus-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/metrics",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/metrics",
+      "target": "finding:corpus-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-15",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-15",
+      "target": "evidence:corpus-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/ftp",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/ftp",
+      "target": "finding:corpus-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-16",
+      "target": "cwe:CWE-548",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-16",
+      "target": "evidence:corpus-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/authentication-details/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/1",
+      "target": "finding:corpus-17",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-17",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-17",
+      "target": "evidence:corpus-17",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/basket/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/1",
+      "target": "finding:corpus-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-18",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-18",
+      "target": "evidence:corpus-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Addresss",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss",
+      "target": "finding:corpus-19",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-19",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-19",
+      "target": "evidence:corpus-19",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Quantitys",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Quantitys",
+      "target": "finding:corpus-20",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-20",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-20",
+      "target": "evidence:corpus-20",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products/1",
+      "target": "finding:corpus-21",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-21",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-21",
+      "target": "evidence:corpus-21",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Feedbacks/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks/1",
+      "target": "finding:corpus-22",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-22",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-22",
+      "target": "evidence:corpus-22",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Challenges/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Challenges/1",
+      "target": "finding:corpus-23",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-23",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-23",
+      "target": "evidence:corpus-23",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/product/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/product/1",
+      "target": "finding:corpus-24",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-24",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-24",
+      "target": "evidence:corpus-24",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/whoami",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/whoami",
+      "target": "finding:corpus-25",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-25",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-25",
+      "target": "evidence:corpus-25",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-25",
+      "target": "verification:corpus-25",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/saveLoginIp",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/saveLoginIp",
+      "target": "finding:corpus-26",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-26",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-26",
+      "target": "evidence:corpus-26",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/track-order/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/track-order/1",
+      "target": "finding:corpus-27",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-27",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-27",
+      "target": "evidence:corpus-27",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-27",
+      "target": "verification:corpus-27",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/order-history",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/order-history",
+      "target": "finding:corpus-28",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-28",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-28",
+      "target": "evidence:corpus-28",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/continue-code",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/continue-code",
+      "target": "finding:corpus-29",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-29",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-29",
+      "target": "evidence:corpus-29",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/continue-code/apply",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/continue-code/apply",
+      "target": "finding:corpus-30",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-30",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-30",
+      "target": "evidence:corpus-30",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/memories",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/memories",
+      "target": "finding:corpus-31",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-31",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-31",
+      "target": "evidence:corpus-31",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-31",
+      "target": "verification:corpus-31",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Recycles",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Recycles",
+      "target": "finding:corpus-32",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-32",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-32",
+      "target": "evidence:corpus-32",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Deliverys",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys",
+      "target": "finding:corpus-33",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-33",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-33",
+      "target": "evidence:corpus-33",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-33",
+      "target": "verification:corpus-33",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Cards",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards",
+      "target": "finding:corpus-34",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-34",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-34",
+      "target": "evidence:corpus-34",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/BasketItems",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/BasketItems",
+      "target": "finding:corpus-35",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-35",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-35",
+      "target": "evidence:corpus-35",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Complaints",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints",
+      "target": "finding:corpus-36",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-36",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-36",
+      "target": "evidence:corpus-36",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/SecurityAnswers",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/SecurityAnswers",
+      "target": "finding:corpus-37",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-37",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-37",
+      "target": "evidence:corpus-37",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Users",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Users",
+      "target": "finding:corpus-38",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-38",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-38",
+      "target": "evidence:corpus-38",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products/search?q=",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products/search?q=",
+      "target": "finding:corpus-39",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-39",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-39",
+      "target": "evidence:corpus-39",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products?q=",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products?q=",
+      "target": "finding:corpus-40",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-40",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-40",
+      "target": "evidence:corpus-40",
+      "type": "HAS_EVIDENCE"
+    }
+  ],
+  "counts": {
+    "findings": 40,
+    "verified": 9,
+    "false_positive_candidates": 31
+  }
+}

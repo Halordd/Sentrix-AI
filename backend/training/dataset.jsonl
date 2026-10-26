@@ -1,0 +1,20 @@
+{"id": "case-01", "text": "Remote code execution in upload parser", "label": "CRITICAL"}
+{"id": "case-02", "text": "Insecure deserialization allows arbitrary code", "label": "CRITICAL"}
+{"id": "case-03", "text": "Broken object-level authorization exposes another account", "label": "HIGH"}
+{"id": "case-04", "text": "Missing access control on admin endpoint", "label": "HIGH"}
+{"id": "case-05", "text": "Privilege escalation through role assignment", "label": "HIGH"}
+{"id": "case-06", "text": "Public bucket exposes archived reports", "label": "MEDIUM"}
+{"id": "case-07", "text": "Security misconfiguration: directory listing enabled", "label": "MEDIUM"}
+{"id": "case-08", "text": "Missing security header on HTML response", "label": "MEDIUM"}
+{"id": "case-09", "text": "Verbose error message discloses stack trace", "label": "LOW"}
+{"id": "case-10", "text": "Version banner reveals framework build", "label": "LOW"}
+{"id": "case-11", "text": "Informational finding about TLS cipher preference", "label": "LOW"}
+{"id": "case-12", "text": "IDOR in invoice lookup returns another tenant", "label": "HIGH"}
+{"id": "case-13", "text": "Command injection in diagnostic endpoint", "label": "CRITICAL"}
+{"id": "case-14", "text": "Exposure of internal metrics without authentication", "label": "MEDIUM"}
+{"id": "case-15", "text": "Publicly readable backup file", "label": "MEDIUM"}
+{"id": "case-16", "text": "Verbose stack trace reveals authorization decision", "label": "LOW"}
+{"id": "case-17", "text": "Informational banner mentions access control version", "label": "LOW"}
+{"id": "case-18", "text": "Publicly readable backup contains privilege logs", "label": "MEDIUM"}
+{"id": "case-19", "text": "Missing security header on admin authorization page", "label": "MEDIUM"}
+{"id": "case-20", "text": "Trace method exposes version and access control details", "label": "LOW"}

@@ -1,0 +1,6 @@
+services:
+  juice-shop:
+    image: bkimminich/juice-shop
+    container_name: sentrix-juice-shop
+    network_mode: host
+    restart: unless-stopped

@@ -1,0 +1,15 @@
+{
+  "name": "sentrix-security-console",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test",
+    "test:one": "node --test --test-isolation=none tests/api-polling.test.js tests/api-workflows.test.js tests/app.test.js tests/domain.test.js tests/repository.test.js tests/server.test.js tests/static.test.js",
+    "verify:browser": "node scripts/browser-check.mjs",
+    "verify:browser:api": "node scripts/browser-api-check.mjs",
+    "verify": "node scripts/verify-all.mjs"
+  }
+}

@@ -1,0 +1,931 @@
+{
+  "base": "http://10.20.20.20:3000",
+  "records": [
+    {
+      "id": "corpus-01",
+      "title": "Missing X-Content-Type-Options header on /",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:19:57.657854+00:00"
+    },
+    {
+      "id": "corpus-02",
+      "title": "Missing Content-Security-Policy header on /",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "label": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:19:57.661310+00:00",
+      "reviewedBy": "ten-nguoi-review",
+      "reviewedAt": "2026-10-26T06:23:03.464283+00:00",
+      "reviewNote": "confirmed CSP missing"
+    },
+    {
+      "id": "corpus-03",
+      "title": "Missing X-Frame-Options header on /",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "x-frame-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:19:57.664445+00:00"
+    },
+    {
+      "id": "corpus-04",
+      "title": "Missing Referrer-Policy header on /",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "RULE_ONLY",
+      "label": 1,
+      "labelReason": "referrer-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:19:57.667293+00:00"
+    },
+    {
+      "id": "corpus-05",
+      "title": "Server banner disclosure on /",
+      "severity": "LOW",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "server_header",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:19:57.670262+00:00"
+    },
+    {
+      "id": "corpus-06",
+      "title": "Unauthenticated API product listing",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Products",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "HUMAN_REJECTED",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 26411,
+        "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+      },
+      "observedAt": "2026-10-26T06:19:57.704333+00:00",
+      "reviewedBy": "ten-nguoi-review",
+      "reviewedAt": "2026-10-26T06:23:03.503009+00:00",
+      "reviewNote": "public by design"
+    },
+    {
+      "id": "corpus-07",
+      "title": "Unauthenticated feedback listing",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Feedbacks",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1734,
+        "bodySha256": "be4e0c4eadc8ac0b241983e5a0614b5ffc5d38c578dea6a1c9fea4a605f086f9"
+      },
+      "observedAt": "2026-10-26T06:19:57.730808+00:00"
+    },
+    {
+      "id": "corpus-08",
+      "title": "Unauthenticated challenge listing",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Challenges",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 65536,
+        "bodySha256": "f18d985a65ce14226c5f4c7772a5c4148cd86bc00c4e65e3126a740d571a835f"
+      },
+      "observedAt": "2026-10-26T06:19:57.765126+00:00"
+    },
+    {
+      "id": "corpus-09",
+      "title": "Public application configuration",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/admin/application-configuration",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "RULE_ONLY",
+      "label": 1,
+      "labelReason": "confirmed_non_html_200",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 36154,
+        "bodySha256": "b7d51dc45f9e081704b015ce1c09ecc605919a3bfb771614973eb00cf7e8f06d"
+      },
+      "observedAt": "2026-10-26T06:19:57.774544+00:00"
+    },
+    {
+      "id": "corpus-10",
+      "title": "Public security questions list",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/SecurityQuestions",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "RULE_ONLY",
+      "label": 1,
+      "labelReason": "confirmed_non_html_200",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1934,
+        "bodySha256": "cc5c6eb0d2b72018651cd950c6db004c7f846ff0f90ba76693386ae911862b46"
+      },
+      "observedAt": "2026-10-26T06:19:57.817236+00:00"
+    },
+    {
+      "id": "corpus-11",
+      "title": "Robots file discloses paths",
+      "severity": "LOW",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/robots.txt",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "RULE_ONLY",
+      "label": 1,
+      "labelReason": "robots_public",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "bytes": 28,
+        "bodySha256": "09f7c2328189ecdd2e687cccdafb34a16b3d2166f50f0a7962ed4de5b3aaf696"
+      },
+      "observedAt": "2026-10-26T06:19:57.819512+00:00"
+    },
+    {
+      "id": "corpus-12",
+      "title": "Security contact file absent",
+      "severity": "INFO",
+      "cwe": "CWE-1059",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/.well-known/security.txt",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "absence_only",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "bytes": 483,
+        "bodySha256": "c806cc145b31920952ec02c0e02552b8c6067f20092a99eea15d273a0aa59780"
+      },
+      "observedAt": "2026-10-26T06:19:57.821838+00:00"
+    },
+    {
+      "id": "corpus-13",
+      "title": "Source map exposure check",
+      "severity": "MEDIUM",
+      "cwe": "CWE-540",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/main.js.map",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:19:57.830356+00:00"
+    },
+    {
+      "id": "corpus-14",
+      "title": "Git metadata exposure check",
+      "severity": "HIGH",
+      "cwe": "CWE-538",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/.git/config",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:19:57.838540+00:00"
+    },
+    {
+      "id": "corpus-15",
+      "title": "Metrics endpoint exposure check",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/metrics",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/plain; version=0.0.4; charset=utf-8",
+        "bytes": 26155,
+        "bodySha256": "e9fdeb465279a1aff9d32c3a9ca52f8e86b151d48ea56092d523158377401ac2"
+      },
+      "observedAt": "2026-10-26T06:19:57.843268+00:00"
+    },
+    {
+      "id": "corpus-16",
+      "title": "FTP directory exposure check",
+      "severity": "MEDIUM",
+      "cwe": "CWE-548",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/ftp",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 11319,
+        "bodySha256": "ad3babf56ff3eb1b45082da3dede8f7823b63b37b93e3e186d1298c7ab3095c5"
+      },
+      "observedAt": "2026-10-26T06:19:57.849706+00:00"
+    },
+    {
+      "id": "corpus-17",
+      "title": "User authentication details exposure check",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/user/authentication-details/1",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:19:57.853189+00:00"
+    },
+    {
+      "id": "corpus-18",
+      "title": "Basket access without session",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/basket/1",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:19:57.856183+00:00"
+    },
+    {
+      "id": "corpus-19",
+      "title": "Address listing without session",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Addresss",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 83,
+        "bodySha256": "65fa11a8ab6a0def8eb78f5e03cde550b3415b5b0f528b3f5ce7e7b3c52da532"
+      },
+      "observedAt": "2026-10-26T06:19:57.859160+00:00"
+    },
+    {
+      "id": "corpus-20",
+      "title": "Quantity listing without session",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Quantitys",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 7628,
+        "bodySha256": "00e82790e2f1e11fa4f09dd236b871cdbd6981db474da8698d93baef397375b9"
+      },
+      "observedAt": "2026-10-26T06:19:57.942432+00:00"
+    },
+    {
+      "id": "corpus-21",
+      "title": "Single product lookup",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Products/1",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 481,
+        "bodySha256": "baeddb0900274e9a842d76eb1ffbe7e886a48a33d9cb4d66c1b17b2c11d72fa7"
+      },
+      "observedAt": "2026-10-26T06:19:57.967458+00:00"
+    },
+    {
+      "id": "corpus-22",
+      "title": "Single feedback lookup",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Feedbacks/1",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:19:57.972846+00:00"
+    },
+    {
+      "id": "corpus-23",
+      "title": "Single challenge lookup",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Challenges/1",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:19:57.976314+00:00"
+    },
+    {
+      "id": "corpus-24",
+      "title": "Product detail endpoint",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/product/1",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 500,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2430,
+        "bodySha256": "03cf2ce37c8f9fc93360f0320206355f3f9c1a200d7aa7c553951c2f6e6b0690"
+      },
+      "observedAt": "2026-10-26T06:19:57.983322+00:00"
+    },
+    {
+      "id": "corpus-25",
+      "title": "Whoami endpoint without auth",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/user/whoami",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "RULE_ONLY",
+      "label": 1,
+      "labelReason": "confirmed_non_html_200",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 11,
+        "bodySha256": "e436ef2b7de06788f8fc4b305c0a08d3ab7ee580ec3c1057cc9f3fdeac867081"
+      },
+      "observedAt": "2026-10-26T06:19:57.988577+00:00"
+    },
+    {
+      "id": "corpus-26",
+      "title": "Save login IP endpoint",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/saveLoginIp",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/plain; charset=utf-8",
+        "bytes": 12,
+        "bodySha256": "d089c8a9fc28e4e50223eb38c9409e362521be9380a37341304fbac7a4cd9e5f"
+      },
+      "observedAt": "2026-10-26T06:19:58.004547+00:00"
+    },
+    {
+      "id": "corpus-27",
+      "title": "Track order lookup",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/track-order/1",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "RULE_ONLY",
+      "label": 1,
+      "labelReason": "confirmed_non_html_200",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 45,
+        "bodySha256": "cb03597e28859274b72fac59404abb8844497bec328c74b645207b89358e6356"
+      },
+      "observedAt": "2026-10-26T06:19:58.016177+00:00"
+    },
+    {
+      "id": "corpus-28",
+      "title": "Order history without session",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/order-history",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 500,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2457,
+        "bodySha256": "88e6548a2690a41b180b26a5e0695bb01b38653a4b7d570eee9686c2d08db50f"
+      },
+      "observedAt": "2026-10-26T06:19:58.024229+00:00"
+    },
+    {
+      "id": "corpus-29",
+      "title": "Continue code endpoint",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/continue-code",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 79,
+        "bodySha256": "c4d4e70cce4bf17acc4ac761b303faeff9d9efc4116561f257f7251bd60c5a4c"
+      },
+      "observedAt": "2026-10-26T06:19:58.035354+00:00"
+    },
+    {
+      "id": "corpus-30",
+      "title": "Continue code apply endpoint",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/continue-code/apply",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 500,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2450,
+        "bodySha256": "c4abfa8bfe2fa979ea75ad00f9d2f044b7ed6a92a54601b5be76f6d371869a25"
+      },
+      "observedAt": "2026-10-26T06:19:58.044734+00:00"
+    },
+    {
+      "id": "corpus-31",
+      "title": "Memories listing",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/memories",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "RULE_ONLY",
+      "label": 1,
+      "labelReason": "confirmed_non_html_200",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 6183,
+        "bodySha256": "d5abd77cebea1f716256f07f99c958ebcb25678e52fbfb0cb6928524aa50de6c"
+      },
+      "observedAt": "2026-10-26T06:19:58.190834+00:00"
+    },
+    {
+      "id": "corpus-32",
+      "title": "Recycle listing",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Recycles",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 76,
+        "bodySha256": "5de19184add0e850a8ece1162bdb03b4ccfa9b12e1b6d3cbb2f6c8a150f918c2"
+      },
+      "observedAt": "2026-10-26T06:19:58.194059+00:00"
+    },
+    {
+      "id": "corpus-33",
+      "title": "Delivery listing",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Deliverys",
+        "line": null
+      },
+      "verified": true,
+      "reviewStatus": "RULE_ONLY",
+      "label": 1,
+      "labelReason": "confirmed_non_html_200",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 266,
+        "bodySha256": "ca658cdfa29e44d2ed93f9b105082ef722d1c0abec70d5ad24dc7e6dcb37c38c"
+      },
+      "observedAt": "2026-10-26T06:19:58.198207+00:00"
+    },
+    {
+      "id": "corpus-34",
+      "title": "Card listing",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Cards",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 83,
+        "bodySha256": "65fa11a8ab6a0def8eb78f5e03cde550b3415b5b0f528b3f5ce7e7b3c52da532"
+      },
+      "observedAt": "2026-10-26T06:19:58.201187+00:00"
+    },
+    {
+      "id": "corpus-35",
+      "title": "Basket item listing",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/BasketItems",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:19:58.203501+00:00"
+    },
+    {
+      "id": "corpus-36",
+      "title": "Complaint listing",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Complaints",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:19:58.206661+00:00"
+    },
+    {
+      "id": "corpus-37",
+      "title": "Security answer listing",
+      "severity": "HIGH",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/SecurityAnswers",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:19:58.209344+00:00"
+    },
+    {
+      "id": "corpus-38",
+      "title": "User listing",
+      "severity": "HIGH",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Users",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "not_confirmed",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:19:58.212301+00:00"
+    },
+    {
+      "id": "corpus-39",
+      "title": "Product search endpoint",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Products/search?q=",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 404,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 35,
+        "bodySha256": "e3816bf52cbe19de91826e46dd362296ea184e1cda15b0d7beb30d136f2b7dec"
+      },
+      "observedAt": "2026-10-26T06:19:58.235409+00:00"
+    },
+    {
+      "id": "corpus-40",
+      "title": "Product query endpoint",
+      "severity": "LOW",
+      "cwe": "CWE-306",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Products?q=",
+        "line": null
+      },
+      "verified": false,
+      "reviewStatus": "RULE_ONLY",
+      "label": 0,
+      "labelReason": "public_by_design",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 26411,
+        "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+      },
+      "observedAt": "2026-10-26T06:19:58.267475+00:00"
+    }
+  ]
+}

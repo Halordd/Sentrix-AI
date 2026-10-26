@@ -1,0 +1,24 @@
+[Unit]
+Description=SENTRIX GNN inference (local)
+After=network.target
+
+[Service]
+Type=simple
+User=sentrixadmin
+Group=sentrixadmin
+WorkingDirectory=/home/sentrixadmin/sentrix-gnn/src
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=SENTRIX_GNN_HOST=10.20.10.30
+Environment=SENTRIX_GNN_PORT=8002
+Environment=SENTRIX_GNN_ARTIFACT=/home/sentrixadmin/sentrix-gnn/artifacts/devign-gat-full/model.pt
+ExecStart=/home/sentrixadmin/sentrix-gnn/venv/bin/python /home/sentrixadmin/sentrix-gnn/src/service.py
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/sentrixadmin/sentrix-gnn/artifacts
+
+[Install]
+WantedBy=multi-user.target

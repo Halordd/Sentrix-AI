@@ -1,0 +1,525 @@
+{
+  "base": "http://10.20.20.20:3000",
+  "records": [
+    {
+      "id": "bola-01",
+      "title": "BOLA basket access",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/basket/8",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 154,
+        "bodySha256": "fb48a69e9456962af6ee363edfc39ce428a18014cb457c64aeffe6befa3a4a69"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-02",
+      "title": "BOLA user details access",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/user/authentication-details/27",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 500,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1382,
+        "bodySha256": "5b11b68964dff7ba1b68d7d6214da013d06eb2b70dfbf50ab59cf58d77e51bc5"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-03",
+      "title": "BOLA address access",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Addresss/27",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 56,
+        "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-04",
+      "title": "BOLA card access",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Cards/27",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 55,
+        "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-05",
+      "title": "BOLA basket item access",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/BasketItems/8",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 154,
+        "bodySha256": "1db46dcab03996cd4712a67858e17e80c1c595243c23672fff1cd6beb3994efc"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-06",
+      "title": "BOLA complaint access",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Complaints/27",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 383,
+        "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-07",
+      "title": "BOLA recycles access",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Recycles/27",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 30,
+        "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-08",
+      "title": "BOLA delivery access",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Deliverys/27",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 18,
+        "bodySha256": "c7fbd9501e80a14cf61dc931140fb4d48d148c5e42ea0cef4573444061bdddfa"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-09",
+      "title": "BOLA security answer access",
+      "severity": "HIGH",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/SecurityAnswers/27",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 383,
+        "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-10",
+      "title": "BOLA user listing access",
+      "severity": "HIGH",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Users",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 7507,
+        "bodySha256": "19d09a1910f2a236f5f54ba8d97191f46caa42ae8909405c8d5cf5adece678ca"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-11",
+      "title": "IDOR order history",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/order-history",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 30,
+        "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-12",
+      "title": "IDOR track order",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/track-order/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 45,
+        "bodySha256": "cb03597e28859274b72fac59404abb8844497bec328c74b645207b89358e6356"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-13",
+      "title": "IDOR product basket",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/basket/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1994,
+        "bodySha256": "8847305584a7373bf7cd8ebd53116b91fe03c343694a42bd40efb4aecab94502"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-14",
+      "title": "IDOR user details 1",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/user/authentication-details/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 500,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1380,
+        "bodySha256": "084c985e255699cb0eecace63182c5055c4c41e2b42fb7e897b7dc95b7afd01b"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-15",
+      "title": "IDOR address 1",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Addresss/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 56,
+        "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-16",
+      "title": "IDOR card 1",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Cards/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 55,
+        "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-17",
+      "title": "IDOR complaint 1",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Complaints/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 383,
+        "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-18",
+      "title": "IDOR recycle 1",
+      "severity": "LOW",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Recycles/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 206,
+        "bodySha256": "511c90245ae77b724fbd2bad5708a17ddd01065c0669c4decccc66fbb37af6c5"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-19",
+      "title": "IDOR delivery 1",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Deliverys/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 106,
+        "bodySha256": "ef936ffab4d943bb9186bd300260be87190685236d49cf8fd8ec73b5538d70eb"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    },
+    {
+      "id": "bola-20",
+      "title": "IDOR feedback 1",
+      "severity": "LOW",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Feedbacks/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 229,
+        "bodySha256": "111e533aad0367f25c53ed5e166343f7e0667d0d9307f7f04a1bd9d7370d4c0b"
+      },
+      "accounts": {
+        "ownBasket": 7,
+        "otherBasket": 8,
+        "otherUser": 27
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+BEGIN;
+
+GRANT USAGE ON SCHEMA corpus_pilot TO sentrix_app;
+GRANT SELECT ON ALL TABLES IN SCHEMA corpus_pilot TO sentrix_app;
+ALTER DEFAULT PRIVILEGES IN SCHEMA corpus_pilot GRANT SELECT ON TABLES TO sentrix_app;
+
+COMMIT;

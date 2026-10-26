@@ -1,0 +1,4366 @@
+{
+  "dataset": "sentrix-web-lab-corpus",
+  "source": "http://10.20.20.20:3000",
+  "labels": {
+    "corpus-01": 0,
+    "corpus-02": 1,
+    "corpus-03": 0,
+    "corpus-04": 1,
+    "corpus-05": 0,
+    "corpus-06": 0,
+    "corpus-07": 0,
+    "corpus-08": 0,
+    "corpus-09": 1,
+    "corpus-10": 1,
+    "corpus-11": 1,
+    "corpus-12": 0,
+    "corpus-13": 0,
+    "corpus-14": 0,
+    "corpus-15": 1,
+    "corpus-16": 0,
+    "corpus-17": 0,
+    "corpus-18": 0,
+    "corpus-19": 0,
+    "corpus-20": 0,
+    "corpus-21": 0,
+    "corpus-22": 0,
+    "corpus-23": 0,
+    "corpus-24": 0,
+    "corpus-25": 1,
+    "corpus-26": 0,
+    "corpus-27": 1,
+    "corpus-28": 0,
+    "corpus-29": 0,
+    "corpus-30": 0,
+    "corpus-31": 1,
+    "corpus-32": 0,
+    "corpus-33": 1,
+    "corpus-34": 0,
+    "corpus-35": 0,
+    "corpus-36": 0,
+    "corpus-37": 0,
+    "corpus-38": 0,
+    "corpus-39": 0,
+    "corpus-40": 0,
+    "bola-01": 1,
+    "bola-02": 0,
+    "bola-03": 0,
+    "bola-04": 0,
+    "bola-05": 1,
+    "bola-06": 0,
+    "bola-07": 1,
+    "bola-08": 0,
+    "bola-09": 0,
+    "bola-10": 1,
+    "bola-11": 1,
+    "bola-12": 1,
+    "bola-13": 1,
+    "bola-14": 0,
+    "bola-15": 0,
+    "bola-16": 0,
+    "bola-17": 0,
+    "bola-18": 1,
+    "bola-19": 1,
+    "bola-20": 1,
+    "b2-head-01": 0,
+    "b2-head-02": 0,
+    "b2-head-03": 0,
+    "b2-head-04": 1,
+    "b2-head-05": 1,
+    "b2-head-06": 1,
+    "b2-head-07": 1,
+    "b2-head-08": 1,
+    "b2-head-09": 0,
+    "b2-head-10": 0,
+    "b2-head-11": 0,
+    "b2-head-12": 0,
+    "b2-head-13": 0,
+    "b2-head-14": 1,
+    "b2-head-15": 1,
+    "b2-head-16": 0,
+    "b2-head-17": 1,
+    "b2-head-18": 0,
+    "b2-head-19": 1,
+    "b2-head-20": 1,
+    "b2-head-21": 1,
+    "b2-bola-01": 1,
+    "b2-bola-02": 0,
+    "b2-bola-03": 0,
+    "b2-bola-04": 0,
+    "b2-bola-05": 0,
+    "b2-bola-06": 0,
+    "b2-bola-07": 1,
+    "b2-bola-08": 0,
+    "b2-bola-09": 0,
+    "b2-bola-10": 1,
+    "b2-bola-11": 1,
+    "b2-bola-12": 1,
+    "b2-bola-13": 0,
+    "b2-bola-14": 0,
+    "b2-bola-15": 0,
+    "b2-bola-16": 0,
+    "b2-bola-17": 1,
+    "b2-bola-18": 1,
+    "b2-bola-19": 1,
+    "b2-bola-20": 1
+  },
+  "nodes": [
+    {
+      "id": "target:lab",
+      "type": "Target",
+      "name": "Juice Shop lab"
+    },
+    {
+      "id": "endpoint:/",
+      "type": "Endpoint",
+      "path": "/"
+    },
+    {
+      "id": "finding:corpus-01",
+      "type": "Finding",
+      "title": "Missing X-Content-Type-Options header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "cwe:CWE-693",
+      "type": "CWE",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "finding:corpus-02",
+      "type": "Finding",
+      "title": "Missing Content-Security-Policy header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-02",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:corpus-02",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:corpus-03",
+      "type": "Finding",
+      "title": "Missing X-Frame-Options header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-03",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "finding:corpus-04",
+      "type": "Finding",
+      "title": "Missing Referrer-Policy header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-04",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:corpus-04",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:corpus-05",
+      "type": "Finding",
+      "title": "Server banner disclosure on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "cwe:CWE-200",
+      "type": "CWE",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-05",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/api/Products",
+      "type": "Endpoint",
+      "path": "/api/Products"
+    },
+    {
+      "id": "finding:corpus-06",
+      "type": "Finding",
+      "title": "Unauthenticated API product listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "cwe:CWE-306",
+      "type": "CWE",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-06",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+    },
+    {
+      "id": "endpoint:/api/Feedbacks",
+      "type": "Endpoint",
+      "path": "/api/Feedbacks"
+    },
+    {
+      "id": "finding:corpus-07",
+      "type": "Finding",
+      "title": "Unauthenticated feedback listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-07",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "be4e0c4eadc8ac0b241983e5a0614b5ffc5d38c578dea6a1c9fea4a605f086f9"
+    },
+    {
+      "id": "endpoint:/api/Challenges",
+      "type": "Endpoint",
+      "path": "/api/Challenges"
+    },
+    {
+      "id": "finding:corpus-08",
+      "type": "Finding",
+      "title": "Unauthenticated challenge listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-08",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "f18d985a65ce14226c5f4c7772a5c4148cd86bc00c4e65e3126a740d571a835f"
+    },
+    {
+      "id": "endpoint:/rest/admin/application-configuration",
+      "type": "Endpoint",
+      "path": "/rest/admin/application-configuration"
+    },
+    {
+      "id": "finding:corpus-09",
+      "type": "Finding",
+      "title": "Public application configuration",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-09",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "b7d51dc45f9e081704b015ce1c09ecc605919a3bfb771614973eb00cf7e8f06d"
+    },
+    {
+      "id": "verification:corpus-09",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/SecurityQuestions",
+      "type": "Endpoint",
+      "path": "/api/SecurityQuestions"
+    },
+    {
+      "id": "finding:corpus-10",
+      "type": "Finding",
+      "title": "Public security questions list",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-10",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "cc5c6eb0d2b72018651cd950c6db004c7f846ff0f90ba76693386ae911862b46"
+    },
+    {
+      "id": "verification:corpus-10",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/robots.txt",
+      "type": "Endpoint",
+      "path": "/robots.txt"
+    },
+    {
+      "id": "finding:corpus-11",
+      "type": "Finding",
+      "title": "Robots file discloses paths",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-11",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "09f7c2328189ecdd2e687cccdafb34a16b3d2166f50f0a7962ed4de5b3aaf696"
+    },
+    {
+      "id": "verification:corpus-11",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/.well-known/security.txt",
+      "type": "Endpoint",
+      "path": "/.well-known/security.txt"
+    },
+    {
+      "id": "finding:corpus-12",
+      "type": "Finding",
+      "title": "Security contact file absent",
+      "severity": "INFO",
+      "source": "DAST",
+      "cwe": "CWE-1059"
+    },
+    {
+      "id": "cwe:CWE-1059",
+      "type": "CWE",
+      "cwe": "CWE-1059"
+    },
+    {
+      "id": "evidence:corpus-12",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "c806cc145b31920952ec02c0e02552b8c6067f20092a99eea15d273a0aa59780"
+    },
+    {
+      "id": "endpoint:/main.js.map",
+      "type": "Endpoint",
+      "path": "/main.js.map"
+    },
+    {
+      "id": "finding:corpus-13",
+      "type": "Finding",
+      "title": "Source map exposure check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-540"
+    },
+    {
+      "id": "cwe:CWE-540",
+      "type": "CWE",
+      "cwe": "CWE-540"
+    },
+    {
+      "id": "evidence:corpus-13",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/.git/config",
+      "type": "Endpoint",
+      "path": "/.git/config"
+    },
+    {
+      "id": "finding:corpus-14",
+      "type": "Finding",
+      "title": "Git metadata exposure check",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-538"
+    },
+    {
+      "id": "cwe:CWE-538",
+      "type": "CWE",
+      "cwe": "CWE-538"
+    },
+    {
+      "id": "evidence:corpus-14",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/metrics",
+      "type": "Endpoint",
+      "path": "/metrics"
+    },
+    {
+      "id": "finding:corpus-15",
+      "type": "Finding",
+      "title": "Metrics endpoint exposure check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-15",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "e9fdeb465279a1aff9d32c3a9ca52f8e86b151d48ea56092d523158377401ac2"
+    },
+    {
+      "id": "verification:corpus-15",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/ftp",
+      "type": "Endpoint",
+      "path": "/ftp"
+    },
+    {
+      "id": "finding:corpus-16",
+      "type": "Finding",
+      "title": "FTP directory exposure check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-548"
+    },
+    {
+      "id": "cwe:CWE-548",
+      "type": "CWE",
+      "cwe": "CWE-548"
+    },
+    {
+      "id": "evidence:corpus-16",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ad3babf56ff3eb1b45082da3dede8f7823b63b37b93e3e186d1298c7ab3095c5"
+    },
+    {
+      "id": "endpoint:/rest/user/authentication-details/1",
+      "type": "Endpoint",
+      "path": "/rest/user/authentication-details/1"
+    },
+    {
+      "id": "finding:corpus-17",
+      "type": "Finding",
+      "title": "User authentication details exposure check",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "cwe:CWE-639",
+      "type": "CWE",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-17",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/rest/basket/1",
+      "type": "Endpoint",
+      "path": "/rest/basket/1"
+    },
+    {
+      "id": "finding:corpus-18",
+      "type": "Finding",
+      "title": "Basket access without session",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-18",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Addresss",
+      "type": "Endpoint",
+      "path": "/api/Addresss"
+    },
+    {
+      "id": "finding:corpus-19",
+      "type": "Finding",
+      "title": "Address listing without session",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-19",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "65fa11a8ab6a0def8eb78f5e03cde550b3415b5b0f528b3f5ce7e7b3c52da532"
+    },
+    {
+      "id": "endpoint:/api/Quantitys",
+      "type": "Endpoint",
+      "path": "/api/Quantitys"
+    },
+    {
+      "id": "finding:corpus-20",
+      "type": "Finding",
+      "title": "Quantity listing without session",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-20",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "00e82790e2f1e11fa4f09dd236b871cdbd6981db474da8698d93baef397375b9"
+    },
+    {
+      "id": "endpoint:/api/Products/1",
+      "type": "Endpoint",
+      "path": "/api/Products/1"
+    },
+    {
+      "id": "finding:corpus-21",
+      "type": "Finding",
+      "title": "Single product lookup",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-21",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "baeddb0900274e9a842d76eb1ffbe7e886a48a33d9cb4d66c1b17b2c11d72fa7"
+    },
+    {
+      "id": "endpoint:/api/Feedbacks/1",
+      "type": "Endpoint",
+      "path": "/api/Feedbacks/1"
+    },
+    {
+      "id": "finding:corpus-22",
+      "type": "Finding",
+      "title": "Single feedback lookup",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-22",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Challenges/1",
+      "type": "Endpoint",
+      "path": "/api/Challenges/1"
+    },
+    {
+      "id": "finding:corpus-23",
+      "type": "Finding",
+      "title": "Single challenge lookup",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-23",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/rest/product/1",
+      "type": "Endpoint",
+      "path": "/rest/product/1"
+    },
+    {
+      "id": "finding:corpus-24",
+      "type": "Finding",
+      "title": "Product detail endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-24",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "03cf2ce37c8f9fc93360f0320206355f3f9c1a200d7aa7c553951c2f6e6b0690"
+    },
+    {
+      "id": "endpoint:/rest/user/whoami",
+      "type": "Endpoint",
+      "path": "/rest/user/whoami"
+    },
+    {
+      "id": "finding:corpus-25",
+      "type": "Finding",
+      "title": "Whoami endpoint without auth",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-25",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "e436ef2b7de06788f8fc4b305c0a08d3ab7ee580ec3c1057cc9f3fdeac867081"
+    },
+    {
+      "id": "verification:corpus-25",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/saveLoginIp",
+      "type": "Endpoint",
+      "path": "/rest/saveLoginIp"
+    },
+    {
+      "id": "finding:corpus-26",
+      "type": "Finding",
+      "title": "Save login IP endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-26",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "d089c8a9fc28e4e50223eb38c9409e362521be9380a37341304fbac7a4cd9e5f"
+    },
+    {
+      "id": "endpoint:/rest/track-order/1",
+      "type": "Endpoint",
+      "path": "/rest/track-order/1"
+    },
+    {
+      "id": "finding:corpus-27",
+      "type": "Finding",
+      "title": "Track order lookup",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-27",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "cb03597e28859274b72fac59404abb8844497bec328c74b645207b89358e6356"
+    },
+    {
+      "id": "verification:corpus-27",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/order-history",
+      "type": "Endpoint",
+      "path": "/rest/order-history"
+    },
+    {
+      "id": "finding:corpus-28",
+      "type": "Finding",
+      "title": "Order history without session",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-28",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "88e6548a2690a41b180b26a5e0695bb01b38653a4b7d570eee9686c2d08db50f"
+    },
+    {
+      "id": "endpoint:/rest/continue-code",
+      "type": "Endpoint",
+      "path": "/rest/continue-code"
+    },
+    {
+      "id": "finding:corpus-29",
+      "type": "Finding",
+      "title": "Continue code endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-29",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "c4d4e70cce4bf17acc4ac761b303faeff9d9efc4116561f257f7251bd60c5a4c"
+    },
+    {
+      "id": "endpoint:/rest/continue-code/apply",
+      "type": "Endpoint",
+      "path": "/rest/continue-code/apply"
+    },
+    {
+      "id": "finding:corpus-30",
+      "type": "Finding",
+      "title": "Continue code apply endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-30",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "c4abfa8bfe2fa979ea75ad00f9d2f044b7ed6a92a54601b5be76f6d371869a25"
+    },
+    {
+      "id": "endpoint:/rest/memories",
+      "type": "Endpoint",
+      "path": "/rest/memories"
+    },
+    {
+      "id": "finding:corpus-31",
+      "type": "Finding",
+      "title": "Memories listing",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-31",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "d5abd77cebea1f716256f07f99c958ebcb25678e52fbfb0cb6928524aa50de6c"
+    },
+    {
+      "id": "verification:corpus-31",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Recycles",
+      "type": "Endpoint",
+      "path": "/api/Recycles"
+    },
+    {
+      "id": "finding:corpus-32",
+      "type": "Finding",
+      "title": "Recycle listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-32",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "5de19184add0e850a8ece1162bdb03b4ccfa9b12e1b6d3cbb2f6c8a150f918c2"
+    },
+    {
+      "id": "endpoint:/api/Deliverys",
+      "type": "Endpoint",
+      "path": "/api/Deliverys"
+    },
+    {
+      "id": "finding:corpus-33",
+      "type": "Finding",
+      "title": "Delivery listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-33",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca658cdfa29e44d2ed93f9b105082ef722d1c0abec70d5ad24dc7e6dcb37c38c"
+    },
+    {
+      "id": "verification:corpus-33",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Cards",
+      "type": "Endpoint",
+      "path": "/api/Cards"
+    },
+    {
+      "id": "finding:corpus-34",
+      "type": "Finding",
+      "title": "Card listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-34",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "65fa11a8ab6a0def8eb78f5e03cde550b3415b5b0f528b3f5ce7e7b3c52da532"
+    },
+    {
+      "id": "endpoint:/api/BasketItems",
+      "type": "Endpoint",
+      "path": "/api/BasketItems"
+    },
+    {
+      "id": "finding:corpus-35",
+      "type": "Finding",
+      "title": "Basket item listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-35",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Complaints",
+      "type": "Endpoint",
+      "path": "/api/Complaints"
+    },
+    {
+      "id": "finding:corpus-36",
+      "type": "Finding",
+      "title": "Complaint listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:corpus-36",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/SecurityAnswers",
+      "type": "Endpoint",
+      "path": "/api/SecurityAnswers"
+    },
+    {
+      "id": "finding:corpus-37",
+      "type": "Finding",
+      "title": "Security answer listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-37",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Users",
+      "type": "Endpoint",
+      "path": "/api/Users"
+    },
+    {
+      "id": "finding:corpus-38",
+      "type": "Finding",
+      "title": "User listing",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-38",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/api/Products/search?q=",
+      "type": "Endpoint",
+      "path": "/api/Products/search?q="
+    },
+    {
+      "id": "finding:corpus-39",
+      "type": "Finding",
+      "title": "Product search endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-39",
+      "type": "Evidence",
+      "status": 404,
+      "bodySha256": "e3816bf52cbe19de91826e46dd362296ea184e1cda15b0d7beb30d136f2b7dec"
+    },
+    {
+      "id": "endpoint:/api/Products?q=",
+      "type": "Endpoint",
+      "path": "/api/Products?q="
+    },
+    {
+      "id": "finding:corpus-40",
+      "type": "Finding",
+      "title": "Product query endpoint",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-40",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+    },
+    {
+      "id": "endpoint:/rest/basket/8",
+      "type": "Endpoint",
+      "path": "/rest/basket/8"
+    },
+    {
+      "id": "finding:bola-01",
+      "type": "Finding",
+      "title": "BOLA basket access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "fb48a69e9456962af6ee363edfc39ce428a18014cb457c64aeffe6befa3a4a69"
+    },
+    {
+      "id": "verification:bola-01",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/user/authentication-details/27",
+      "type": "Endpoint",
+      "path": "/rest/user/authentication-details/27"
+    },
+    {
+      "id": "finding:bola-02",
+      "type": "Finding",
+      "title": "BOLA user details access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-02",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "5b11b68964dff7ba1b68d7d6214da013d06eb2b70dfbf50ab59cf58d77e51bc5"
+    },
+    {
+      "id": "endpoint:/api/Addresss/27",
+      "type": "Endpoint",
+      "path": "/api/Addresss/27"
+    },
+    {
+      "id": "finding:bola-03",
+      "type": "Finding",
+      "title": "BOLA address access",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-03",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+    },
+    {
+      "id": "endpoint:/api/Cards/27",
+      "type": "Endpoint",
+      "path": "/api/Cards/27"
+    },
+    {
+      "id": "finding:bola-04",
+      "type": "Finding",
+      "title": "BOLA card access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-04",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+    },
+    {
+      "id": "endpoint:/api/BasketItems/8",
+      "type": "Endpoint",
+      "path": "/api/BasketItems/8"
+    },
+    {
+      "id": "finding:bola-05",
+      "type": "Finding",
+      "title": "BOLA basket item access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-05",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "1db46dcab03996cd4712a67858e17e80c1c595243c23672fff1cd6beb3994efc"
+    },
+    {
+      "id": "verification:bola-05",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Complaints/27",
+      "type": "Endpoint",
+      "path": "/api/Complaints/27"
+    },
+    {
+      "id": "finding:bola-06",
+      "type": "Finding",
+      "title": "BOLA complaint access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-06",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "endpoint:/api/Recycles/27",
+      "type": "Endpoint",
+      "path": "/api/Recycles/27"
+    },
+    {
+      "id": "finding:bola-07",
+      "type": "Finding",
+      "title": "BOLA recycles access",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-07",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+    },
+    {
+      "id": "verification:bola-07",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Deliverys/27",
+      "type": "Endpoint",
+      "path": "/api/Deliverys/27"
+    },
+    {
+      "id": "finding:bola-08",
+      "type": "Finding",
+      "title": "BOLA delivery access",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-08",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c7fbd9501e80a14cf61dc931140fb4d48d148c5e42ea0cef4573444061bdddfa"
+    },
+    {
+      "id": "endpoint:/api/SecurityAnswers/27",
+      "type": "Endpoint",
+      "path": "/api/SecurityAnswers/27"
+    },
+    {
+      "id": "finding:bola-09",
+      "type": "Finding",
+      "title": "BOLA security answer access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:bola-09",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "finding:bola-10",
+      "type": "Finding",
+      "title": "BOLA user listing access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:bola-10",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "19d09a1910f2a236f5f54ba8d97191f46caa42ae8909405c8d5cf5adece678ca"
+    },
+    {
+      "id": "verification:bola-10",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:bola-11",
+      "type": "Finding",
+      "title": "IDOR order history",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-11",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+    },
+    {
+      "id": "verification:bola-11",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:bola-12",
+      "type": "Finding",
+      "title": "IDOR track order",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-12",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "cb03597e28859274b72fac59404abb8844497bec328c74b645207b89358e6356"
+    },
+    {
+      "id": "verification:bola-12",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:bola-13",
+      "type": "Finding",
+      "title": "IDOR product basket",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-13",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "8847305584a7373bf7cd8ebd53116b91fe03c343694a42bd40efb4aecab94502"
+    },
+    {
+      "id": "verification:bola-13",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:bola-14",
+      "type": "Finding",
+      "title": "IDOR user details 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-14",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "084c985e255699cb0eecace63182c5055c4c41e2b42fb7e897b7dc95b7afd01b"
+    },
+    {
+      "id": "endpoint:/api/Addresss/1",
+      "type": "Endpoint",
+      "path": "/api/Addresss/1"
+    },
+    {
+      "id": "finding:bola-15",
+      "type": "Finding",
+      "title": "IDOR address 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-15",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+    },
+    {
+      "id": "endpoint:/api/Cards/1",
+      "type": "Endpoint",
+      "path": "/api/Cards/1"
+    },
+    {
+      "id": "finding:bola-16",
+      "type": "Finding",
+      "title": "IDOR card 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-16",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+    },
+    {
+      "id": "endpoint:/api/Complaints/1",
+      "type": "Endpoint",
+      "path": "/api/Complaints/1"
+    },
+    {
+      "id": "finding:bola-17",
+      "type": "Finding",
+      "title": "IDOR complaint 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-17",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "endpoint:/api/Recycles/1",
+      "type": "Endpoint",
+      "path": "/api/Recycles/1"
+    },
+    {
+      "id": "finding:bola-18",
+      "type": "Finding",
+      "title": "IDOR recycle 1",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-18",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "511c90245ae77b724fbd2bad5708a17ddd01065c0669c4decccc66fbb37af6c5"
+    },
+    {
+      "id": "verification:bola-18",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Deliverys/1",
+      "type": "Endpoint",
+      "path": "/api/Deliverys/1"
+    },
+    {
+      "id": "finding:bola-19",
+      "type": "Finding",
+      "title": "IDOR delivery 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-19",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ef936ffab4d943bb9186bd300260be87190685236d49cf8fd8ec73b5538d70eb"
+    },
+    {
+      "id": "verification:bola-19",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:bola-20",
+      "type": "Finding",
+      "title": "IDOR feedback 1",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-20",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "111e533aad0367f25c53ed5e166343f7e0667d0d9307f7f04a1bd9d7370d4c0b"
+    },
+    {
+      "id": "verification:bola-20",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/login.html",
+      "type": "Endpoint",
+      "path": "/login.html"
+    },
+    {
+      "id": "finding:b2-head-01",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /login.html",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/register.html",
+      "type": "Endpoint",
+      "path": "/register.html"
+    },
+    {
+      "id": "finding:b2-head-02",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /register.html",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-02",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/forgot-password.html",
+      "type": "Endpoint",
+      "path": "/forgot-password.html"
+    },
+    {
+      "id": "finding:b2-head-03",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /forgot-password.html",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-03",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/search",
+      "type": "Endpoint",
+      "path": "/search"
+    },
+    {
+      "id": "finding:b2-head-04",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /search",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-04",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:b2-head-04",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/basket",
+      "type": "Endpoint",
+      "path": "/basket"
+    },
+    {
+      "id": "finding:b2-head-05",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /basket",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-05",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:b2-head-05",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/order-history",
+      "type": "Endpoint",
+      "path": "/order-history"
+    },
+    {
+      "id": "finding:b2-head-06",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /order-history",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-06",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:b2-head-06",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/admin",
+      "type": "Endpoint",
+      "path": "/admin"
+    },
+    {
+      "id": "finding:b2-head-07",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /admin",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-07",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:b2-head-07",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/accounting",
+      "type": "Endpoint",
+      "path": "/accounting"
+    },
+    {
+      "id": "finding:b2-head-08",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /accounting",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-08",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:b2-head-08",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-head-09",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /api/Products",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-09",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+    },
+    {
+      "id": "finding:b2-head-10",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /api/Feedbacks",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-10",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "be4e0c4eadc8ac0b241983e5a0614b5ffc5d38c578dea6a1c9fea4a605f086f9"
+    },
+    {
+      "id": "endpoint:/rest/user/login",
+      "type": "Endpoint",
+      "path": "/rest/user/login"
+    },
+    {
+      "id": "finding:b2-head-11",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /rest/user/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-11",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "5dba30f9bcc05e0f806517c48ca562eba19afecbcc66ecc30fb82f94d3911225"
+    },
+    {
+      "id": "endpoint:/rest/products/search",
+      "type": "Endpoint",
+      "path": "/rest/products/search"
+    },
+    {
+      "id": "finding:b2-head-12",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /rest/products/search",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-12",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "89868c9c13ba550ef8fcca1684839113bf2a59bec36a9efb7e39c2191d2c2de5"
+    },
+    {
+      "id": "endpoint:/assets/public/images/",
+      "type": "Endpoint",
+      "path": "/assets/public/images/"
+    },
+    {
+      "id": "finding:b2-head-13",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /assets/public/images/",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-13",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "finding:b2-head-14",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /robots.txt",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-14",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "09f7c2328189ecdd2e687cccdafb34a16b3d2166f50f0a7962ed4de5b3aaf696"
+    },
+    {
+      "id": "verification:b2-head-14",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/security.txt",
+      "type": "Endpoint",
+      "path": "/security.txt"
+    },
+    {
+      "id": "finding:b2-head-15",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /security.txt",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-15",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "c806cc145b31920952ec02c0e02552b8c6067f20092a99eea15d273a0aa59780"
+    },
+    {
+      "id": "verification:b2-head-15",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-head-16",
+      "type": "Finding",
+      "title": "Missing x-frame-options on /ftp",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-16",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ad3babf56ff3eb1b45082da3dede8f7823b63b37b93e3e186d1298c7ab3095c5"
+    },
+    {
+      "id": "finding:b2-head-17",
+      "type": "Finding",
+      "title": "Missing x-frame-options on /metrics",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-17",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "d89d67195c56d443080b0eb344db2d3f1627741dbd7236680929bce5fd9aee13"
+    },
+    {
+      "id": "verification:b2-head-17",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-head-18",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /api/Users",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-18",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "finding:b2-head-19",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /rest/memories",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-19",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "d5abd77cebea1f716256f07f99c958ebcb25678e52fbfb0cb6928524aa50de6c"
+    },
+    {
+      "id": "verification:b2-head-19",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-head-20",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /api/Challenges",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-20",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a3e0d83a368c652cd871a0950e985cb2a5a65cd6cdf4eceff4e56cbf0b2293b1"
+    },
+    {
+      "id": "verification:b2-head-20",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-head-21",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /login.html",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-21",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:b2-head-21",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/basket/12",
+      "type": "Endpoint",
+      "path": "/rest/basket/12"
+    },
+    {
+      "id": "finding:b2-bola-01",
+      "type": "Finding",
+      "title": "Cross-user basket by id",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a202c7381741c4cbb7e4003b9b40309caddc352f89ceff5a20733461c32c4afd"
+    },
+    {
+      "id": "verification:b2-bola-01",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/user/authentication-details/31",
+      "type": "Endpoint",
+      "path": "/rest/user/authentication-details/31"
+    },
+    {
+      "id": "finding:b2-bola-02",
+      "type": "Finding",
+      "title": "Cross-user user details",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-02",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "531da5a2534c42632e18c04a19a669c0a045d7fd0fc917262f20425a4861cc6a"
+    },
+    {
+      "id": "endpoint:/api/Addresss/31",
+      "type": "Endpoint",
+      "path": "/api/Addresss/31"
+    },
+    {
+      "id": "finding:b2-bola-03",
+      "type": "Finding",
+      "title": "Cross-user address by id",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-03",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+    },
+    {
+      "id": "endpoint:/api/Cards/31",
+      "type": "Endpoint",
+      "path": "/api/Cards/31"
+    },
+    {
+      "id": "finding:b2-bola-04",
+      "type": "Finding",
+      "title": "Cross-user card by id",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-04",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+    },
+    {
+      "id": "endpoint:/api/BasketItems/12",
+      "type": "Endpoint",
+      "path": "/api/BasketItems/12"
+    },
+    {
+      "id": "finding:b2-bola-05",
+      "type": "Finding",
+      "title": "Cross-user basket items",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-05",
+      "type": "Evidence",
+      "status": 404,
+      "bodySha256": "e3816bf52cbe19de91826e46dd362296ea184e1cda15b0d7beb30d136f2b7dec"
+    },
+    {
+      "id": "endpoint:/api/Complaints/31",
+      "type": "Endpoint",
+      "path": "/api/Complaints/31"
+    },
+    {
+      "id": "finding:b2-bola-06",
+      "type": "Finding",
+      "title": "Cross-user complaints",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-06",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "endpoint:/api/Recycles/31",
+      "type": "Endpoint",
+      "path": "/api/Recycles/31"
+    },
+    {
+      "id": "finding:b2-bola-07",
+      "type": "Finding",
+      "title": "Cross-user recycles",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-07",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+    },
+    {
+      "id": "verification:b2-bola-07",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Deliverys/31",
+      "type": "Endpoint",
+      "path": "/api/Deliverys/31"
+    },
+    {
+      "id": "finding:b2-bola-08",
+      "type": "Finding",
+      "title": "Cross-user deliveries",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-08",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c7fbd9501e80a14cf61dc931140fb4d48d148c5e42ea0cef4573444061bdddfa"
+    },
+    {
+      "id": "endpoint:/api/SecurityAnswers/31",
+      "type": "Endpoint",
+      "path": "/api/SecurityAnswers/31"
+    },
+    {
+      "id": "finding:b2-bola-09",
+      "type": "Finding",
+      "title": "Cross-user security answers",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b2-bola-09",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "endpoint:/rest/order-history?userId=31",
+      "type": "Endpoint",
+      "path": "/rest/order-history?userId=31"
+    },
+    {
+      "id": "finding:b2-bola-10",
+      "type": "Finding",
+      "title": "Cross-user order history",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-10",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+    },
+    {
+      "id": "verification:b2-bola-10",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/track-order/31",
+      "type": "Endpoint",
+      "path": "/rest/track-order/31"
+    },
+    {
+      "id": "finding:b2-bola-11",
+      "type": "Finding",
+      "title": "Cross-user track order",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-11",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "6ba4083c5ecfba4948dfb700655b36b6e874dd596f30b86703954118d7adb865"
+    },
+    {
+      "id": "verification:b2-bola-11",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-bola-12",
+      "type": "Finding",
+      "title": "BOLA basket id 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-12",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "8847305584a7373bf7cd8ebd53116b91fe03c343694a42bd40efb4aecab94502"
+    },
+    {
+      "id": "verification:b2-bola-12",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-bola-13",
+      "type": "Finding",
+      "title": "BOLA user details id 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-13",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "084c985e255699cb0eecace63182c5055c4c41e2b42fb7e897b7dc95b7afd01b"
+    },
+    {
+      "id": "finding:b2-bola-14",
+      "type": "Finding",
+      "title": "BOLA address id 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-14",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+    },
+    {
+      "id": "finding:b2-bola-15",
+      "type": "Finding",
+      "title": "BOLA card id 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-15",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+    },
+    {
+      "id": "finding:b2-bola-16",
+      "type": "Finding",
+      "title": "BOLA complaint id 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-16",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "finding:b2-bola-17",
+      "type": "Finding",
+      "title": "BOLA recycle id 1",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-17",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "511c90245ae77b724fbd2bad5708a17ddd01065c0669c4decccc66fbb37af6c5"
+    },
+    {
+      "id": "verification:b2-bola-17",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-bola-18",
+      "type": "Finding",
+      "title": "BOLA delivery id 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-18",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ef936ffab4d943bb9186bd300260be87190685236d49cf8fd8ec73b5538d70eb"
+    },
+    {
+      "id": "verification:b2-bola-18",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-bola-19",
+      "type": "Finding",
+      "title": "BOLA feedback id 1",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-19",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "111e533aad0367f25c53ed5e166343f7e0667d0d9307f7f04a1bd9d7370d4c0b"
+    },
+    {
+      "id": "verification:b2-bola-19",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/BasketItems?basketId=12",
+      "type": "Endpoint",
+      "path": "/api/BasketItems?basketId=12"
+    },
+    {
+      "id": "finding:b2-bola-20",
+      "type": "Finding",
+      "title": "BOLA basket items query",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-20",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "b3c08f92f77c0e74050facf475f026a30c213662207c69884b9bdb5f8138ec22"
+    },
+    {
+      "id": "verification:b2-bola-20",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-01",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-01",
+      "target": "evidence:corpus-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "evidence:corpus-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "verification:corpus-02",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-03",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-03",
+      "target": "evidence:corpus-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-04",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-04",
+      "target": "evidence:corpus-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-04",
+      "target": "verification:corpus-04",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-05",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-05",
+      "target": "evidence:corpus-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products",
+      "target": "finding:corpus-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-06",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-06",
+      "target": "evidence:corpus-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Feedbacks",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks",
+      "target": "finding:corpus-07",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-07",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-07",
+      "target": "evidence:corpus-07",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Challenges",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Challenges",
+      "target": "finding:corpus-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-08",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-08",
+      "target": "evidence:corpus-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/admin/application-configuration",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/admin/application-configuration",
+      "target": "finding:corpus-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-09",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-09",
+      "target": "evidence:corpus-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-09",
+      "target": "verification:corpus-09",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/SecurityQuestions",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/SecurityQuestions",
+      "target": "finding:corpus-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-10",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-10",
+      "target": "evidence:corpus-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-10",
+      "target": "verification:corpus-10",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/robots.txt",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/robots.txt",
+      "target": "finding:corpus-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-11",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-11",
+      "target": "evidence:corpus-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-11",
+      "target": "verification:corpus-11",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/.well-known/security.txt",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/.well-known/security.txt",
+      "target": "finding:corpus-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-12",
+      "target": "cwe:CWE-1059",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-12",
+      "target": "evidence:corpus-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/main.js.map",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/main.js.map",
+      "target": "finding:corpus-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-13",
+      "target": "cwe:CWE-540",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-13",
+      "target": "evidence:corpus-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/.git/config",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/.git/config",
+      "target": "finding:corpus-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-14",
+      "target": "cwe:CWE-538",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-14",
+      "target": "evidence:corpus-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/metrics",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/metrics",
+      "target": "finding:corpus-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-15",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-15",
+      "target": "evidence:corpus-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-15",
+      "target": "verification:corpus-15",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/ftp",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/ftp",
+      "target": "finding:corpus-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-16",
+      "target": "cwe:CWE-548",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-16",
+      "target": "evidence:corpus-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/authentication-details/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/1",
+      "target": "finding:corpus-17",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-17",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-17",
+      "target": "evidence:corpus-17",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/basket/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/1",
+      "target": "finding:corpus-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-18",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-18",
+      "target": "evidence:corpus-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Addresss",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss",
+      "target": "finding:corpus-19",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-19",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-19",
+      "target": "evidence:corpus-19",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Quantitys",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Quantitys",
+      "target": "finding:corpus-20",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-20",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-20",
+      "target": "evidence:corpus-20",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products/1",
+      "target": "finding:corpus-21",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-21",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-21",
+      "target": "evidence:corpus-21",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Feedbacks/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks/1",
+      "target": "finding:corpus-22",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-22",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-22",
+      "target": "evidence:corpus-22",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Challenges/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Challenges/1",
+      "target": "finding:corpus-23",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-23",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-23",
+      "target": "evidence:corpus-23",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/product/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/product/1",
+      "target": "finding:corpus-24",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-24",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-24",
+      "target": "evidence:corpus-24",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/whoami",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/whoami",
+      "target": "finding:corpus-25",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-25",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-25",
+      "target": "evidence:corpus-25",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-25",
+      "target": "verification:corpus-25",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/saveLoginIp",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/saveLoginIp",
+      "target": "finding:corpus-26",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-26",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-26",
+      "target": "evidence:corpus-26",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/track-order/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/track-order/1",
+      "target": "finding:corpus-27",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-27",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-27",
+      "target": "evidence:corpus-27",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-27",
+      "target": "verification:corpus-27",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/order-history",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/order-history",
+      "target": "finding:corpus-28",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-28",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-28",
+      "target": "evidence:corpus-28",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/continue-code",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/continue-code",
+      "target": "finding:corpus-29",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-29",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-29",
+      "target": "evidence:corpus-29",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/continue-code/apply",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/continue-code/apply",
+      "target": "finding:corpus-30",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-30",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-30",
+      "target": "evidence:corpus-30",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/memories",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/memories",
+      "target": "finding:corpus-31",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-31",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-31",
+      "target": "evidence:corpus-31",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-31",
+      "target": "verification:corpus-31",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Recycles",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Recycles",
+      "target": "finding:corpus-32",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-32",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-32",
+      "target": "evidence:corpus-32",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Deliverys",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys",
+      "target": "finding:corpus-33",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-33",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-33",
+      "target": "evidence:corpus-33",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-33",
+      "target": "verification:corpus-33",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Cards",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards",
+      "target": "finding:corpus-34",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-34",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-34",
+      "target": "evidence:corpus-34",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/BasketItems",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/BasketItems",
+      "target": "finding:corpus-35",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-35",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-35",
+      "target": "evidence:corpus-35",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Complaints",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints",
+      "target": "finding:corpus-36",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-36",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-36",
+      "target": "evidence:corpus-36",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/SecurityAnswers",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/SecurityAnswers",
+      "target": "finding:corpus-37",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-37",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-37",
+      "target": "evidence:corpus-37",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Users",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Users",
+      "target": "finding:corpus-38",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-38",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-38",
+      "target": "evidence:corpus-38",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products/search?q=",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products/search?q=",
+      "target": "finding:corpus-39",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-39",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-39",
+      "target": "evidence:corpus-39",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products?q=",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products?q=",
+      "target": "finding:corpus-40",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-40",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-40",
+      "target": "evidence:corpus-40",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/basket/8",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/8",
+      "target": "finding:bola-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-01",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-01",
+      "target": "evidence:bola-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-01",
+      "target": "verification:bola-01",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/authentication-details/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/27",
+      "target": "finding:bola-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-02",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-02",
+      "target": "evidence:bola-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Addresss/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss/27",
+      "target": "finding:bola-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-03",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-03",
+      "target": "evidence:bola-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Cards/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards/27",
+      "target": "finding:bola-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-04",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-04",
+      "target": "evidence:bola-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/BasketItems/8",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/BasketItems/8",
+      "target": "finding:bola-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-05",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-05",
+      "target": "evidence:bola-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-05",
+      "target": "verification:bola-05",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Complaints/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints/27",
+      "target": "finding:bola-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-06",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-06",
+      "target": "evidence:bola-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Recycles/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Recycles/27",
+      "target": "finding:bola-07",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-07",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-07",
+      "target": "evidence:bola-07",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-07",
+      "target": "verification:bola-07",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Deliverys/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys/27",
+      "target": "finding:bola-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-08",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-08",
+      "target": "evidence:bola-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/SecurityAnswers/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/SecurityAnswers/27",
+      "target": "finding:bola-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-09",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-09",
+      "target": "evidence:bola-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Users",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Users",
+      "target": "finding:bola-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-10",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-10",
+      "target": "evidence:bola-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-10",
+      "target": "verification:bola-10",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/order-history",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/order-history",
+      "target": "finding:bola-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-11",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-11",
+      "target": "evidence:bola-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-11",
+      "target": "verification:bola-11",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/track-order/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/track-order/1",
+      "target": "finding:bola-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-12",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-12",
+      "target": "evidence:bola-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-12",
+      "target": "verification:bola-12",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/basket/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/1",
+      "target": "finding:bola-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-13",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-13",
+      "target": "evidence:bola-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-13",
+      "target": "verification:bola-13",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/authentication-details/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/1",
+      "target": "finding:bola-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-14",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-14",
+      "target": "evidence:bola-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Addresss/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss/1",
+      "target": "finding:bola-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-15",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-15",
+      "target": "evidence:bola-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Cards/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards/1",
+      "target": "finding:bola-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-16",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-16",
+      "target": "evidence:bola-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Complaints/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints/1",
+      "target": "finding:bola-17",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-17",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-17",
+      "target": "evidence:bola-17",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Recycles/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Recycles/1",
+      "target": "finding:bola-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-18",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-18",
+      "target": "evidence:bola-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-18",
+      "target": "verification:bola-18",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Deliverys/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys/1",
+      "target": "finding:bola-19",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-19",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-19",
+      "target": "evidence:bola-19",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-19",
+      "target": "verification:bola-19",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Feedbacks/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks/1",
+      "target": "finding:bola-20",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-20",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-20",
+      "target": "evidence:bola-20",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-20",
+      "target": "verification:bola-20",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/login.html",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/login.html",
+      "target": "finding:b2-head-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-01",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-01",
+      "target": "evidence:b2-head-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/register.html",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/register.html",
+      "target": "finding:b2-head-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-02",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-02",
+      "target": "evidence:b2-head-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/forgot-password.html",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/forgot-password.html",
+      "target": "finding:b2-head-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-03",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-03",
+      "target": "evidence:b2-head-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/search",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/search",
+      "target": "finding:b2-head-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-04",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-04",
+      "target": "evidence:b2-head-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-04",
+      "target": "verification:b2-head-04",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/basket",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/basket",
+      "target": "finding:b2-head-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-05",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-05",
+      "target": "evidence:b2-head-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-05",
+      "target": "verification:b2-head-05",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/order-history",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/order-history",
+      "target": "finding:b2-head-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-06",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-06",
+      "target": "evidence:b2-head-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-06",
+      "target": "verification:b2-head-06",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/admin",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/admin",
+      "target": "finding:b2-head-07",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-07",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-07",
+      "target": "evidence:b2-head-07",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-07",
+      "target": "verification:b2-head-07",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/accounting",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/accounting",
+      "target": "finding:b2-head-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-08",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-08",
+      "target": "evidence:b2-head-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-08",
+      "target": "verification:b2-head-08",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Products",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products",
+      "target": "finding:b2-head-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-09",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-09",
+      "target": "evidence:b2-head-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Feedbacks",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks",
+      "target": "finding:b2-head-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-10",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-10",
+      "target": "evidence:b2-head-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/login",
+      "target": "finding:b2-head-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-11",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-11",
+      "target": "evidence:b2-head-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/products/search",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/products/search",
+      "target": "finding:b2-head-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-12",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-12",
+      "target": "evidence:b2-head-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/assets/public/images/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/assets/public/images/",
+      "target": "finding:b2-head-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-13",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-13",
+      "target": "evidence:b2-head-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/robots.txt",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/robots.txt",
+      "target": "finding:b2-head-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-14",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-14",
+      "target": "evidence:b2-head-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-14",
+      "target": "verification:b2-head-14",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/security.txt",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/security.txt",
+      "target": "finding:b2-head-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-15",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-15",
+      "target": "evidence:b2-head-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-15",
+      "target": "verification:b2-head-15",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/ftp",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/ftp",
+      "target": "finding:b2-head-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-16",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-16",
+      "target": "evidence:b2-head-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/metrics",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/metrics",
+      "target": "finding:b2-head-17",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-17",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-17",
+      "target": "evidence:b2-head-17",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-17",
+      "target": "verification:b2-head-17",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Users",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Users",
+      "target": "finding:b2-head-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-18",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-18",
+      "target": "evidence:b2-head-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/memories",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/memories",
+      "target": "finding:b2-head-19",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-19",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-19",
+      "target": "evidence:b2-head-19",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-19",
+      "target": "verification:b2-head-19",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Challenges",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Challenges",
+      "target": "finding:b2-head-20",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-20",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-20",
+      "target": "evidence:b2-head-20",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-20",
+      "target": "verification:b2-head-20",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/login.html",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/login.html",
+      "target": "finding:b2-head-21",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-21",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-21",
+      "target": "evidence:b2-head-21",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-21",
+      "target": "verification:b2-head-21",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/basket/12",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/12",
+      "target": "finding:b2-bola-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-01",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-01",
+      "target": "evidence:b2-bola-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-01",
+      "target": "verification:b2-bola-01",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/authentication-details/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/31",
+      "target": "finding:b2-bola-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-02",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-02",
+      "target": "evidence:b2-bola-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Addresss/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss/31",
+      "target": "finding:b2-bola-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-03",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-03",
+      "target": "evidence:b2-bola-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Cards/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards/31",
+      "target": "finding:b2-bola-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-04",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-04",
+      "target": "evidence:b2-bola-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/BasketItems/12",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/BasketItems/12",
+      "target": "finding:b2-bola-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-05",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-05",
+      "target": "evidence:b2-bola-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Complaints/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints/31",
+      "target": "finding:b2-bola-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-06",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-06",
+      "target": "evidence:b2-bola-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Recycles/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Recycles/31",
+      "target": "finding:b2-bola-07",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-07",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-07",
+      "target": "evidence:b2-bola-07",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-07",
+      "target": "verification:b2-bola-07",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Deliverys/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys/31",
+      "target": "finding:b2-bola-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-08",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-08",
+      "target": "evidence:b2-bola-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/SecurityAnswers/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/SecurityAnswers/31",
+      "target": "finding:b2-bola-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-09",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-09",
+      "target": "evidence:b2-bola-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/order-history?userId=31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/order-history?userId=31",
+      "target": "finding:b2-bola-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-10",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-10",
+      "target": "evidence:b2-bola-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-10",
+      "target": "verification:b2-bola-10",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/track-order/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/track-order/31",
+      "target": "finding:b2-bola-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-11",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-11",
+      "target": "evidence:b2-bola-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-11",
+      "target": "verification:b2-bola-11",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/basket/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/1",
+      "target": "finding:b2-bola-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-12",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-12",
+      "target": "evidence:b2-bola-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-12",
+      "target": "verification:b2-bola-12",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/rest/user/authentication-details/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/1",
+      "target": "finding:b2-bola-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-13",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-13",
+      "target": "evidence:b2-bola-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Addresss/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss/1",
+      "target": "finding:b2-bola-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-14",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-14",
+      "target": "evidence:b2-bola-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Cards/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards/1",
+      "target": "finding:b2-bola-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-15",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-15",
+      "target": "evidence:b2-bola-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Complaints/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints/1",
+      "target": "finding:b2-bola-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-16",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-16",
+      "target": "evidence:b2-bola-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Recycles/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Recycles/1",
+      "target": "finding:b2-bola-17",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-17",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-17",
+      "target": "evidence:b2-bola-17",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-17",
+      "target": "verification:b2-bola-17",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Deliverys/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys/1",
+      "target": "finding:b2-bola-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-18",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-18",
+      "target": "evidence:b2-bola-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-18",
+      "target": "verification:b2-bola-18",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/Feedbacks/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks/1",
+      "target": "finding:b2-bola-19",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-19",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-19",
+      "target": "evidence:b2-bola-19",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-19",
+      "target": "verification:b2-bola-19",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:lab",
+      "target": "endpoint:/api/BasketItems?basketId=12",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/BasketItems?basketId=12",
+      "target": "finding:b2-bola-20",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-20",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-20",
+      "target": "evidence:b2-bola-20",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-20",
+      "target": "verification:b2-bola-20",
+      "type": "VERIFIED_BY"
+    }
+  ],
+  "counts": {
+    "findings": 101,
+    "verified": 40,
+    "human_rejected": 61,
+    "pending_review": 0
+  }
+}

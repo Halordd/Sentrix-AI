@@ -1,0 +1,1045 @@
+{
+  "base": "http://10.20.20.20:8080",
+  "records": [
+    {
+      "id": "b3-head-01",
+      "title": "Missing content-security-policy on /WebGoat/login",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/login",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.618210+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141003+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-02",
+      "title": "Missing content-security-policy on /WebGoat/registration",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/registration",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 4188,
+        "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+      },
+      "observedAt": "2026-10-26T12:26:35.658424+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141027+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-03",
+      "title": "Missing content-security-policy on /WebGoat/",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.668189+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141037+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-04",
+      "title": "Missing x-content-type-options on /WebGoat/login",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/login",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "x-content-type-options missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.674108+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141047+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-05",
+      "title": "Missing x-content-type-options on /WebGoat/registration",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/registration",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "x-content-type-options missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 4188,
+        "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+      },
+      "observedAt": "2026-10-26T12:26:35.684968+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141056+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-06",
+      "title": "Missing x-content-type-options on /WebGoat/",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "x-content-type-options missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.694982+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141065+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-07",
+      "title": "Missing x-frame-options on /WebGoat/login",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/login",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "x-frame-options missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.714722+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141074+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-08",
+      "title": "Missing x-frame-options on /WebGoat/registration",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/registration",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "x-frame-options missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 4188,
+        "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+      },
+      "observedAt": "2026-10-26T12:26:35.733613+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141084+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-09",
+      "title": "Missing x-frame-options on /WebGoat/",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "x-frame-options missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.746368+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141093+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-10",
+      "title": "Missing referrer-policy on /WebGoat/login",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/login",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "referrer-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.755877+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141102+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-11",
+      "title": "Missing referrer-policy on /WebGoat/registration",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/registration",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "referrer-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 4188,
+        "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+      },
+      "observedAt": "2026-10-26T12:26:35.763728+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141111+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-12",
+      "title": "Missing referrer-policy on /WebGoat/",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "referrer-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.782344+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141120+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-13",
+      "title": "Missing strict-transport-security on /WebGoat/login",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/login",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "strict-transport-security missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.787874+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141129+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-14",
+      "title": "Missing strict-transport-security on /WebGoat/registration",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/registration",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "strict-transport-security missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 4188,
+        "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+      },
+      "observedAt": "2026-10-26T12:26:35.802802+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141138+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-15",
+      "title": "Missing strict-transport-security on /WebGoat/",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "strict-transport-security missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.822425+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141147+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-16",
+      "title": "Missing permissions-policy on /WebGoat/login",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/login",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "permissions-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.827803+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141156+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-17",
+      "title": "Missing permissions-policy on /WebGoat/registration",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/registration",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "permissions-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 4188,
+        "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+      },
+      "observedAt": "2026-10-26T12:26:35.833808+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141165+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-18",
+      "title": "Missing permissions-policy on /WebGoat/",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "permissions-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.842002+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141175+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-19",
+      "title": "Missing cache-control on /WebGoat/login",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/login",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "cache-control missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:35.849848+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141184+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-head-20",
+      "title": "Missing cache-control on /WebGoat/registration",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/registration",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "ruleHint": 1,
+      "labelReason": "cache-control missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 4188,
+        "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+      },
+      "observedAt": "2026-10-26T12:26:35.854984+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:35:57.141195+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-01",
+      "title": "Actuator root",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/vnd.spring-boot.actuator.v3+json",
+        "bytes": 657,
+        "bodySha256": "09bff2002148396b87fa32310a70e860b639d91d06eb740150a2a63eaa3ed301"
+      },
+      "observedAt": "2026-10-26T12:26:35.875211+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233163+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-02",
+      "title": "Actuator health",
+      "severity": "LOW",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/health",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/vnd.spring-boot.actuator.v3+json",
+        "bytes": 633,
+        "bodySha256": "d31db8c48c9381ad3c2679423d8e7bdf04b25425a3e7b77dc9ca26d7eb43a66c"
+      },
+      "observedAt": "2026-10-26T12:26:35.899525+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233186+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-03",
+      "title": "Actuator info",
+      "severity": "LOW",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/info",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 302,
+        "contentType": "",
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observedAt": "2026-10-26T12:26:35.982201+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233197+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-04",
+      "title": "Actuator env",
+      "severity": "HIGH",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/env",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/vnd.spring-boot.actuator.v3+json",
+        "bytes": 6596,
+        "bodySha256": "917f6a857ab04b6de4f119cdcda920e202b8f8639cc6b5a32d68286ac9528379"
+      },
+      "observedAt": "2026-10-26T12:26:36.003754+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233206+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-05",
+      "title": "Actuator mappings",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/mappings",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 302,
+        "contentType": "",
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observedAt": "2026-10-26T12:26:36.031232+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233215+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-06",
+      "title": "Actuator beans",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/beans",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 302,
+        "contentType": "",
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observedAt": "2026-10-26T12:26:36.050948+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233224+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-07",
+      "title": "Actuator metrics",
+      "severity": "LOW",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/metrics",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 302,
+        "contentType": "",
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observedAt": "2026-10-26T12:26:36.070474+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233233+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-08",
+      "title": "Actuator loggers",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/loggers",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 302,
+        "contentType": "",
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observedAt": "2026-10-26T12:26:36.085984+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233242+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-09",
+      "title": "Actuator configprops",
+      "severity": "HIGH",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/configprops",
+        "line": null
+      },
+      "verified": true,
+      "label": 1,
+      "reviewStatus": "HUMAN_VERIFIED",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/vnd.spring-boot.actuator.v3+json",
+        "bytes": 21898,
+        "bodySha256": "48969b2dbf93a86fb949a44287b20e34ab700487021ae30de32d26dd5f6de7cf"
+      },
+      "observedAt": "2026-10-26T12:26:36.153135+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233256+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-10",
+      "title": "Actuator threaddump",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/threaddump",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 302,
+        "contentType": "",
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observedAt": "2026-10-26T12:26:36.190599+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233265+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-11",
+      "title": "Actuator heapdump",
+      "severity": "HIGH",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/heapdump",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 302,
+        "contentType": "",
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observedAt": "2026-10-26T12:26:36.209869+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233273+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-12",
+      "title": "Actuator prometheus",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/actuator/prometheus",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 302,
+        "contentType": "",
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observedAt": "2026-10-26T12:26:36.225911+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233282+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-13",
+      "title": "Robots file",
+      "severity": "LOW",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/robots.txt",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:36.236547+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233291+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-14",
+      "title": "Git metadata",
+      "severity": "HIGH",
+      "cwe": "CWE-538",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/.git/config",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:36.255040+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233305+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-15",
+      "title": "Registration page",
+      "severity": "LOW",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/registration",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 4188,
+        "bodySha256": "a7d04db39de2bfdee845097cf10211f71ca9bf8cfd6a4d2cbcecd1c78b7172e0"
+      },
+      "observedAt": "2026-10-26T12:26:36.262964+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233314+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-16",
+      "title": "Login error page",
+      "severity": "LOW",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/login?error",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 2007,
+        "bodySha256": "ee154e6377c8b6afe1f461caab44a8ca9e358e134d94d5484a2f08a6f6a5868d"
+      },
+      "observedAt": "2026-10-26T12:26:36.279750+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233323+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-17",
+      "title": "Static JS bundle",
+      "severity": "LOW",
+      "cwe": "CWE-540",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/js/main.js",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/javascript",
+        "bytes": 1942,
+        "bodySha256": "b52e9d7c0532329ddf743813586ce5002ea3417c82b67af083be4d9be6c53206"
+      },
+      "observedAt": "2026-10-26T12:26:36.283612+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233332+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-18",
+      "title": "Static CSS bundle",
+      "severity": "LOW",
+      "cwe": "CWE-540",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/css/main.css",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/css",
+        "bytes": 27685,
+        "bodySha256": "344f60b2135ddaedb56f907aabb06e6e55a53f570f664241fed9a180bc29a889"
+      },
+      "observedAt": "2026-10-26T12:26:36.297027+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233341+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-19",
+      "title": "Swagger UI check",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/swagger-ui/index.html",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:36.308838+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233350+00:00",
+      "reviewNote": "none"
+    },
+    {
+      "id": "b3-path-20",
+      "title": "H2 console check",
+      "severity": "MEDIUM",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/WebGoat/h2-console",
+        "line": null
+      },
+      "verified": false,
+      "label": 0,
+      "reviewStatus": "HUMAN_REJECTED",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html;charset=UTF-8",
+        "bytes": 1929,
+        "bodySha256": "61153914d077b9f99ead10a536133564d2988ad5f6eaa74ad2300867dc2249dd"
+      },
+      "observedAt": "2026-10-26T12:26:36.319415+00:00",
+      "reviewedBy": "halord",
+      "reviewedAt": "2026-10-26T12:40:42.233359+00:00",
+      "reviewNote": "none"
+    }
+  ]
+}

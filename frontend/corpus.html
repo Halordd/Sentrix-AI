@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENTRIX · Corpus pilot</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .corpus-shell { max-width: 1280px; margin: 0 auto; padding: 28px; }
+      .corpus-head { display: flex; justify-content: space-between; gap: 16px; align-items: end; margin-bottom: 18px; }
+      .corpus-head h1 { margin: 6px 0; }
+      .corpus-head p { color: #94a3b8; margin: 0; }
+      .pilot-banner { border: 1px solid #f59e0b; background: #2a1d08; color: #fde68a; padding: 12px 16px; border-radius: 12px; margin-bottom: 18px; }
+      .pilot-banner b { color: #fff; }
+      .corpus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-bottom: 18px; }
+      .corpus-card { border: 1px solid #243245; background: #0d1623; border-radius: 14px; padding: 16px; }
+      .corpus-card span { color: #94a3b8; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+      .corpus-card strong { display: block; font-size: 28px; margin-top: 6px; }
+      .corpus-panel { border: 1px solid #243245; background: #0d1623; border-radius: 14px; padding: 16px; margin-bottom: 18px; }
+      .corpus-panel h2 { margin: 0 0 12px; font-size: 18px; }
+      .corpus-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      .corpus-table th, .corpus-table td { text-align: left; padding: 9px 8px; border-bottom: 1px solid #1e293b; vertical-align: top; }
+      .corpus-table th { color: #94a3b8; font-weight: 600; }
+      .verified { color: #4ade80; }
+      .unverified { color: #f59e0b; }
+      .muted { color: #64748b; }
+      .corpus-link { color: #67e8f9; text-decoration: none; }
+      .corpus-error { color: #f87171; }
+      @media (max-width: 720px) { .corpus-head { flex-direction: column; align-items: start; } }
+    </style>
+  </head>
+  <body>
+    <main class="corpus-shell">
+      <header class="corpus-head">
+        <div>
+          <span class="eyebrow cyan">CORPUS PILOT</span>
+          <h1>Web/API lab corpus</h1>
+          <p>Read-only view. Scores are pilot and uncalibrated; labels came from human review.</p>
+        </div>
+        <a class="corpus-link" href="/">← Back to console</a>
+      </header>
+      <div class="pilot-banner"><b>PILOT · UNCALIBRATED</b> — do not treat these scores as production confidence. <span id="model-label"></span></div>
+      <p class="corpus-error" id="corpus-error"></p>
+      <section class="corpus-grid" id="summary"></section>
+      <section class="corpus-panel"><h2>Targets</h2><div id="targets"></div></section>
+      <section class="corpus-panel"><h2>Top candidates</h2><div id="candidates"></div></section>
+      <section class="corpus-panel"><h2>Findings</h2><div id="findings"></div></section>
+    </main>
+    <script type="module" src="/corpus.js"></script>
+  </body>
+</html>

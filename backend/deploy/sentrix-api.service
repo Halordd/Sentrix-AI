@@ -1,0 +1,24 @@
+[Unit]
+Description=SENTRIX API (local)
+After=network.target
+
+[Service]
+Type=simple
+User=sentrixadmin
+Group=sentrixadmin
+WorkingDirectory=/home/sentrixadmin/sentrix-backend
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=SENTRIX_ARTIFACT_DIR=/home/sentrixadmin/sentrix-artifacts
+Environment=SENTRIX_SHARED_AUTH=1
+EnvironmentFile=-/home/sentrixadmin/sentrix-backend/.env
+ExecStart=/home/sentrixadmin/sentrix-backend/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/sentrixadmin/sentrix-artifacts
+
+[Install]
+WantedBy=multi-user.target

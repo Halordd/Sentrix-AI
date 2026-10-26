@@ -1,0 +1,1049 @@
+{
+  "base": "http://10.20.20.20:3000",
+  "records": [
+    {
+      "id": "b2-head-01",
+      "title": "Missing x-content-type-options on /login.html",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/login.html",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.174381+00:00"
+    },
+    {
+      "id": "b2-head-02",
+      "title": "Missing x-content-type-options on /register.html",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/register.html",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.182056+00:00"
+    },
+    {
+      "id": "b2-head-03",
+      "title": "Missing x-content-type-options on /forgot-password.html",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/forgot-password.html",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.189548+00:00"
+    },
+    {
+      "id": "b2-head-04",
+      "title": "Missing content-security-policy on /search",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/search",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.197044+00:00"
+    },
+    {
+      "id": "b2-head-05",
+      "title": "Missing content-security-policy on /basket",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/basket",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.204435+00:00"
+    },
+    {
+      "id": "b2-head-06",
+      "title": "Missing content-security-policy on /order-history",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/order-history",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.214790+00:00"
+    },
+    {
+      "id": "b2-head-07",
+      "title": "Missing content-security-policy on /admin",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/admin",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.222880+00:00"
+    },
+    {
+      "id": "b2-head-08",
+      "title": "Missing content-security-policy on /accounting",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/accounting",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.230455+00:00"
+    },
+    {
+      "id": "b2-head-09",
+      "title": "Missing x-content-type-options on /api/Products",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Products",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 26411,
+        "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+      },
+      "observedAt": "2026-10-26T06:49:25.375054+00:00"
+    },
+    {
+      "id": "b2-head-10",
+      "title": "Missing x-content-type-options on /api/Feedbacks",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Feedbacks",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1734,
+        "bodySha256": "be4e0c4eadc8ac0b241983e5a0614b5ffc5d38c578dea6a1c9fea4a605f086f9"
+      },
+      "observedAt": "2026-10-26T06:49:25.400224+00:00"
+    },
+    {
+      "id": "b2-head-11",
+      "title": "Missing x-content-type-options on /rest/user/login",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/user/login",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 500,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2432,
+        "bodySha256": "5dba30f9bcc05e0f806517c48ca562eba19afecbcc66ecc30fb82f94d3911225"
+      },
+      "observedAt": "2026-10-26T06:49:25.403833+00:00"
+    },
+    {
+      "id": "b2-head-12",
+      "title": "Missing x-content-type-options on /rest/products/search",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/products/search",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 26963,
+        "bodySha256": "89868c9c13ba550ef8fcca1684839113bf2a59bec36a9efb7e39c2191d2c2de5"
+      },
+      "observedAt": "2026-10-26T06:49:25.427254+00:00"
+    },
+    {
+      "id": "b2-head-13",
+      "title": "Missing x-content-type-options on /assets/public/images/",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/assets/public/images/",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.436348+00:00"
+    },
+    {
+      "id": "b2-head-14",
+      "title": "Missing content-security-policy on /robots.txt",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/robots.txt",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "bytes": 28,
+        "bodySha256": "09f7c2328189ecdd2e687cccdafb34a16b3d2166f50f0a7962ed4de5b3aaf696"
+      },
+      "observedAt": "2026-10-26T06:49:25.438678+00:00"
+    },
+    {
+      "id": "b2-head-15",
+      "title": "Missing content-security-policy on /security.txt",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/security.txt",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "bytes": 483,
+        "bodySha256": "c806cc145b31920952ec02c0e02552b8c6067f20092a99eea15d273a0aa59780"
+      },
+      "observedAt": "2026-10-26T06:49:25.441083+00:00"
+    },
+    {
+      "id": "b2-head-16",
+      "title": "Missing x-frame-options on /ftp",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/ftp",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-frame-options present",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 11319,
+        "bodySha256": "ad3babf56ff3eb1b45082da3dede8f7823b63b37b93e3e186d1298c7ab3095c5"
+      },
+      "observedAt": "2026-10-26T06:49:25.446348+00:00"
+    },
+    {
+      "id": "b2-head-17",
+      "title": "Missing x-frame-options on /metrics",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/metrics",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "x-frame-options missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/plain; version=0.0.4; charset=utf-8",
+        "bytes": 26223,
+        "bodySha256": "d89d67195c56d443080b0eb344db2d3f1627741dbd7236680929bce5fd9aee13"
+      },
+      "observedAt": "2026-10-26T06:49:25.450054+00:00"
+    },
+    {
+      "id": "b2-head-18",
+      "title": "Missing x-content-type-options on /api/Users",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Users",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 0,
+      "labelReason": "x-content-type-options present",
+      "evidence": {
+        "status": 401,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 972,
+        "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+      },
+      "observedAt": "2026-10-26T06:49:25.453197+00:00"
+    },
+    {
+      "id": "b2-head-19",
+      "title": "Missing content-security-policy on /rest/memories",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/memories",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 6183,
+        "bodySha256": "d5abd77cebea1f716256f07f99c958ebcb25678e52fbfb0cb6928524aa50de6c"
+      },
+      "observedAt": "2026-10-26T06:49:25.504322+00:00"
+    },
+    {
+      "id": "b2-head-20",
+      "title": "Missing content-security-policy on /api/Challenges",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Challenges",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 65536,
+        "bodySha256": "a3e0d83a368c652cd871a0950e985cb2a5a65cd6cdf4eceff4e56cbf0b2293b1"
+      },
+      "observedAt": "2026-10-26T06:49:25.536469+00:00"
+    },
+    {
+      "id": "b2-head-21",
+      "title": "Missing content-security-policy on /login.html",
+      "severity": "LOW",
+      "cwe": "CWE-693",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/login.html",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "ruleHint": 1,
+      "labelReason": "content-security-policy missing",
+      "evidence": {
+        "status": 200,
+        "contentType": "text/html; charset=UTF-8",
+        "bytes": 9984,
+        "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+      },
+      "observedAt": "2026-10-26T06:49:25.544084+00:00"
+    },
+    {
+      "id": "b2-bola-01",
+      "title": "Cross-user basket by id",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/basket/12",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 155,
+        "bodySha256": "a202c7381741c4cbb7e4003b9b40309caddc352f89ceff5a20733461c32c4afd"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.706483+00:00"
+    },
+    {
+      "id": "b2-bola-02",
+      "title": "Cross-user user details",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/user/authentication-details/31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 500,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1382,
+        "bodySha256": "531da5a2534c42632e18c04a19a669c0a045d7fd0fc917262f20425a4861cc6a"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.714074+00:00"
+    },
+    {
+      "id": "b2-bola-03",
+      "title": "Cross-user address by id",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Addresss/31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 56,
+        "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.735077+00:00"
+    },
+    {
+      "id": "b2-bola-04",
+      "title": "Cross-user card by id",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Cards/31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 55,
+        "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.739911+00:00"
+    },
+    {
+      "id": "b2-bola-05",
+      "title": "Cross-user basket items",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/BasketItems/12",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 404,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 35,
+        "bodySha256": "e3816bf52cbe19de91826e46dd362296ea184e1cda15b0d7beb30d136f2b7dec"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.766848+00:00"
+    },
+    {
+      "id": "b2-bola-06",
+      "title": "Cross-user complaints",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Complaints/31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 383,
+        "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.770856+00:00"
+    },
+    {
+      "id": "b2-bola-07",
+      "title": "Cross-user recycles",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Recycles/31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 30,
+        "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.775039+00:00"
+    },
+    {
+      "id": "b2-bola-08",
+      "title": "Cross-user deliveries",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Deliverys/31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 18,
+        "bodySha256": "c7fbd9501e80a14cf61dc931140fb4d48d148c5e42ea0cef4573444061bdddfa"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.779563+00:00"
+    },
+    {
+      "id": "b2-bola-09",
+      "title": "Cross-user security answers",
+      "severity": "HIGH",
+      "cwe": "CWE-200",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/SecurityAnswers/31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 383,
+        "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.782982+00:00"
+    },
+    {
+      "id": "b2-bola-10",
+      "title": "Cross-user order history",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/order-history?userId=31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 30,
+        "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.791522+00:00"
+    },
+    {
+      "id": "b2-bola-11",
+      "title": "Cross-user track order",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/track-order/31",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 46,
+        "bodySha256": "6ba4083c5ecfba4948dfb700655b36b6e874dd596f30b86703954118d7adb865"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.800278+00:00"
+    },
+    {
+      "id": "b2-bola-12",
+      "title": "BOLA basket id 1",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/basket/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1994,
+        "bodySha256": "8847305584a7373bf7cd8ebd53116b91fe03c343694a42bd40efb4aecab94502"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.855556+00:00"
+    },
+    {
+      "id": "b2-bola-13",
+      "title": "BOLA user details id 1",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/rest/user/authentication-details/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 500,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1380,
+        "bodySha256": "084c985e255699cb0eecace63182c5055c4c41e2b42fb7e897b7dc95b7afd01b"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.865412+00:00"
+    },
+    {
+      "id": "b2-bola-14",
+      "title": "BOLA address id 1",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Addresss/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 56,
+        "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.884334+00:00"
+    },
+    {
+      "id": "b2-bola-15",
+      "title": "BOLA card id 1",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Cards/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 400,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 55,
+        "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.889268+00:00"
+    },
+    {
+      "id": "b2-bola-16",
+      "title": "BOLA complaint id 1",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Complaints/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 401,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 383,
+        "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.892746+00:00"
+    },
+    {
+      "id": "b2-bola-17",
+      "title": "BOLA recycle id 1",
+      "severity": "LOW",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Recycles/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 206,
+        "bodySha256": "511c90245ae77b724fbd2bad5708a17ddd01065c0669c4decccc66fbb37af6c5"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.897818+00:00"
+    },
+    {
+      "id": "b2-bola-18",
+      "title": "BOLA delivery id 1",
+      "severity": "MEDIUM",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Deliverys/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 106,
+        "bodySha256": "ef936ffab4d943bb9186bd300260be87190685236d49cf8fd8ec73b5538d70eb"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.902364+00:00"
+    },
+    {
+      "id": "b2-bola-19",
+      "title": "BOLA feedback id 1",
+      "severity": "LOW",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/Feedbacks/1",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 229,
+        "bodySha256": "111e533aad0367f25c53ed5e166343f7e0667d0d9307f7f04a1bd9d7370d4c0b"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.927146+00:00"
+    },
+    {
+      "id": "b2-bola-20",
+      "title": "BOLA basket items query",
+      "severity": "HIGH",
+      "cwe": "CWE-639",
+      "source": "DAST",
+      "location": {
+        "kind": "url",
+        "value": "/api/BasketItems?basketId=12",
+        "line": null
+      },
+      "verified": false,
+      "label": null,
+      "reviewStatus": "PENDING_HUMAN_REVIEW",
+      "evidence": {
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1045,
+        "bodySha256": "b3c08f92f77c0e74050facf475f026a30c213662207c69884b9bdb5f8138ec22"
+      },
+      "accounts": {
+        "ownBasket": 11,
+        "otherBasket": 12,
+        "otherUser": 31
+      },
+      "observedAt": "2026-10-26T06:49:25.953011+00:00"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# JavaScript
+node_modules/
+npm-debug.log*
+
+# Runtime and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.dump
+*.sqlite
+*.log
+*.pid
+
+# Local model artifacts (source stays; weights do not)
+*.pt
+*.pth
+artifacts/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local scratch outputs that are large generated data
+frontend/docs/ui-check.png.tmp
+*.bundle

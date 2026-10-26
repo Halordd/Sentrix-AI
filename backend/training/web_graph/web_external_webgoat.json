@@ -1,0 +1,46 @@
+{
+  "train": "Juice Shop batch 1+2",
+  "test": "WebGoat batch 3",
+  "trainSize": 64,
+  "validationSize": 17,
+  "testSize": 40,
+  "testPositives": 24,
+  "severityBaseline": {
+    "k": 24,
+    "precisionAtK": 0.625,
+    "recallAtK": 0.625,
+    "hits": 15,
+    "positives": 24
+  },
+  "uncalibrated": {
+    "precision": 1.0,
+    "recall": 0.8333,
+    "f1": 0.9091,
+    "ece": 0.1771,
+    "brier": 0.0983
+  },
+  "temperature": {
+    "precision": 1.0,
+    "recall": 0.8333,
+    "f1": 0.9091,
+    "ece": 0.31,
+    "brier": 0.1827
+  },
+  "platt": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "ece": 0.3423,
+    "brier": 0.2336
+  },
+  "isotonic": {
+    "precision": 0.6316,
+    "recall": 1.0,
+    "f1": 0.7742,
+    "ece": 0.2241,
+    "brier": 0.1484
+  },
+  "temperatureValue": 4.8882,
+  "plattA": 0.1299,
+  "plattB": -0.341
+}

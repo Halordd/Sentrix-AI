@@ -1,0 +1,181 @@
+{
+  "manifestVersion": 1,
+  "appliesTo": "docs/phase2/06-migration-and-acceptance.md §3.4",
+  "seedCommand": "python -m app.seed_demo",
+  "verifyCommand": "python -m app.seed_demo --verify",
+  "deterministic": true,
+  "rules": [
+    "All ids and timestamps are literals; no now(), random, uuid, locale or timezone dependence.",
+    "Seed runs in one transaction as an idempotent upsert keyed by id; a content mismatch aborts with a diff.",
+    "Timestamps are UTC and serialised with a trailing Z.",
+    "The manifest is the test oracle: after a fresh seed the DB must match counts, ids and key fields exactly."
+  ],
+  "counts": {
+    "scan_profile": 3,
+    "app_user": 5,
+    "project": 3,
+    "project_member": 3,
+    "target": 4,
+    "target_authorization": 3,
+    "scan_job": 3,
+    "scan_run": 3,
+    "scan_observation": 0,
+    "finding": 3,
+    "evidence": 3,
+    "finding_status_event": 3,
+    "analysis": 1,
+    "prompt_template": 1,
+    "prompt_template_version": 1,
+    "model": 2,
+    "model_version": 2,
+    "dataset": 1,
+    "dataset_version": 1,
+    "evaluation_run": 0,
+    "remediation": 1,
+    "verification": 0,
+    "report": 1,
+    "report_finding": 2,
+    "audit_event": 2,
+    "total": 51
+  },
+  "ids": {
+    "scan_profile": ["external_attack_surface", "api_authorization", "cloud_configuration"],
+    "app_user": ["user-maya", "user-jon", "user-priya", "user-admin", "user-system"],
+    "project": ["project-atlas", "project-helix", "project-northstar"],
+    "project_member": ["project-atlas/user-maya", "project-helix/user-jon", "project-northstar/user-priya"],
+    "target": ["target-atlas-api", "target-atlas-web", "target-helix-api", "target-northstar"],
+    "target_authorization": ["auth-atlas-api", "auth-atlas-web", "auth-helix-api"],
+    "scan_job": ["scan-atlas", "scan-helix", "scan-atlas-running"],
+    "scan_run": ["run-seed-atlas", "run-seed-helix", "run-seed-atlas-running"],
+    "scan_observation": [],
+    "finding": ["finding-bola", "finding-bucket", "finding-debug"],
+    "evidence": ["evidence-bola", "evidence-bucket", "evidence-debug"],
+    "finding_status_event": ["fse-bola-created", "fse-bucket-created", "fse-debug-created"],
+    "analysis": ["analysis-bola"],
+    "prompt_template": ["pt-risk"],
+    "prompt_template_version": ["ptv-risk-1"],
+    "model": ["model-risk", "model-evidence"],
+    "model_version": ["modelversion-risk-4.8.2", "modelversion-evidence-2.4.1"],
+    "dataset": ["dataset-demo"],
+    "dataset_version": ["datasetversion-demo-2026.09"],
+    "evaluation_run": [],
+    "remediation": ["task-bola"],
+    "verification": [],
+    "report": ["report-atlas"],
+    "report_finding": ["report-atlas/finding-bola", "report-atlas/finding-debug"],
+    "audit_event": ["audit-seed-1", "audit-seed-2"]
+  },
+  "referenceData": {
+    "scan_profile": [
+      { "id": "external_attack_surface", "name": "External attack surface", "adapter_code": "demo" },
+      { "id": "api_authorization", "name": "API authorization", "adapter_code": "demo" },
+      { "id": "cloud_configuration", "name": "Cloud configuration", "adapter_code": "demo" }
+    ]
+  },
+  "auth": {
+    "demoAutoLoginUserId": "user-maya",
+    "adminUserId": "user-admin",
+    "systemUserId": "user-system",
+    "systemUserActive": false,
+    "seededPasswordHashes": null,
+    "note": "No password hashes are seeded; local credentials remain pending decision D-02 / X-05."
+  },
+  "fixedTimestamps": {
+    "user_created_at": "2026-09-01T00:00:00Z",
+    "project_created_at": {
+      "project-atlas": "2026-10-12T09:00:00Z",
+      "project-helix": "2026-10-09T09:00:00Z",
+      "project-northstar": "2026-10-02T09:00:00Z"
+    },
+    "target_created_at": {
+      "target-atlas-api": "2026-10-12T09:05:00Z",
+      "target-atlas-web": "2026-10-12T09:06:00Z",
+      "target-helix-api": "2026-10-09T09:05:00Z",
+      "target-northstar": "2026-10-02T09:05:00Z"
+    },
+    "attestation_at": {
+      "auth-atlas-api": "2026-10-12T09:10:00Z",
+      "auth-atlas-web": "2026-10-12T09:11:00Z",
+      "auth-helix-api": "2026-10-09T09:10:00Z"
+    },
+    "scan_job_created_at": {
+      "scan-atlas": "2026-10-18T02:20:00.000Z",
+      "scan-helix": "2026-10-18T00:12:00.000Z",
+      "scan-atlas-running": "2026-10-18T03:44:00.000Z"
+    },
+    "scan_run": {
+      "run-seed-atlas": { "startedAt": "2026-10-18T02:20:00.000Z", "finishedAt": "2026-10-18T02:43:00.000Z", "status": "SUCCEEDED" },
+      "run-seed-helix": { "startedAt": "2026-10-18T00:12:00.000Z", "finishedAt": "2026-10-18T00:35:00.000Z", "status": "SUCCEEDED" },
+      "run-seed-atlas-running": { "startedAt": "2026-10-18T03:44:00.000Z", "finishedAt": null, "status": "RUNNING", "workerId": "seed", "heartbeatAt": "2026-10-18T03:44:00.000Z", "stats": { "seed": true } }
+    },
+    "finding_created_at": {
+      "finding-bola": "2026-10-18T02:43:00.000Z",
+      "finding-bucket": "2026-10-18T00:35:00.000Z",
+      "finding-debug": "2026-10-17T18:06:00.000Z"
+    },
+    "analysis_created_at": "2026-10-18T02:45:00.000Z",
+    "model_dataset_created_at": "2026-09-15T00:00:00Z",
+    "prompt_template_created_at": "2026-09-20T00:00:00Z",
+    "report_created_at": "2026-10-18T03:00:00.000Z",
+    "audit_occurred_at": {
+      "audit-seed-1": "2026-10-18T03:00:00.000Z",
+      "audit-seed-2": "2026-10-18T02:45:00.000Z"
+    }
+  },
+  "keyFields": {
+    "finding": {
+      "finding-bola": { "severity": "CRITICAL", "status": "CONFIRMED", "source": "DEMO", "projectId": "project-atlas", "targetId": "target-atlas-api", "jobId": "scan-atlas", "observationId": null },
+      "finding-bucket": { "severity": "HIGH", "status": "NEW", "source": "DEMO", "projectId": "project-helix", "targetId": "target-helix-api", "jobId": "scan-helix", "observationId": null },
+      "finding-debug": { "severity": "MEDIUM", "status": "ACCEPTED_RISK", "source": "DEMO", "projectId": "project-atlas", "targetId": "target-atlas-web", "jobId": "scan-atlas", "observationId": null }
+    },
+    "remediation": {
+      "task-bola": { "findingId": "finding-bola", "assigneeId": "user-maya", "status": "IN_PROGRESS", "dueDate": "2026-10-24" }
+    },
+    "report_finding": {
+      "report-atlas/finding-bola": { "position": 1, "severity": "CRITICAL", "status": "CONFIRMED" },
+      "report-atlas/finding-debug": { "position": 2, "severity": "MEDIUM", "status": "ACCEPTED_RISK" }
+    },
+    "model_version": {
+      "modelversion-risk-4.8.2": { "modelId": "model-risk", "version": "4.8.2", "stage": "PRODUCTION", "isMock": true, "metrics": { "precision": 0.91, "recall": 0.88, "f1": 0.89, "inferenceMs": 420 } },
+      "modelversion-evidence-2.4.1": { "modelId": "model-evidence", "version": "2.4.1", "stage": "PRODUCTION", "isMock": true, "metrics": { "precision": 0.86, "recall": 0.84, "f1": 0.85, "inferenceMs": 280 } }
+    },
+    "analysis": {
+      "analysis-bola": { "findingId": "finding-bola", "modelVersionId": "modelversion-risk-4.8.2", "promptTemplateVersionId": "ptv-risk-1", "confidence": 0.91, "simulated": true, "latencyMs": 420 }
+    }
+  },
+  "ordering": {
+    "project": "created_on DESC",
+    "finding": "created_at DESC",
+    "scan_job": "created_at DESC",
+    "analysis": "created_at DESC",
+    "remediation": "created_at DESC",
+    "report": "created_at DESC",
+    "audit_event": "occurred_at DESC",
+    "report_finding": "position ASC"
+  },
+  "exceptions": [
+    {
+      "id": "legacy-finding-remediation-mismatch",
+      "what": "finding-bola is CONFIRMED while task-bola is IN_PROGRESS",
+      "expected": true,
+      "reference": "01 Q21; 05 §4.4"
+    },
+    {
+      "id": "legacy-finding-job-target-mismatch",
+      "what": "finding-debug references job scan-atlas (target target-atlas-api) while its own target is target-atlas-web",
+      "expected": true,
+      "reference": "01 Q22; 05 §4.4"
+    },
+    {
+      "id": "no-transition-history",
+      "what": "only one creation finding_status_event per finding; legacy current states are imported as-is",
+      "expected": true,
+      "reference": "06 §3.4 determinism rule 5"
+    }
+  ],
+  "forbiddenInSeed": {
+    "evaluation_run": "only MEASURED runs may exist (first one is created in M7)",
+    "scan_observation": "demo findings have no observations",
+    "password_hash": "do not seed credentials while D-02/X-05 are pending"
+  }
+}
