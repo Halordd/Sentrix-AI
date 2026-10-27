@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS corpus_pilot.candidate (
     finding_id   text NOT NULL REFERENCES corpus_pilot.finding (id) ON DELETE CASCADE,
     target       text NOT NULL,
     action_code  text NOT NULL,
-    score        numeric(5,4) NOT NULL,
+    score        numeric(7,6) NOT NULL,
     status       text NOT NULL DEFAULT 'QUEUED',
     model        text NOT NULL,
     created_at   timestamptz NOT NULL DEFAULT now()

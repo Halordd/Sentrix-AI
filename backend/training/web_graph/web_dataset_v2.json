@@ -1,6 +1,10 @@
 {
   "dataset": "sentrix-web-lab-corpus",
   "source": "http://10.20.20.20:3000",
+  "target": {
+    "id": "target:juice-shop",
+    "name": "Juice Shop lab"
+  },
   "labels": {
     "corpus-01": 0,
     "corpus-02": 1,
@@ -66,47 +70,47 @@
     "b2-head-02": 0,
     "b2-head-03": 0,
     "b2-head-04": 1,
-    "b2-head-05": 1,
-    "b2-head-06": 1,
-    "b2-head-07": 1,
-    "b2-head-08": 1,
+    "b2-head-05": null,
+    "b2-head-06": null,
+    "b2-head-07": null,
+    "b2-head-08": null,
     "b2-head-09": 0,
     "b2-head-10": 0,
     "b2-head-11": 0,
     "b2-head-12": 0,
     "b2-head-13": 0,
-    "b2-head-14": 1,
-    "b2-head-15": 1,
+    "b2-head-14": null,
+    "b2-head-15": null,
     "b2-head-16": 0,
-    "b2-head-17": 1,
+    "b2-head-17": null,
     "b2-head-18": 0,
-    "b2-head-19": 1,
-    "b2-head-20": 1,
-    "b2-head-21": 1,
+    "b2-head-19": null,
+    "b2-head-20": null,
+    "b2-head-21": null,
     "b2-bola-01": 1,
     "b2-bola-02": 0,
     "b2-bola-03": 0,
     "b2-bola-04": 0,
     "b2-bola-05": 0,
     "b2-bola-06": 0,
-    "b2-bola-07": 1,
+    "b2-bola-07": null,
     "b2-bola-08": 0,
     "b2-bola-09": 0,
-    "b2-bola-10": 1,
-    "b2-bola-11": 1,
-    "b2-bola-12": 1,
+    "b2-bola-10": null,
+    "b2-bola-11": null,
+    "b2-bola-12": null,
     "b2-bola-13": 0,
     "b2-bola-14": 0,
     "b2-bola-15": 0,
     "b2-bola-16": 0,
-    "b2-bola-17": 1,
-    "b2-bola-18": 1,
-    "b2-bola-19": 1,
-    "b2-bola-20": 1
+    "b2-bola-17": null,
+    "b2-bola-18": null,
+    "b2-bola-19": null,
+    "b2-bola-20": null
   },
   "nodes": [
     {
-      "id": "target:lab",
+      "id": "target:juice-shop",
       "type": "Target",
       "name": "Juice Shop lab"
     },
@@ -180,11 +184,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
-    },
-    {
-      "id": "verification:corpus-04",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "finding:corpus-05",
@@ -287,11 +286,6 @@
       "bodySha256": "b7d51dc45f9e081704b015ce1c09ecc605919a3bfb771614973eb00cf7e8f06d"
     },
     {
-      "id": "verification:corpus-09",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/api/SecurityQuestions",
       "type": "Endpoint",
       "path": "/api/SecurityQuestions"
@@ -311,11 +305,6 @@
       "bodySha256": "cc5c6eb0d2b72018651cd950c6db004c7f846ff0f90ba76693386ae911862b46"
     },
     {
-      "id": "verification:corpus-10",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/robots.txt",
       "type": "Endpoint",
       "path": "/robots.txt"
@@ -333,11 +322,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "09f7c2328189ecdd2e687cccdafb34a16b3d2166f50f0a7962ed4de5b3aaf696"
-    },
-    {
-      "id": "verification:corpus-11",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "endpoint:/.well-known/security.txt",
@@ -636,11 +620,6 @@
       "bodySha256": "e436ef2b7de06788f8fc4b305c0a08d3ab7ee580ec3c1057cc9f3fdeac867081"
     },
     {
-      "id": "verification:corpus-25",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/rest/saveLoginIp",
       "type": "Endpoint",
       "path": "/rest/saveLoginIp"
@@ -677,11 +656,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "cb03597e28859274b72fac59404abb8844497bec328c74b645207b89358e6356"
-    },
-    {
-      "id": "verification:corpus-27",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "endpoint:/rest/order-history",
@@ -760,11 +734,6 @@
       "bodySha256": "d5abd77cebea1f716256f07f99c958ebcb25678e52fbfb0cb6928524aa50de6c"
     },
     {
-      "id": "verification:corpus-31",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/api/Recycles",
       "type": "Endpoint",
       "path": "/api/Recycles"
@@ -801,11 +770,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "ca658cdfa29e44d2ed93f9b105082ef722d1c0abec70d5ad24dc7e6dcb37c38c"
-    },
-    {
-      "id": "verification:corpus-33",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "endpoint:/api/Cards",
@@ -1441,11 +1405,6 @@
       "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
     },
     {
-      "id": "verification:b2-head-05",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/order-history",
       "type": "Endpoint",
       "path": "/order-history"
@@ -1463,11 +1422,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
-    },
-    {
-      "id": "verification:b2-head-06",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "endpoint:/admin",
@@ -1489,11 +1443,6 @@
       "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
     },
     {
-      "id": "verification:b2-head-07",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/accounting",
       "type": "Endpoint",
       "path": "/accounting"
@@ -1511,11 +1460,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
-    },
-    {
-      "id": "verification:b2-head-08",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "finding:b2-head-09",
@@ -1617,11 +1561,6 @@
       "bodySha256": "09f7c2328189ecdd2e687cccdafb34a16b3d2166f50f0a7962ed4de5b3aaf696"
     },
     {
-      "id": "verification:b2-head-14",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/security.txt",
       "type": "Endpoint",
       "path": "/security.txt"
@@ -1639,11 +1578,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "c806cc145b31920952ec02c0e02552b8c6067f20092a99eea15d273a0aa59780"
-    },
-    {
-      "id": "verification:b2-head-15",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "finding:b2-head-16",
@@ -1674,11 +1608,6 @@
       "bodySha256": "d89d67195c56d443080b0eb344db2d3f1627741dbd7236680929bce5fd9aee13"
     },
     {
-      "id": "verification:b2-head-17",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "finding:b2-head-18",
       "type": "Finding",
       "title": "Missing x-content-type-options on /api/Users",
@@ -1707,11 +1636,6 @@
       "bodySha256": "d5abd77cebea1f716256f07f99c958ebcb25678e52fbfb0cb6928524aa50de6c"
     },
     {
-      "id": "verification:b2-head-19",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "finding:b2-head-20",
       "type": "Finding",
       "title": "Missing content-security-policy on /api/Challenges",
@@ -1726,11 +1650,6 @@
       "bodySha256": "a3e0d83a368c652cd871a0950e985cb2a5a65cd6cdf4eceff4e56cbf0b2293b1"
     },
     {
-      "id": "verification:b2-head-20",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "finding:b2-head-21",
       "type": "Finding",
       "title": "Missing content-security-policy on /login.html",
@@ -1743,11 +1662,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
-    },
-    {
-      "id": "verification:b2-head-21",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "endpoint:/rest/basket/12",
@@ -1888,11 +1802,6 @@
       "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
     },
     {
-      "id": "verification:b2-bola-07",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/api/Deliverys/31",
       "type": "Endpoint",
       "path": "/api/Deliverys/31"
@@ -1950,11 +1859,6 @@
       "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
     },
     {
-      "id": "verification:b2-bola-10",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "endpoint:/rest/track-order/31",
       "type": "Endpoint",
       "path": "/rest/track-order/31"
@@ -1974,11 +1878,6 @@
       "bodySha256": "6ba4083c5ecfba4948dfb700655b36b6e874dd596f30b86703954118d7adb865"
     },
     {
-      "id": "verification:b2-bola-11",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "finding:b2-bola-12",
       "type": "Finding",
       "title": "BOLA basket id 1",
@@ -1991,11 +1890,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "8847305584a7373bf7cd8ebd53116b91fe03c343694a42bd40efb4aecab94502"
-    },
-    {
-      "id": "verification:b2-bola-12",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "finding:b2-bola-13",
@@ -2068,11 +1962,6 @@
       "bodySha256": "511c90245ae77b724fbd2bad5708a17ddd01065c0669c4decccc66fbb37af6c5"
     },
     {
-      "id": "verification:b2-bola-17",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "finding:b2-bola-18",
       "type": "Finding",
       "title": "BOLA delivery id 1",
@@ -2087,11 +1976,6 @@
       "bodySha256": "ef936ffab4d943bb9186bd300260be87190685236d49cf8fd8ec73b5538d70eb"
     },
     {
-      "id": "verification:b2-bola-18",
-      "type": "Verification",
-      "outcome": "VERIFIED"
-    },
-    {
       "id": "finding:b2-bola-19",
       "type": "Finding",
       "title": "BOLA feedback id 1",
@@ -2104,11 +1988,6 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "111e533aad0367f25c53ed5e166343f7e0667d0d9307f7f04a1bd9d7370d4c0b"
-    },
-    {
-      "id": "verification:b2-bola-19",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     },
     {
       "id": "endpoint:/api/BasketItems?basketId=12",
@@ -2128,16 +2007,11 @@
       "type": "Evidence",
       "status": 200,
       "bodySha256": "b3c08f92f77c0e74050facf475f026a30c213662207c69884b9bdb5f8138ec22"
-    },
-    {
-      "id": "verification:b2-bola-20",
-      "type": "Verification",
-      "outcome": "VERIFIED"
     }
   ],
   "edges": [
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/",
       "type": "EXPOSES"
     },
@@ -2157,7 +2031,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/",
       "type": "EXPOSES"
     },
@@ -2182,7 +2056,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/",
       "type": "EXPOSES"
     },
@@ -2202,7 +2076,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/",
       "type": "EXPOSES"
     },
@@ -2222,12 +2096,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:corpus-04",
-      "target": "verification:corpus-04",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/",
       "type": "EXPOSES"
     },
@@ -2247,7 +2116,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Products",
       "type": "EXPOSES"
     },
@@ -2267,7 +2136,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Feedbacks",
       "type": "EXPOSES"
     },
@@ -2287,7 +2156,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Challenges",
       "type": "EXPOSES"
     },
@@ -2307,7 +2176,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/admin/application-configuration",
       "type": "EXPOSES"
     },
@@ -2327,12 +2196,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:corpus-09",
-      "target": "verification:corpus-09",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/SecurityQuestions",
       "type": "EXPOSES"
     },
@@ -2352,12 +2216,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:corpus-10",
-      "target": "verification:corpus-10",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/robots.txt",
       "type": "EXPOSES"
     },
@@ -2377,12 +2236,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:corpus-11",
-      "target": "verification:corpus-11",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/.well-known/security.txt",
       "type": "EXPOSES"
     },
@@ -2402,7 +2256,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/main.js.map",
       "type": "EXPOSES"
     },
@@ -2422,7 +2276,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/.git/config",
       "type": "EXPOSES"
     },
@@ -2442,7 +2296,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/metrics",
       "type": "EXPOSES"
     },
@@ -2467,7 +2321,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/ftp",
       "type": "EXPOSES"
     },
@@ -2487,7 +2341,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/user/authentication-details/1",
       "type": "EXPOSES"
     },
@@ -2507,7 +2361,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/basket/1",
       "type": "EXPOSES"
     },
@@ -2527,7 +2381,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Addresss",
       "type": "EXPOSES"
     },
@@ -2547,7 +2401,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Quantitys",
       "type": "EXPOSES"
     },
@@ -2567,7 +2421,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Products/1",
       "type": "EXPOSES"
     },
@@ -2587,7 +2441,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Feedbacks/1",
       "type": "EXPOSES"
     },
@@ -2607,7 +2461,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Challenges/1",
       "type": "EXPOSES"
     },
@@ -2627,7 +2481,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/product/1",
       "type": "EXPOSES"
     },
@@ -2647,7 +2501,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/user/whoami",
       "type": "EXPOSES"
     },
@@ -2667,12 +2521,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:corpus-25",
-      "target": "verification:corpus-25",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/saveLoginIp",
       "type": "EXPOSES"
     },
@@ -2692,7 +2541,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/track-order/1",
       "type": "EXPOSES"
     },
@@ -2712,12 +2561,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:corpus-27",
-      "target": "verification:corpus-27",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/order-history",
       "type": "EXPOSES"
     },
@@ -2737,7 +2581,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/continue-code",
       "type": "EXPOSES"
     },
@@ -2757,7 +2601,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/continue-code/apply",
       "type": "EXPOSES"
     },
@@ -2777,7 +2621,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/memories",
       "type": "EXPOSES"
     },
@@ -2797,12 +2641,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:corpus-31",
-      "target": "verification:corpus-31",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Recycles",
       "type": "EXPOSES"
     },
@@ -2822,7 +2661,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Deliverys",
       "type": "EXPOSES"
     },
@@ -2842,12 +2681,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:corpus-33",
-      "target": "verification:corpus-33",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Cards",
       "type": "EXPOSES"
     },
@@ -2867,7 +2701,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/BasketItems",
       "type": "EXPOSES"
     },
@@ -2887,7 +2721,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Complaints",
       "type": "EXPOSES"
     },
@@ -2907,7 +2741,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/SecurityAnswers",
       "type": "EXPOSES"
     },
@@ -2927,7 +2761,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Users",
       "type": "EXPOSES"
     },
@@ -2947,7 +2781,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Products/search?q=",
       "type": "EXPOSES"
     },
@@ -2967,7 +2801,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Products?q=",
       "type": "EXPOSES"
     },
@@ -2987,7 +2821,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/basket/8",
       "type": "EXPOSES"
     },
@@ -3012,7 +2846,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/user/authentication-details/27",
       "type": "EXPOSES"
     },
@@ -3032,7 +2866,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Addresss/27",
       "type": "EXPOSES"
     },
@@ -3052,7 +2886,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Cards/27",
       "type": "EXPOSES"
     },
@@ -3072,7 +2906,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/BasketItems/8",
       "type": "EXPOSES"
     },
@@ -3097,7 +2931,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Complaints/27",
       "type": "EXPOSES"
     },
@@ -3117,7 +2951,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Recycles/27",
       "type": "EXPOSES"
     },
@@ -3142,7 +2976,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Deliverys/27",
       "type": "EXPOSES"
     },
@@ -3162,7 +2996,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/SecurityAnswers/27",
       "type": "EXPOSES"
     },
@@ -3182,7 +3016,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Users",
       "type": "EXPOSES"
     },
@@ -3207,7 +3041,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/order-history",
       "type": "EXPOSES"
     },
@@ -3232,7 +3066,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/track-order/1",
       "type": "EXPOSES"
     },
@@ -3257,7 +3091,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/basket/1",
       "type": "EXPOSES"
     },
@@ -3282,7 +3116,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/user/authentication-details/1",
       "type": "EXPOSES"
     },
@@ -3302,7 +3136,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Addresss/1",
       "type": "EXPOSES"
     },
@@ -3322,7 +3156,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Cards/1",
       "type": "EXPOSES"
     },
@@ -3342,7 +3176,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Complaints/1",
       "type": "EXPOSES"
     },
@@ -3362,7 +3196,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Recycles/1",
       "type": "EXPOSES"
     },
@@ -3387,7 +3221,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Deliverys/1",
       "type": "EXPOSES"
     },
@@ -3412,7 +3246,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Feedbacks/1",
       "type": "EXPOSES"
     },
@@ -3437,7 +3271,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/login.html",
       "type": "EXPOSES"
     },
@@ -3457,7 +3291,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/register.html",
       "type": "EXPOSES"
     },
@@ -3477,7 +3311,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/forgot-password.html",
       "type": "EXPOSES"
     },
@@ -3497,7 +3331,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/search",
       "type": "EXPOSES"
     },
@@ -3522,7 +3356,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/basket",
       "type": "EXPOSES"
     },
@@ -3542,12 +3376,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-05",
-      "target": "verification:b2-head-05",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/order-history",
       "type": "EXPOSES"
     },
@@ -3567,12 +3396,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-06",
-      "target": "verification:b2-head-06",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/admin",
       "type": "EXPOSES"
     },
@@ -3592,12 +3416,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-07",
-      "target": "verification:b2-head-07",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/accounting",
       "type": "EXPOSES"
     },
@@ -3617,12 +3436,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-08",
-      "target": "verification:b2-head-08",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Products",
       "type": "EXPOSES"
     },
@@ -3642,7 +3456,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Feedbacks",
       "type": "EXPOSES"
     },
@@ -3662,7 +3476,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/user/login",
       "type": "EXPOSES"
     },
@@ -3682,7 +3496,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/products/search",
       "type": "EXPOSES"
     },
@@ -3702,7 +3516,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/assets/public/images/",
       "type": "EXPOSES"
     },
@@ -3722,7 +3536,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/robots.txt",
       "type": "EXPOSES"
     },
@@ -3742,12 +3556,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-14",
-      "target": "verification:b2-head-14",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/security.txt",
       "type": "EXPOSES"
     },
@@ -3767,12 +3576,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-15",
-      "target": "verification:b2-head-15",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/ftp",
       "type": "EXPOSES"
     },
@@ -3792,7 +3596,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/metrics",
       "type": "EXPOSES"
     },
@@ -3812,12 +3616,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-17",
-      "target": "verification:b2-head-17",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Users",
       "type": "EXPOSES"
     },
@@ -3837,7 +3636,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/memories",
       "type": "EXPOSES"
     },
@@ -3857,12 +3656,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-19",
-      "target": "verification:b2-head-19",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Challenges",
       "type": "EXPOSES"
     },
@@ -3882,12 +3676,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-20",
-      "target": "verification:b2-head-20",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/login.html",
       "type": "EXPOSES"
     },
@@ -3907,12 +3696,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-head-21",
-      "target": "verification:b2-head-21",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/basket/12",
       "type": "EXPOSES"
     },
@@ -3937,7 +3721,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/user/authentication-details/31",
       "type": "EXPOSES"
     },
@@ -3957,7 +3741,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Addresss/31",
       "type": "EXPOSES"
     },
@@ -3977,7 +3761,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Cards/31",
       "type": "EXPOSES"
     },
@@ -3997,7 +3781,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/BasketItems/12",
       "type": "EXPOSES"
     },
@@ -4017,7 +3801,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Complaints/31",
       "type": "EXPOSES"
     },
@@ -4037,7 +3821,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Recycles/31",
       "type": "EXPOSES"
     },
@@ -4057,12 +3841,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-bola-07",
-      "target": "verification:b2-bola-07",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Deliverys/31",
       "type": "EXPOSES"
     },
@@ -4082,7 +3861,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/SecurityAnswers/31",
       "type": "EXPOSES"
     },
@@ -4102,7 +3881,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/order-history?userId=31",
       "type": "EXPOSES"
     },
@@ -4122,12 +3901,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-bola-10",
-      "target": "verification:b2-bola-10",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/track-order/31",
       "type": "EXPOSES"
     },
@@ -4147,12 +3921,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-bola-11",
-      "target": "verification:b2-bola-11",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/basket/1",
       "type": "EXPOSES"
     },
@@ -4172,12 +3941,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-bola-12",
-      "target": "verification:b2-bola-12",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/rest/user/authentication-details/1",
       "type": "EXPOSES"
     },
@@ -4197,7 +3961,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Addresss/1",
       "type": "EXPOSES"
     },
@@ -4217,7 +3981,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Cards/1",
       "type": "EXPOSES"
     },
@@ -4237,7 +4001,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Complaints/1",
       "type": "EXPOSES"
     },
@@ -4257,7 +4021,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Recycles/1",
       "type": "EXPOSES"
     },
@@ -4277,12 +4041,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-bola-17",
-      "target": "verification:b2-bola-17",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Deliverys/1",
       "type": "EXPOSES"
     },
@@ -4302,12 +4061,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-bola-18",
-      "target": "verification:b2-bola-18",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/Feedbacks/1",
       "type": "EXPOSES"
     },
@@ -4327,12 +4081,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "finding:b2-bola-19",
-      "target": "verification:b2-bola-19",
-      "type": "VERIFIED_BY"
-    },
-    {
-      "source": "target:lab",
+      "source": "target:juice-shop",
       "target": "endpoint:/api/BasketItems?basketId=12",
       "type": "EXPOSES"
     },
@@ -4350,17 +4099,12 @@
       "source": "finding:b2-bola-20",
       "target": "evidence:b2-bola-20",
       "type": "HAS_EVIDENCE"
-    },
-    {
-      "source": "finding:b2-bola-20",
-      "target": "verification:b2-bola-20",
-      "type": "VERIFIED_BY"
     }
   ],
   "counts": {
     "findings": 101,
-    "verified": 40,
+    "verified": 22,
     "human_rejected": 61,
-    "pending_review": 0
+    "pending_review": 18
   }
 }

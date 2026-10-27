@@ -131,7 +131,7 @@ def aggregate(rows: list[dict]) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("dataset", nargs="?", default="web_dataset_combined.json")
+    parser.add_argument("dataset", nargs="?", default="web_dataset_v2_reviewed.json")
     parser.add_argument("--out", default="web_experiments.json")
     parser.add_argument("--epochs", type=int, default=60)
     args = parser.parse_args()

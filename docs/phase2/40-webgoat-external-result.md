@@ -3,16 +3,27 @@
 | Field | Value |
 |---|---|
 | Document ID | `SENTRIX-WEB-GNN-RUN-006` |
-| Date | 2026-10-26 |
-| Train | Juice Shop batches 1+2, 101 records / 40 positive |
-| Test | WebGoat batch 3, 40 records / 24 positive |
+| Date | 2026-10-27 |
+| Train | Reviewed Juice Shop records: 46 (14 positive / 32 negative) |
+| Test | WebGoat batch 3: 40 records / 24 positive |
 | Model | Heterogeneous SAGE |
-| Status | Pilot external validation |
+| Status | Pilot external validation, corrected after review |
+
+## Correction
+
+The earlier version of this document claimed **101 records / 40 positive** and
+**F1 0.9091**. Those numbers were not reproducible from the checked-in corpus:
+18 records were still `PENDING_HUMAN_REVIEW`, and the dataset had been backfilled
+to 40 positives.
+
+The corrected run uses only `HUMAN_VERIFIED` / `HUMAN_REJECTED` labels.
 
 ## Result
 
 ```json
 {
+  "trainSize": 20,
+  "validationSize": 6,
   "testSize": 40,
   "testPositives": 24,
   "severityBaseline": {
@@ -22,18 +33,18 @@
     "hits": 15
   },
   "uncalibrated": {
-    "precision": 1.0,
-    "recall": 0.8333,
-    "f1": 0.9091,
-    "ece": 0.1771,
-    "brier": 0.0983
+    "precision": 0.6471,
+    "recall": 0.9167,
+    "f1": 0.7586,
+    "ece": 0.3563,
+    "brier": 0.2916
   },
   "temperature": {
-    "precision": 1.0,
-    "recall": 0.8333,
-    "f1": 0.9091,
-    "ece": 0.31,
-    "brier": 0.1827
+    "precision": 0.6471,
+    "recall": 0.9167,
+    "f1": 0.7586,
+    "ece": 0.347,
+    "brier": 0.2754
   },
   "platt": {
     "precision": 0.0,
@@ -41,55 +52,48 @@
     "f1": 0.0
   },
   "isotonic": {
-    "precision": 0.6316,
-    "recall": 1.0,
-    "f1": 0.7742,
-    "ece": 0.2241
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
   }
 }
 ```
 
 ## Interpretation
 
-- On this WebGoat test set, the GNN achieved F1 0.9091 and beat the severity
-  baseline (precision@24 0.625).
-- Uncalibrated probabilities had the best ECE (0.1771) and Brier (0.0983).
-- Temperature, Platt and isotonic all made calibration worse again.
-- Platt collapsed (a=0.1299), so it is not usable.
+- The GNN still beats the severity baseline on this test:
+  `0.7586` vs `0.625 precision@24`.
+- Calibration is still poor: ECE 0.3563 uncalibrated.
+- Temperature does not change ranking or F1, only probabilities.
+- Platt/isotonic collapse at the 0.5 threshold in this small test.
+- Test is 24 positives / 16 negatives, dominated by header findings.
 
-## Critical caveats
+## Caveats
 
-- Test is 40 records / 24 positives, not production scale.
-- The graph is transductive: WebGoat test nodes were present during graph
-  construction, though their labels were not used in training.
-- The test is dominated by header findings, which are similar to training
-  header findings. This makes the task easier than “detect any web vuln”.
-- One external lab, one run.
-- No independent second external lab beyond WebGoat.
-- Endpoint identity ablation previously hurt; the production candidate should
-  likely drop endpoint one-hot features.
-- Score import still blocked by the missing DB mapping.
+- The training set is only 46 reviewed records / 14 positives.
+- 18 Juice Shop records are still pending human review.
+- One external lab (WebGoat), one run.
+- Transductive graph.
+- No production score import.
+- No claim of generalization.
 
 ## Artifacts
 
 ```text
 backend/training/web_graph/evaluate_webgoat_external.py
 backend/training/web_graph/web_external_webgoat.json
-~/sentrix-gnn/src/web_external_webgoat.json
+~/sentrix-gnn/src/web_external_webgoat_fixed.json
 ```
 
 ## Verdict
 
-This is a **positive pilot external result**, not permission to import production
-scores.
-
-Allowed claim:
+Allowed:
 
 > “On a 40-record WebGoat external set with 24 human-reviewed positives, the
-> pilot GNN achieved F1 0.9091 versus 0.625 precision@24 for a severity baseline.
-> The test is small and dominated by header findings; calibration was not
-> improved by post-hoc methods.”
+> pilot GNN achieved F1 0.7586 versus 0.625 precision@24 for a severity
+> baseline. The training corpus is 46 human-reviewed records; calibration is
+> still poor and the result is not production evidence.”
 
 Not allowed:
 
-> “The model generalizes to web vulnerabilities in production.”
+> “The model generalizes to production web vulnerabilities.”

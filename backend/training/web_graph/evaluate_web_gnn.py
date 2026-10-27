@@ -18,7 +18,8 @@ def group_masks(finding_ids: list[str], group: str) -> torch.Tensor:
     return torch.tensor([node_id.startswith(prefix) for node_id in finding_ids], dtype=torch.bool)
 
 
-def train_model(data, train_mask, valid_mask=None, epochs: int = 60):
+def train_model(data, train_mask, valid_mask=None, epochs: int = 60, seed: int = 42):
+    torch.manual_seed(seed)
     labels = data["Finding"].y
     model = WebHGT(data, hidden=32)
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)

@@ -1,6 +1,7 @@
 """Import the reviewed web corpus into an isolated DB schema.
 
 Run only against the sentrix_corpus schema. It does not touch public tables.
+`verified` is derived only from HUMAN_VERIFIED review status.
 """
 from __future__ import annotations
 
@@ -9,6 +10,19 @@ import json
 from pathlib import Path
 
 import psycopg
+
+TARGETS = {
+    "juice-shop": {
+        "id": "target-juice-shop",
+        "name": "Juice Shop",
+        "scope": "https://10.20.20.20:3000",
+    },
+    "webgoat": {
+        "id": "target-webgoat",
+        "name": "WebGoat",
+        "scope": "http://10.20.20.20:8080/WebGoat/",
+    },
+}
 
 
 def load_records(paths: list[Path]) -> list[dict]:
@@ -38,10 +52,6 @@ def main() -> None:
     records = load_records([Path(path) for path in args.corpora])
     scores = json.loads(Path(args.scores).read_text())
     project_id = "project-corpus-pilot"
-    targets = {
-        "juice-shop": "target-juice-shop",
-        "webgoat": "target-webgoat",
-    }
     with psycopg.connect(args.dsn) as connection:
         with connection.cursor() as cursor:
             cursor.execute(
@@ -52,23 +62,25 @@ def main() -> None:
                 """,
                 (project_id, "SENTRIX corpus pilot", "local lab; pilot only"),
             )
-            for name, target_id in targets.items():
+            for target in TARGETS.values():
                 cursor.execute(
                     """
                     INSERT INTO corpus_pilot.target (id, project_id, name, type, scope)
                     VALUES (%s, %s, %s, 'WEB', %s)
-                    ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name
+                    ON CONFLICT (id) DO UPDATE SET
+                        name = EXCLUDED.name,
+                        scope = EXCLUDED.scope
                     """,
-                    (target_id, project_id, name, name),
+                    (target["id"], project_id, target["name"], target["scope"]),
                 )
             for record in records:
                 source_id = record["id"]
                 target_key = "webgoat" if source_id.startswith("b3-") else "juice-shop"
-                target_id = targets[target_key]
+                target_id = TARGETS[target_key]["id"]
                 finding_id = f"finding-{source_id}"
                 score = scores.get(source_id, {}).get("score")
                 if score is None:
-                    score = 0.0
+                    raise SystemExit(f"no score for {source_id}")
                 action_code = (
                     "read.response_headers"
                     if record.get("cwe") == "CWE-693"
@@ -96,7 +108,7 @@ def main() -> None:
                         record["severity"],
                         record.get("cwe"),
                         json.dumps(record.get("location") or {}),
-                        bool(record.get("label") == 1),
+                        record.get("reviewStatus") == "HUMAN_VERIFIED",
                     ),
                 )
                 cursor.execute(
@@ -112,7 +124,7 @@ def main() -> None:
                     (
                         f"candidate-{source_id}",
                         finding_id,
-                        target_key,
+                        target_id,
                         action_code,
                         score,
                         "HeteroConv-SAGE pilot",

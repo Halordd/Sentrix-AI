@@ -1,7 +1,9 @@
-"""Batch 2: 40 new lab records (20 header probes + 20 BOLA/IDOR probes).
+"""Batch 2: 41 lab records (21 header + 20 BOLA/IDOR probes).
 
-All records start as PENDING_HUMAN_REVIEW. This script never assigns a positive
-label. It is GET-only and uses disposable local lab accounts.
+All records start as PENDING_HUMAN_REVIEW. The header probes are GET-only.
+The BOLA probes create two disposable local accounts (POST /api/Users and
+/api/auth/login) and then issue GET-only cross-user requests; this is a
+setup write, not target exploitation.
 """
 from __future__ import annotations
 
@@ -109,7 +111,9 @@ def post(path: str, payload: dict) -> tuple[int, dict]:
 
 def create_account(tag: str) -> dict:
     email = f"sentrix.b2.{tag}.{uuid.uuid4().hex[:10]}@example.com"
-    password = "SentrixLab123!"
+    password = os.environ.get("SENTRIX_LAB_PASSWORD", "")
+    if not password:
+        raise SystemExit("set SENTRIX_LAB_PASSWORD for disposable lab accounts")
     status, body = post(
         "/api/Users",
         {

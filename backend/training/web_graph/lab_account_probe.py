@@ -1,10 +1,13 @@
 import json
+import os
 import urllib.request
 import uuid
 
 BASE = "http://10.20.20.20:3000"
 email = f"sentrix.lab.{uuid.uuid4().hex[:8]}@example.com"
-password = "SentrixLab123!"
+password = os.environ.get("SENTRIX_LAB_PASSWORD", "")
+if not password:
+    raise SystemExit("set SENTRIX_LAB_PASSWORD")
 
 
 def post(path, payload):

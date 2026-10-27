@@ -1,3 +1,5 @@
+> **Superseded metrics:** see [44-code-review-fixes.md](44-code-review-fixes.md).
+
 # SENTRIX — Calibration comparison
 
 | Field | Value |

@@ -2,110 +2,110 @@
   "summary": {
     "uncalibrated": {
       "runs": 5,
-      "f1Mean": 0.0841,
-      "f1Std": 0.0691,
-      "eceMean": 0.1773,
-      "eceStd": 0.0329,
-      "brierMean": 0.2579
+      "f1Mean": 0.7467,
+      "f1Std": 0.0319,
+      "eceMean": 0.3348,
+      "eceStd": 0.0145,
+      "brierMean": 0.2925
     },
     "temperature": {
       "runs": 5,
-      "f1Mean": 0.0841,
-      "f1Std": 0.0691,
-      "eceMean": 0.15,
+      "f1Mean": 0.7467,
+      "f1Std": 0.0319,
+      "eceMean": 0.1499,
       "eceStd": 0.0316,
       "brierMean": 0.25
     },
     "platt": {
       "runs": 5,
-      "f1Mean": 0.7849,
-      "f1Std": 0.0222,
-      "eceMean": 0.2547,
-      "eceStd": 0.1306,
-      "brierMean": 0.246
+      "f1Mean": 0.8014,
+      "f1Std": 0.0272,
+      "eceMean": 0.327,
+      "eceStd": 0.0343,
+      "brierMean": 0.2269
     },
     "isotonic": {
       "runs": 5,
-      "f1Mean": 0.8339,
-      "f1Std": 0.0215,
-      "eceMean": 0.1336,
-      "eceStd": 0.1277,
-      "brierMean": 0.1899
+      "f1Mean": 0.7342,
+      "f1Std": 0.0269,
+      "eceMean": 0.1411,
+      "eceStd": 0.0661,
+      "brierMean": 0.2694
     }
   },
   "runs": {
     "uncalibrated": [
       {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "ece": 0.2305,
-        "brier": 0.2576
+        "precision": 0.6875,
+        "recall": 0.9167,
+        "f1": 0.7857,
+        "ece": 0.3204,
+        "brier": 0.2803
       },
       {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "ece": 0.1779,
-        "brier": 0.2588
+        "precision": 0.6471,
+        "recall": 0.9167,
+        "f1": 0.7586,
+        "ece": 0.3344,
+        "brier": 0.294
       },
       {
-        "precision": 1.0,
-        "recall": 0.0833,
-        "f1": 0.1538,
-        "ece": 0.1267,
-        "brier": 0.2549
+        "precision": 0.6667,
+        "recall": 0.8333,
+        "f1": 0.7407,
+        "ece": 0.3434,
+        "brier": 0.2818
       },
       {
-        "precision": 0.3333,
-        "recall": 0.0833,
-        "f1": 0.1333,
-        "ece": 0.1763,
-        "brier": 0.2583
+        "precision": 0.6471,
+        "recall": 0.9167,
+        "f1": 0.7586,
+        "ece": 0.3574,
+        "brier": 0.2924
       },
       {
-        "precision": 0.3333,
-        "recall": 0.0833,
-        "f1": 0.1333,
-        "ece": 0.1749,
-        "brier": 0.2599
+        "precision": 0.5882,
+        "recall": 0.8333,
+        "f1": 0.6897,
+        "ece": 0.3186,
+        "brier": 0.3139
       }
     ],
     "temperature": [
       {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "ece": 0.2,
+        "precision": 0.6875,
+        "recall": 0.9167,
+        "f1": 0.7857,
+        "ece": 0.1999,
         "brier": 0.25
       },
       {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "ece": 0.15,
+        "precision": 0.6471,
+        "recall": 0.9167,
+        "f1": 0.7586,
+        "ece": 0.1499,
+        "brier": 0.2501
+      },
+      {
+        "precision": 0.6667,
+        "recall": 0.8333,
+        "f1": 0.7407,
+        "ece": 0.1499,
         "brier": 0.25
       },
       {
-        "precision": 1.0,
-        "recall": 0.0833,
-        "f1": 0.1538,
-        "ece": 0.1,
+        "precision": 0.6471,
+        "recall": 0.9167,
+        "f1": 0.7586,
+        "ece": 0.1499,
         "brier": 0.25
       },
       {
-        "precision": 0.3333,
-        "recall": 0.0833,
-        "f1": 0.1333,
-        "ece": 0.15,
-        "brier": 0.25
-      },
-      {
-        "precision": 0.3333,
-        "recall": 0.0833,
-        "f1": 0.1333,
-        "ece": 0.15,
-        "brier": 0.25
+        "precision": 0.5882,
+        "recall": 0.8333,
+        "f1": 0.6897,
+        "ece": 0.0999,
+        "brier": 0.2501
       }
     ],
     "platt": [
@@ -113,73 +113,73 @@
         "precision": 0.6667,
         "recall": 1.0,
         "f1": 0.8,
-        "ece": 0.3286,
-        "brier": 0.2437
+        "ece": 0.3641,
+        "brier": 0.2268
       },
       {
-        "precision": 0.6316,
+        "precision": 0.7059,
         "recall": 1.0,
-        "f1": 0.7742,
-        "ece": 0.2116,
-        "brier": 0.2324
-      },
-      {
-        "precision": 0.6875,
-        "recall": 0.9167,
-        "f1": 0.7857,
-        "ece": 0.411,
-        "brier": 0.2762
+        "f1": 0.8276,
+        "ece": 0.359,
+        "brier": 0.2201
       },
       {
         "precision": 0.7333,
         "recall": 0.9167,
         "f1": 0.8148,
-        "ece": 0.2955,
-        "brier": 0.2321
+        "ece": 0.3331,
+        "brier": 0.2426
+      },
+      {
+        "precision": 0.7333,
+        "recall": 0.9167,
+        "f1": 0.8148,
+        "ece": 0.2719,
+        "brier": 0.22
       },
       {
         "precision": 0.6,
         "recall": 1.0,
         "f1": 0.75,
-        "ece": 0.0269,
-        "brier": 0.2458
+        "ece": 0.3067,
+        "brier": 0.2248
       }
     ],
     "isotonic": [
       {
-        "precision": 0.75,
+        "precision": 0.6316,
         "recall": 1.0,
-        "f1": 0.8571,
-        "ece": 0.377,
-        "brier": 0.2176
+        "f1": 0.7742,
+        "ece": 0.2344,
+        "brier": 0.3011
       },
       {
-        "precision": 0.7059,
-        "recall": 1.0,
-        "f1": 0.8276,
-        "ece": 0.0324,
-        "brier": 0.1784
-      },
-      {
-        "precision": 0.75,
-        "recall": 1.0,
-        "f1": 0.8571,
-        "ece": 0.0802,
-        "brier": 0.1623
-      },
-      {
-        "precision": 0.7059,
-        "recall": 1.0,
-        "f1": 0.8276,
-        "ece": 0.038,
-        "brier": 0.1788
+        "precision": 0.6111,
+        "recall": 0.9167,
+        "f1": 0.7333,
+        "ece": 0.0724,
+        "brier": 0.2304
       },
       {
         "precision": 0.6667,
-        "recall": 1.0,
-        "f1": 0.8,
-        "ece": 0.1402,
-        "brier": 0.2125
+        "recall": 0.8333,
+        "f1": 0.7407,
+        "ece": 0.1263,
+        "brier": 0.2676
+      },
+      {
+        "precision": 0.6111,
+        "recall": 0.9167,
+        "f1": 0.7333,
+        "ece": 0.0725,
+        "brier": 0.2305
+      },
+      {
+        "precision": 0.5882,
+        "recall": 0.8333,
+        "f1": 0.6897,
+        "ece": 0.2,
+        "brier": 0.3176
       }
     ]
   }

@@ -1,0 +1,1995 @@
+{
+  "dataset": "sentrix-web-lab-corpus",
+  "source": "http://10.20.20.20:3000",
+  "target": {
+    "id": "target:juice-shop",
+    "name": "Juice Shop lab"
+  },
+  "labels": {
+    "corpus-02": 1,
+    "corpus-06": 0,
+    "corpus-15": 1,
+    "bola-01": 1,
+    "bola-02": 0,
+    "bola-03": 0,
+    "bola-04": 0,
+    "bola-05": 1,
+    "bola-06": 0,
+    "bola-07": 1,
+    "bola-08": 0,
+    "bola-09": 0,
+    "bola-10": 1,
+    "bola-11": 1,
+    "bola-12": 1,
+    "bola-13": 1,
+    "bola-14": 0,
+    "bola-15": 0,
+    "bola-16": 0,
+    "bola-17": 0,
+    "bola-18": 1,
+    "bola-19": 1,
+    "bola-20": 1,
+    "b2-head-01": 0,
+    "b2-head-02": 0,
+    "b2-head-03": 0,
+    "b2-head-04": 1,
+    "b2-head-09": 0,
+    "b2-head-10": 0,
+    "b2-head-11": 0,
+    "b2-head-12": 0,
+    "b2-head-13": 0,
+    "b2-head-16": 0,
+    "b2-head-18": 0,
+    "b2-bola-01": 1,
+    "b2-bola-02": 0,
+    "b2-bola-03": 0,
+    "b2-bola-04": 0,
+    "b2-bola-05": 0,
+    "b2-bola-06": 0,
+    "b2-bola-08": 0,
+    "b2-bola-09": 0,
+    "b2-bola-13": 0,
+    "b2-bola-14": 0,
+    "b2-bola-15": 0,
+    "b2-bola-16": 0
+  },
+  "nodes": [
+    {
+      "id": "target:juice-shop",
+      "type": "Target",
+      "name": "Juice Shop lab"
+    },
+    {
+      "id": "endpoint:/",
+      "type": "Endpoint",
+      "path": "/"
+    },
+    {
+      "id": "finding:corpus-02",
+      "type": "Finding",
+      "title": "Missing Content-Security-Policy header on /",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "cwe:CWE-693",
+      "type": "CWE",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:corpus-02",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:corpus-02",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Products",
+      "type": "Endpoint",
+      "path": "/api/Products"
+    },
+    {
+      "id": "finding:corpus-06",
+      "type": "Finding",
+      "title": "Unauthenticated API product listing",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "cwe:CWE-306",
+      "type": "CWE",
+      "cwe": "CWE-306"
+    },
+    {
+      "id": "evidence:corpus-06",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+    },
+    {
+      "id": "endpoint:/metrics",
+      "type": "Endpoint",
+      "path": "/metrics"
+    },
+    {
+      "id": "finding:corpus-15",
+      "type": "Finding",
+      "title": "Metrics endpoint exposure check",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "cwe:CWE-200",
+      "type": "CWE",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:corpus-15",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "e9fdeb465279a1aff9d32c3a9ca52f8e86b151d48ea56092d523158377401ac2"
+    },
+    {
+      "id": "verification:corpus-15",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/basket/8",
+      "type": "Endpoint",
+      "path": "/rest/basket/8"
+    },
+    {
+      "id": "finding:bola-01",
+      "type": "Finding",
+      "title": "BOLA basket access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "cwe:CWE-639",
+      "type": "CWE",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "fb48a69e9456962af6ee363edfc39ce428a18014cb457c64aeffe6befa3a4a69"
+    },
+    {
+      "id": "verification:bola-01",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/user/authentication-details/27",
+      "type": "Endpoint",
+      "path": "/rest/user/authentication-details/27"
+    },
+    {
+      "id": "finding:bola-02",
+      "type": "Finding",
+      "title": "BOLA user details access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-02",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "5b11b68964dff7ba1b68d7d6214da013d06eb2b70dfbf50ab59cf58d77e51bc5"
+    },
+    {
+      "id": "endpoint:/api/Addresss/27",
+      "type": "Endpoint",
+      "path": "/api/Addresss/27"
+    },
+    {
+      "id": "finding:bola-03",
+      "type": "Finding",
+      "title": "BOLA address access",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-03",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+    },
+    {
+      "id": "endpoint:/api/Cards/27",
+      "type": "Endpoint",
+      "path": "/api/Cards/27"
+    },
+    {
+      "id": "finding:bola-04",
+      "type": "Finding",
+      "title": "BOLA card access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-04",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+    },
+    {
+      "id": "endpoint:/api/BasketItems/8",
+      "type": "Endpoint",
+      "path": "/api/BasketItems/8"
+    },
+    {
+      "id": "finding:bola-05",
+      "type": "Finding",
+      "title": "BOLA basket item access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-05",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "1db46dcab03996cd4712a67858e17e80c1c595243c23672fff1cd6beb3994efc"
+    },
+    {
+      "id": "verification:bola-05",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Complaints/27",
+      "type": "Endpoint",
+      "path": "/api/Complaints/27"
+    },
+    {
+      "id": "finding:bola-06",
+      "type": "Finding",
+      "title": "BOLA complaint access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-06",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "endpoint:/api/Recycles/27",
+      "type": "Endpoint",
+      "path": "/api/Recycles/27"
+    },
+    {
+      "id": "finding:bola-07",
+      "type": "Finding",
+      "title": "BOLA recycles access",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-07",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+    },
+    {
+      "id": "verification:bola-07",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Deliverys/27",
+      "type": "Endpoint",
+      "path": "/api/Deliverys/27"
+    },
+    {
+      "id": "finding:bola-08",
+      "type": "Finding",
+      "title": "BOLA delivery access",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-08",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c7fbd9501e80a14cf61dc931140fb4d48d148c5e42ea0cef4573444061bdddfa"
+    },
+    {
+      "id": "endpoint:/api/SecurityAnswers/27",
+      "type": "Endpoint",
+      "path": "/api/SecurityAnswers/27"
+    },
+    {
+      "id": "finding:bola-09",
+      "type": "Finding",
+      "title": "BOLA security answer access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:bola-09",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "endpoint:/api/Users",
+      "type": "Endpoint",
+      "path": "/api/Users"
+    },
+    {
+      "id": "finding:bola-10",
+      "type": "Finding",
+      "title": "BOLA user listing access",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:bola-10",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "19d09a1910f2a236f5f54ba8d97191f46caa42ae8909405c8d5cf5adece678ca"
+    },
+    {
+      "id": "verification:bola-10",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/order-history",
+      "type": "Endpoint",
+      "path": "/rest/order-history"
+    },
+    {
+      "id": "finding:bola-11",
+      "type": "Finding",
+      "title": "IDOR order history",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-11",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639"
+    },
+    {
+      "id": "verification:bola-11",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/track-order/1",
+      "type": "Endpoint",
+      "path": "/rest/track-order/1"
+    },
+    {
+      "id": "finding:bola-12",
+      "type": "Finding",
+      "title": "IDOR track order",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-12",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "cb03597e28859274b72fac59404abb8844497bec328c74b645207b89358e6356"
+    },
+    {
+      "id": "verification:bola-12",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/basket/1",
+      "type": "Endpoint",
+      "path": "/rest/basket/1"
+    },
+    {
+      "id": "finding:bola-13",
+      "type": "Finding",
+      "title": "IDOR product basket",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-13",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "8847305584a7373bf7cd8ebd53116b91fe03c343694a42bd40efb4aecab94502"
+    },
+    {
+      "id": "verification:bola-13",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/user/authentication-details/1",
+      "type": "Endpoint",
+      "path": "/rest/user/authentication-details/1"
+    },
+    {
+      "id": "finding:bola-14",
+      "type": "Finding",
+      "title": "IDOR user details 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-14",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "084c985e255699cb0eecace63182c5055c4c41e2b42fb7e897b7dc95b7afd01b"
+    },
+    {
+      "id": "endpoint:/api/Addresss/1",
+      "type": "Endpoint",
+      "path": "/api/Addresss/1"
+    },
+    {
+      "id": "finding:bola-15",
+      "type": "Finding",
+      "title": "IDOR address 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-15",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+    },
+    {
+      "id": "endpoint:/api/Cards/1",
+      "type": "Endpoint",
+      "path": "/api/Cards/1"
+    },
+    {
+      "id": "finding:bola-16",
+      "type": "Finding",
+      "title": "IDOR card 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-16",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+    },
+    {
+      "id": "endpoint:/api/Complaints/1",
+      "type": "Endpoint",
+      "path": "/api/Complaints/1"
+    },
+    {
+      "id": "finding:bola-17",
+      "type": "Finding",
+      "title": "IDOR complaint 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-17",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "endpoint:/api/Recycles/1",
+      "type": "Endpoint",
+      "path": "/api/Recycles/1"
+    },
+    {
+      "id": "finding:bola-18",
+      "type": "Finding",
+      "title": "IDOR recycle 1",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-18",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "511c90245ae77b724fbd2bad5708a17ddd01065c0669c4decccc66fbb37af6c5"
+    },
+    {
+      "id": "verification:bola-18",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Deliverys/1",
+      "type": "Endpoint",
+      "path": "/api/Deliverys/1"
+    },
+    {
+      "id": "finding:bola-19",
+      "type": "Finding",
+      "title": "IDOR delivery 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-19",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ef936ffab4d943bb9186bd300260be87190685236d49cf8fd8ec73b5538d70eb"
+    },
+    {
+      "id": "verification:bola-19",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/api/Feedbacks/1",
+      "type": "Endpoint",
+      "path": "/api/Feedbacks/1"
+    },
+    {
+      "id": "finding:bola-20",
+      "type": "Finding",
+      "title": "IDOR feedback 1",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:bola-20",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "111e533aad0367f25c53ed5e166343f7e0667d0d9307f7f04a1bd9d7370d4c0b"
+    },
+    {
+      "id": "verification:bola-20",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/login.html",
+      "type": "Endpoint",
+      "path": "/login.html"
+    },
+    {
+      "id": "finding:b2-head-01",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /login.html",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/register.html",
+      "type": "Endpoint",
+      "path": "/register.html"
+    },
+    {
+      "id": "finding:b2-head-02",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /register.html",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-02",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/forgot-password.html",
+      "type": "Endpoint",
+      "path": "/forgot-password.html"
+    },
+    {
+      "id": "finding:b2-head-03",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /forgot-password.html",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-03",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/search",
+      "type": "Endpoint",
+      "path": "/search"
+    },
+    {
+      "id": "finding:b2-head-04",
+      "type": "Finding",
+      "title": "Missing content-security-policy on /search",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-04",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "verification:b2-head-04",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "finding:b2-head-09",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /api/Products",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-09",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ca89e18236dc1586c955c2506f2423ec30ff08dac14306533a87c0bc26792ec4"
+    },
+    {
+      "id": "endpoint:/api/Feedbacks",
+      "type": "Endpoint",
+      "path": "/api/Feedbacks"
+    },
+    {
+      "id": "finding:b2-head-10",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /api/Feedbacks",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-10",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "be4e0c4eadc8ac0b241983e5a0614b5ffc5d38c578dea6a1c9fea4a605f086f9"
+    },
+    {
+      "id": "endpoint:/rest/user/login",
+      "type": "Endpoint",
+      "path": "/rest/user/login"
+    },
+    {
+      "id": "finding:b2-head-11",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /rest/user/login",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-11",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "5dba30f9bcc05e0f806517c48ca562eba19afecbcc66ecc30fb82f94d3911225"
+    },
+    {
+      "id": "endpoint:/rest/products/search",
+      "type": "Endpoint",
+      "path": "/rest/products/search"
+    },
+    {
+      "id": "finding:b2-head-12",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /rest/products/search",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-12",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "89868c9c13ba550ef8fcca1684839113bf2a59bec36a9efb7e39c2191d2c2de5"
+    },
+    {
+      "id": "endpoint:/assets/public/images/",
+      "type": "Endpoint",
+      "path": "/assets/public/images/"
+    },
+    {
+      "id": "finding:b2-head-13",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /assets/public/images/",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-13",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "21cbe884eaf2c3b3ef828e127b2c735f280c7cb10cbfe0299c94a910e20a1b3e"
+    },
+    {
+      "id": "endpoint:/ftp",
+      "type": "Endpoint",
+      "path": "/ftp"
+    },
+    {
+      "id": "finding:b2-head-16",
+      "type": "Finding",
+      "title": "Missing x-frame-options on /ftp",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-16",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "ad3babf56ff3eb1b45082da3dede8f7823b63b37b93e3e186d1298c7ab3095c5"
+    },
+    {
+      "id": "finding:b2-head-18",
+      "type": "Finding",
+      "title": "Missing x-content-type-options on /api/Users",
+      "severity": "LOW",
+      "source": "DAST",
+      "cwe": "CWE-693"
+    },
+    {
+      "id": "evidence:b2-head-18",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "75f50e026506606485b7eb4c8748663214e66b13b036c8112300c5c83a0d40ac"
+    },
+    {
+      "id": "endpoint:/rest/basket/12",
+      "type": "Endpoint",
+      "path": "/rest/basket/12"
+    },
+    {
+      "id": "finding:b2-bola-01",
+      "type": "Finding",
+      "title": "Cross-user basket by id",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-01",
+      "type": "Evidence",
+      "status": 200,
+      "bodySha256": "a202c7381741c4cbb7e4003b9b40309caddc352f89ceff5a20733461c32c4afd"
+    },
+    {
+      "id": "verification:b2-bola-01",
+      "type": "Verification",
+      "outcome": "VERIFIED"
+    },
+    {
+      "id": "endpoint:/rest/user/authentication-details/31",
+      "type": "Endpoint",
+      "path": "/rest/user/authentication-details/31"
+    },
+    {
+      "id": "finding:b2-bola-02",
+      "type": "Finding",
+      "title": "Cross-user user details",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-02",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "531da5a2534c42632e18c04a19a669c0a045d7fd0fc917262f20425a4861cc6a"
+    },
+    {
+      "id": "endpoint:/api/Addresss/31",
+      "type": "Endpoint",
+      "path": "/api/Addresss/31"
+    },
+    {
+      "id": "finding:b2-bola-03",
+      "type": "Finding",
+      "title": "Cross-user address by id",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-03",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+    },
+    {
+      "id": "endpoint:/api/Cards/31",
+      "type": "Endpoint",
+      "path": "/api/Cards/31"
+    },
+    {
+      "id": "finding:b2-bola-04",
+      "type": "Finding",
+      "title": "Cross-user card by id",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-04",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+    },
+    {
+      "id": "endpoint:/api/BasketItems/12",
+      "type": "Endpoint",
+      "path": "/api/BasketItems/12"
+    },
+    {
+      "id": "finding:b2-bola-05",
+      "type": "Finding",
+      "title": "Cross-user basket items",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-05",
+      "type": "Evidence",
+      "status": 404,
+      "bodySha256": "e3816bf52cbe19de91826e46dd362296ea184e1cda15b0d7beb30d136f2b7dec"
+    },
+    {
+      "id": "endpoint:/api/Complaints/31",
+      "type": "Endpoint",
+      "path": "/api/Complaints/31"
+    },
+    {
+      "id": "finding:b2-bola-06",
+      "type": "Finding",
+      "title": "Cross-user complaints",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-06",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "endpoint:/api/Deliverys/31",
+      "type": "Endpoint",
+      "path": "/api/Deliverys/31"
+    },
+    {
+      "id": "finding:b2-bola-08",
+      "type": "Finding",
+      "title": "Cross-user deliveries",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-08",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c7fbd9501e80a14cf61dc931140fb4d48d148c5e42ea0cef4573444061bdddfa"
+    },
+    {
+      "id": "endpoint:/api/SecurityAnswers/31",
+      "type": "Endpoint",
+      "path": "/api/SecurityAnswers/31"
+    },
+    {
+      "id": "finding:b2-bola-09",
+      "type": "Finding",
+      "title": "Cross-user security answers",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-200"
+    },
+    {
+      "id": "evidence:b2-bola-09",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    },
+    {
+      "id": "finding:b2-bola-13",
+      "type": "Finding",
+      "title": "BOLA user details id 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-13",
+      "type": "Evidence",
+      "status": 500,
+      "bodySha256": "084c985e255699cb0eecace63182c5055c4c41e2b42fb7e897b7dc95b7afd01b"
+    },
+    {
+      "id": "finding:b2-bola-14",
+      "type": "Finding",
+      "title": "BOLA address id 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-14",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "1ea36ec40fade46d67e3424daccc9ea17839c21a189f44ad6379a673be862d30"
+    },
+    {
+      "id": "finding:b2-bola-15",
+      "type": "Finding",
+      "title": "BOLA card id 1",
+      "severity": "HIGH",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-15",
+      "type": "Evidence",
+      "status": 400,
+      "bodySha256": "c5a2c04382b001e55cf28b185a5f2c43e69f38f0563ec7b0c69e53a82b184023"
+    },
+    {
+      "id": "finding:b2-bola-16",
+      "type": "Finding",
+      "title": "BOLA complaint id 1",
+      "severity": "MEDIUM",
+      "source": "DAST",
+      "cwe": "CWE-639"
+    },
+    {
+      "id": "evidence:b2-bola-16",
+      "type": "Evidence",
+      "status": 401,
+      "bodySha256": "a340dab2e86b8a8dc7118c0be218a1edcb0318fa61e7c013edffd8ad7f738c66"
+    }
+  ],
+  "edges": [
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/",
+      "target": "finding:corpus-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "evidence:corpus-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-02",
+      "target": "verification:corpus-02",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Products",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products",
+      "target": "finding:corpus-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-06",
+      "target": "cwe:CWE-306",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-06",
+      "target": "evidence:corpus-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/metrics",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/metrics",
+      "target": "finding:corpus-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:corpus-15",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:corpus-15",
+      "target": "evidence:corpus-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:corpus-15",
+      "target": "verification:corpus-15",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/basket/8",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/8",
+      "target": "finding:bola-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-01",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-01",
+      "target": "evidence:bola-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-01",
+      "target": "verification:bola-01",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/user/authentication-details/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/27",
+      "target": "finding:bola-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-02",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-02",
+      "target": "evidence:bola-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Addresss/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss/27",
+      "target": "finding:bola-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-03",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-03",
+      "target": "evidence:bola-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Cards/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards/27",
+      "target": "finding:bola-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-04",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-04",
+      "target": "evidence:bola-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/BasketItems/8",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/BasketItems/8",
+      "target": "finding:bola-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-05",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-05",
+      "target": "evidence:bola-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-05",
+      "target": "verification:bola-05",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Complaints/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints/27",
+      "target": "finding:bola-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-06",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-06",
+      "target": "evidence:bola-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Recycles/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Recycles/27",
+      "target": "finding:bola-07",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-07",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-07",
+      "target": "evidence:bola-07",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-07",
+      "target": "verification:bola-07",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Deliverys/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys/27",
+      "target": "finding:bola-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-08",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-08",
+      "target": "evidence:bola-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/SecurityAnswers/27",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/SecurityAnswers/27",
+      "target": "finding:bola-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-09",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-09",
+      "target": "evidence:bola-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Users",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Users",
+      "target": "finding:bola-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-10",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-10",
+      "target": "evidence:bola-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-10",
+      "target": "verification:bola-10",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/order-history",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/order-history",
+      "target": "finding:bola-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-11",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-11",
+      "target": "evidence:bola-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-11",
+      "target": "verification:bola-11",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/track-order/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/track-order/1",
+      "target": "finding:bola-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-12",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-12",
+      "target": "evidence:bola-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-12",
+      "target": "verification:bola-12",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/basket/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/1",
+      "target": "finding:bola-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-13",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-13",
+      "target": "evidence:bola-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-13",
+      "target": "verification:bola-13",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/user/authentication-details/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/1",
+      "target": "finding:bola-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-14",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-14",
+      "target": "evidence:bola-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Addresss/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss/1",
+      "target": "finding:bola-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-15",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-15",
+      "target": "evidence:bola-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Cards/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards/1",
+      "target": "finding:bola-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-16",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-16",
+      "target": "evidence:bola-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Complaints/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints/1",
+      "target": "finding:bola-17",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-17",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-17",
+      "target": "evidence:bola-17",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Recycles/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Recycles/1",
+      "target": "finding:bola-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-18",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-18",
+      "target": "evidence:bola-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-18",
+      "target": "verification:bola-18",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Deliverys/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys/1",
+      "target": "finding:bola-19",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-19",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-19",
+      "target": "evidence:bola-19",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-19",
+      "target": "verification:bola-19",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Feedbacks/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks/1",
+      "target": "finding:bola-20",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:bola-20",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:bola-20",
+      "target": "evidence:bola-20",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:bola-20",
+      "target": "verification:bola-20",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/login.html",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/login.html",
+      "target": "finding:b2-head-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-01",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-01",
+      "target": "evidence:b2-head-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/register.html",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/register.html",
+      "target": "finding:b2-head-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-02",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-02",
+      "target": "evidence:b2-head-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/forgot-password.html",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/forgot-password.html",
+      "target": "finding:b2-head-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-03",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-03",
+      "target": "evidence:b2-head-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/search",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/search",
+      "target": "finding:b2-head-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-04",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-04",
+      "target": "evidence:b2-head-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-head-04",
+      "target": "verification:b2-head-04",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Products",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Products",
+      "target": "finding:b2-head-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-09",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-09",
+      "target": "evidence:b2-head-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Feedbacks",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Feedbacks",
+      "target": "finding:b2-head-10",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-10",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-10",
+      "target": "evidence:b2-head-10",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/user/login",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/login",
+      "target": "finding:b2-head-11",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-11",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-11",
+      "target": "evidence:b2-head-11",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/products/search",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/products/search",
+      "target": "finding:b2-head-12",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-12",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-12",
+      "target": "evidence:b2-head-12",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/assets/public/images/",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/assets/public/images/",
+      "target": "finding:b2-head-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-13",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-13",
+      "target": "evidence:b2-head-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/ftp",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/ftp",
+      "target": "finding:b2-head-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-16",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-16",
+      "target": "evidence:b2-head-16",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Users",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Users",
+      "target": "finding:b2-head-18",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-head-18",
+      "target": "cwe:CWE-693",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-head-18",
+      "target": "evidence:b2-head-18",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/basket/12",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/basket/12",
+      "target": "finding:b2-bola-01",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-01",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-01",
+      "target": "evidence:b2-bola-01",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "finding:b2-bola-01",
+      "target": "verification:b2-bola-01",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/user/authentication-details/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/31",
+      "target": "finding:b2-bola-02",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-02",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-02",
+      "target": "evidence:b2-bola-02",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Addresss/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss/31",
+      "target": "finding:b2-bola-03",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-03",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-03",
+      "target": "evidence:b2-bola-03",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Cards/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards/31",
+      "target": "finding:b2-bola-04",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-04",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-04",
+      "target": "evidence:b2-bola-04",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/BasketItems/12",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/BasketItems/12",
+      "target": "finding:b2-bola-05",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-05",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-05",
+      "target": "evidence:b2-bola-05",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Complaints/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints/31",
+      "target": "finding:b2-bola-06",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-06",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-06",
+      "target": "evidence:b2-bola-06",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Deliverys/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Deliverys/31",
+      "target": "finding:b2-bola-08",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-08",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-08",
+      "target": "evidence:b2-bola-08",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/SecurityAnswers/31",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/SecurityAnswers/31",
+      "target": "finding:b2-bola-09",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-09",
+      "target": "cwe:CWE-200",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-09",
+      "target": "evidence:b2-bola-09",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/rest/user/authentication-details/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/rest/user/authentication-details/1",
+      "target": "finding:b2-bola-13",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-13",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-13",
+      "target": "evidence:b2-bola-13",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Addresss/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Addresss/1",
+      "target": "finding:b2-bola-14",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-14",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-14",
+      "target": "evidence:b2-bola-14",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Cards/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Cards/1",
+      "target": "finding:b2-bola-15",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-15",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-15",
+      "target": "evidence:b2-bola-15",
+      "type": "HAS_EVIDENCE"
+    },
+    {
+      "source": "target:juice-shop",
+      "target": "endpoint:/api/Complaints/1",
+      "type": "EXPOSES"
+    },
+    {
+      "source": "endpoint:/api/Complaints/1",
+      "target": "finding:b2-bola-16",
+      "type": "HAS_FINDING"
+    },
+    {
+      "source": "finding:b2-bola-16",
+      "target": "cwe:CWE-639",
+      "type": "HAS_CWE"
+    },
+    {
+      "source": "finding:b2-bola-16",
+      "target": "evidence:b2-bola-16",
+      "type": "HAS_EVIDENCE"
+    }
+  ],
+  "counts": {
+    "findings": 46,
+    "verified": 14,
+    "human_rejected": 32,
+    "pending_review": 0
+  }
+}

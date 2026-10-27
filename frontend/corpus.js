@@ -25,7 +25,7 @@ function table(headers, rows) {
 try {
   const [projects, candidates, findings] = await Promise.all([
     get("/api/v1/corpus/projects"),
-    get("/api/v1/corpus/candidates?limit=100"),
+    get("/api/v1/corpus/candidates?limit=500"),
     get("/api/v1/corpus/findings?limit=500"),
   ]);
   document.querySelector("#model-label").textContent = `Score label: ${projects.scoreLabel}`;

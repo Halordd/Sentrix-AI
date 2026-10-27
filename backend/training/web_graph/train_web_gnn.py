@@ -90,7 +90,11 @@ def build_data(dataset: dict) -> tuple[HeteroData, dict]:
     data = ToUndirected()(data)
     labels = dataset["labels"]
     data["Finding"].y = torch.tensor(
-        [int(labels[node["id"].removeprefix("finding:")]) for node in findings],
+        [
+            -1 if labels[node["id"].removeprefix("finding:")] is None
+            else int(labels[node["id"].removeprefix("finding:")])
+            for node in findings
+        ],
         dtype=torch.long,
     )
     return data, index
@@ -102,9 +106,24 @@ def split_indices(labels: list[int], seed: int = 42):
     negatives = [i for i, label in enumerate(labels) if label == 0]
     rng.shuffle(positives)
     rng.shuffle(negatives)
-    train = positives[:12] + negatives[:24]
-    valid = positives[12:16] + negatives[24:32]
-    test = positives[16:] + negatives[32:]
+
+    def split_group(group: list[int]) -> tuple[list[int], list[int], list[int]]:
+        total = len(group)
+        if total == 0:
+            return [], [], []
+        if total < 3:
+            return group[:1], group[1:2], group[2:]
+        train_count = max(1, int(total * 0.6))
+        valid_count = max(1, int(total * 0.2))
+        while train_count + valid_count >= total:
+            valid_count -= 1
+        return group[:train_count], group[train_count : train_count + valid_count], group[train_count + valid_count :]
+
+    positive_train, positive_valid, positive_test = split_group(positives)
+    negative_train, negative_valid, negative_test = split_group(negatives)
+    train = positive_train + negative_train
+    valid = positive_valid + negative_valid
+    test = positive_test + negative_test
     for group in (train, valid, test):
         group.sort()
     return train, valid, test
@@ -192,15 +211,17 @@ class WebHGT(nn.Module):
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("dataset", nargs="?", default="web_dataset_combined.json")
+    parser.add_argument("dataset", nargs="?", default="web_dataset_v2_reviewed.json")
     parser.add_argument("--out", default="artifacts/web-hgt")
     parser.add_argument("--epochs", type=int, default=60)
     parser.add_argument("--hidden", type=int, default=32)
+    parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
+    torch.manual_seed(args.seed)
     dataset = json.loads(Path(args.dataset).read_text())
     data, _ = build_data(dataset)
     labels = data["Finding"].y.tolist()
-    train, valid, test = split_indices(labels)
+    train, valid, test = split_indices(labels, args.seed)
     train_mask = torch.zeros(len(labels), dtype=torch.bool)
     valid_mask = torch.zeros(len(labels), dtype=torch.bool)
     test_mask = torch.zeros(len(labels), dtype=torch.bool)

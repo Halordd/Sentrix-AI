@@ -151,14 +151,14 @@ flowchart LR
 flowchart LR
     LAB1[Juice Shop<br/>batch 1+2] --> H1[harnesses<br/>GET-only + BOLA]
     LAB2[WebGoat<br/>batch 3] --> H2[GET-only harness]
-    H1 --> REV[human review<br/>40 positive / 61 negative]
+    H1 --> REV[human review<br/>14 positive / 32 negative<br/>18 pending]
     H2 --> REV2[human review<br/>24 positive / 16 negative]
     REV --> DS1[web corpus v2<br/>101 records]
     REV2 --> DS2[batch 3<br/>40 records]
     DS1 --> GRAPH[heterogeneous graph]
     DS2 --> GRAPH
     GRAPH --> HGT[HeteroConv-SAGE<br/>no Verification leakage]
-    HGT --> EXT[external WebGoat test<br/>F1 0.9091]
+    HGT --> EXT[external WebGoat test<br/>F1 0.7586]
     HGT --> CAL[calibration comparison<br/>isotonic pilot only]
     EXT --> PILOT[pilot result]
     CAL --> PILOT
@@ -166,7 +166,7 @@ flowchart LR
 
 Rules:
 
-- every label is human-reviewed;
+- training uses only HUMAN_VERIFIED / HUMAN_REJECTED labels; 18 records remain pending;
 - `Verification` nodes/edges are excluded from training to prevent leakage;
 - endpoint identity is an ablation that hurts; `no_endpoint` is better;
 - Devign C-code scores are never applied to web findings;
@@ -227,7 +227,7 @@ flowchart LR
 
 ## 9. Honest boundaries
 
-- The web GNN is a **pilot**, not production.
+- The web GNN is a **pilot**, not production.\n- The current reviewed training set is 46 records (14 positive / 32 negative); 18 of 101 are still pending.
 - External test is 40 records / 24 positives, dominated by header findings.
 - Devign C-code model is weak and separate.
 - Calibration is not production-validated.

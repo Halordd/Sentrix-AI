@@ -2505,6 +2505,15 @@ def reports() -> list[dict]:
 # ---------------------------------------------------------------------------
 
 
+def _corpus_limit(request: Request, default: int) -> int:
+    raw = request.query_params.get("limit", str(default))
+    try:
+        value = int(raw)
+    except ValueError as error:
+        raise HTTPException(status_code=400, detail="limit must be an integer") from error
+    return max(1, min(value, 500))
+
+
 @app.get("/api/v1/corpus/projects")
 def corpus_projects(request: Request) -> dict:
     _require_admin(request)
@@ -2558,7 +2567,7 @@ def corpus_projects(request: Request) -> dict:
 @app.get("/api/v1/corpus/findings")
 def corpus_findings(request: Request) -> dict:
     _require_admin(request)
-    limit = max(1, min(int(request.query_params.get("limit", "100")), 500))
+    limit = _corpus_limit(request, 100)
     target = request.query_params.get("targetId", "")
     with get_engine().connect() as connection:
         rows = connection.execute(
@@ -2599,7 +2608,7 @@ def corpus_findings(request: Request) -> dict:
 @app.get("/api/v1/corpus/candidates")
 def corpus_candidates(request: Request) -> dict:
     _require_admin(request)
-    limit = max(1, min(int(request.query_params.get("limit", "50")), 500))
+    limit = _corpus_limit(request, 50)
     with get_engine().connect() as connection:
         rows = connection.execute(
             text(

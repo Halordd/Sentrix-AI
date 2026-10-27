@@ -1,6 +1,10 @@
 {
   "dataset": "sentrix-web-lab-corpus",
   "source": "http://10.20.20.20:8080",
+  "target": {
+    "id": "target:webgoat",
+    "name": "WebGoat lab"
+  },
   "labels": {
     "b3-head-01": 1,
     "b3-head-02": 1,
@@ -45,9 +49,9 @@
   },
   "nodes": [
     {
-      "id": "target:lab",
+      "id": "target:webgoat",
       "type": "Target",
-      "name": "Juice Shop lab"
+      "name": "WebGoat lab"
     },
     {
       "id": "endpoint:/WebGoat/login",
@@ -862,7 +866,7 @@
   ],
   "edges": [
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/login",
       "type": "EXPOSES"
     },
@@ -887,7 +891,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/registration",
       "type": "EXPOSES"
     },
@@ -912,7 +916,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/",
       "type": "EXPOSES"
     },
@@ -937,7 +941,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/login",
       "type": "EXPOSES"
     },
@@ -962,7 +966,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/registration",
       "type": "EXPOSES"
     },
@@ -987,7 +991,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/",
       "type": "EXPOSES"
     },
@@ -1012,7 +1016,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/login",
       "type": "EXPOSES"
     },
@@ -1037,7 +1041,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/registration",
       "type": "EXPOSES"
     },
@@ -1062,7 +1066,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/",
       "type": "EXPOSES"
     },
@@ -1087,7 +1091,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/login",
       "type": "EXPOSES"
     },
@@ -1112,7 +1116,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/registration",
       "type": "EXPOSES"
     },
@@ -1137,7 +1141,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/",
       "type": "EXPOSES"
     },
@@ -1162,7 +1166,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/login",
       "type": "EXPOSES"
     },
@@ -1187,7 +1191,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/registration",
       "type": "EXPOSES"
     },
@@ -1212,7 +1216,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/",
       "type": "EXPOSES"
     },
@@ -1237,7 +1241,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/login",
       "type": "EXPOSES"
     },
@@ -1262,7 +1266,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/registration",
       "type": "EXPOSES"
     },
@@ -1287,7 +1291,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/",
       "type": "EXPOSES"
     },
@@ -1312,7 +1316,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/login",
       "type": "EXPOSES"
     },
@@ -1337,7 +1341,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/registration",
       "type": "EXPOSES"
     },
@@ -1362,7 +1366,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator",
       "type": "EXPOSES"
     },
@@ -1387,7 +1391,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/health",
       "type": "EXPOSES"
     },
@@ -1412,7 +1416,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/info",
       "type": "EXPOSES"
     },
@@ -1432,7 +1436,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/env",
       "type": "EXPOSES"
     },
@@ -1457,7 +1461,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/mappings",
       "type": "EXPOSES"
     },
@@ -1477,7 +1481,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/beans",
       "type": "EXPOSES"
     },
@@ -1497,7 +1501,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/metrics",
       "type": "EXPOSES"
     },
@@ -1517,7 +1521,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/loggers",
       "type": "EXPOSES"
     },
@@ -1537,7 +1541,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/configprops",
       "type": "EXPOSES"
     },
@@ -1562,7 +1566,7 @@
       "type": "VERIFIED_BY"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/threaddump",
       "type": "EXPOSES"
     },
@@ -1582,7 +1586,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/heapdump",
       "type": "EXPOSES"
     },
@@ -1602,7 +1606,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/actuator/prometheus",
       "type": "EXPOSES"
     },
@@ -1622,7 +1626,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/robots.txt",
       "type": "EXPOSES"
     },
@@ -1642,7 +1646,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/.git/config",
       "type": "EXPOSES"
     },
@@ -1662,7 +1666,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/registration",
       "type": "EXPOSES"
     },
@@ -1682,7 +1686,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/login?error",
       "type": "EXPOSES"
     },
@@ -1702,7 +1706,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/js/main.js",
       "type": "EXPOSES"
     },
@@ -1722,7 +1726,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/css/main.css",
       "type": "EXPOSES"
     },
@@ -1742,7 +1746,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/swagger-ui/index.html",
       "type": "EXPOSES"
     },
@@ -1762,7 +1766,7 @@
       "type": "HAS_EVIDENCE"
     },
     {
-      "source": "target:lab",
+      "source": "target:webgoat",
       "target": "endpoint:/WebGoat/h2-console",
       "type": "EXPOSES"
     },

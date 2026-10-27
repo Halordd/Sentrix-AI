@@ -8,8 +8,8 @@
 | Project | `project-corpus-pilot` |
 | Targets | `target-juice-shop`, `target-webgoat` |
 | Findings | 141 |
-| Candidates | 141 |
-| Main seed tests | 59 passed |
+| Candidates | 141 |\n| Verified findings | 38 (14 Juice Shop + 24 WebGoat) |
+| Main seed tests | 62 passed |
 | Status | Pilot import; not production |
 
 ## Why a separate schema
@@ -60,8 +60,9 @@ The score comes from the pilot HeteroConv-SAGE model:
 ```text
 model: HeteroConv-SAGE pilot
 scores: 141
-min: 0.000003
-max: 0.999989
+min: 0.037449
+max: 0.931313
+verified findings: 38 (14 Juice Shop + 24 WebGoat)
 ```
 
 Candidates are queued with `read.response_headers` for CWE-693 and
@@ -87,12 +88,45 @@ ORDER BY c.score DESC
 LIMIT 10;
 ```
 
-## Read-only API routes\n\nThe corpus is exposed through admin-only, read-only routes:\n\n```text\nGET /api/v1/corpus/projects\nGET /api/v1/corpus/findings?targetId=...&limit=...\nGET /api/v1/corpus/candidates?limit=...\n```\n\nEvery response carries:\n\n```json\n{"pilot": true, "scoreLabel": "pilot-uncalibrated"}\n```\n\nManual smoke test on a temporary API process:\n\n```json\n{\n  "loginStatus": 200,\n  "project": "project-corpus-pilot",\n  "targets": [\n    {"id": "target-juice-shop", "findings": 101},\n    {"id": "target-webgoat", "findings": 40}\n  ],\n  "pilot": true,\n  "scoreLabel": "pilot-uncalibrated"\n}\n```\n\n## Seed safety
+## Read-only API routes
+
+The corpus is exposed through admin-only, read-only routes:
+
+```text
+GET /api/v1/corpus/projects
+GET /api/v1/corpus/findings?targetId=...&limit=...
+GET /api/v1/corpus/candidates?limit=...
+```
+
+Every response carries:
+
+```json
+{"pilot": true, "scoreLabel": "pilot-uncalibrated"}
+```
+
+Manual smoke test on a temporary API process:
+
+```json
+{
+  "loginStatus": 200,
+  "project": {
+    "id": "project-corpus-pilot"
+  },
+  "targets": [
+    {"id": "target-juice-shop", "name": "Juice Shop", "type": "WEB", "findings": 101},
+    {"id": "target-webgoat", "name": "WebGoat", "type": "WEB", "findings": 40}
+  ],
+  "pilot": true,
+  "scoreLabel": "pilot-uncalibrated"
+}
+```
+
+## Seed safety
 
 The public schema was not modified.
 
 ```text
-backend tests: 59 passed
+backend tests: 62 passed
 ```
 
 ## Artifacts

@@ -40,10 +40,10 @@ Ran against a temporary API process:
 ```json
 {
   "loginStatus": 200,
-  "project": "project-corpus-pilot",
+  "project": {"id": "project-corpus-pilot"},
   "targets": [
-    {"id": "target-juice-shop", "findings": 101},
-    {"id": "target-webgoat", "findings": 40}
+    {"id": "target-juice-shop", "name": "Juice Shop", "findings": 101},
+    {"id": "target-webgoat", "name": "WebGoat", "findings": 40}
   ],
   "pilot": true,
   "scoreLabel": "pilot-uncalibrated"
@@ -85,7 +85,7 @@ Login with an ADMIN account, because the corpus routes require admin.
 ## Tests
 
 ```text
-backend: 59 passed
+backend: 62 passed
 frontend: existing suite has Windows EPERM limitation in this environment
 JS syntax: node --check passed
 ```

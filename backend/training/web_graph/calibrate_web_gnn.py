@@ -100,7 +100,7 @@ def evaluate(probabilities, labels):
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("dataset", nargs="?", default="web_dataset_v2.json")
+    parser.add_argument("dataset", nargs="?", default="web_dataset_v2_reviewed.json")
     parser.add_argument("--out", default="web_calibration_compare.json")
     parser.add_argument("--epochs", type=int, default=60)
     args = parser.parse_args()
@@ -145,8 +145,8 @@ def main() -> None:
 
         results[f"train_{train_name}_test_{test_name}"] = {
             "validationSize": int(valid_mask.sum()),
-            "temperature": round(temperature, 4),
-            "platt": {"a": round(platt_a, 4), "b": round(platt_b, 4)},
+            "temperatureValue": round(temperature, 4),
+            "plattParams": {"a": round(platt_a, 4), "b": round(platt_b, 4)},
             "isotonicBlocks": len(isotonic_blocks),
             "uncalibrated": evaluate(base_probs, test_labels),
             "temperature": evaluate(temperature_probs, test_labels),

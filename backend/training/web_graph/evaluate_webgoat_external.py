@@ -32,7 +32,7 @@ def merge(a: dict, b: dict) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("train_dataset", nargs="?", default="web_dataset_v2.json")
+    parser.add_argument("train_dataset", nargs="?", default="web_dataset_v2_reviewed.json")
     parser.add_argument("test_dataset", nargs="?", default="web_dataset_batch3.json")
     parser.add_argument("--out", default="web_external_webgoat.json")
     parser.add_argument("--epochs", type=int, default=60)

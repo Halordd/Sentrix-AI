@@ -1,8 +1,8 @@
 {
   "train": "Juice Shop batch 1+2",
   "test": "WebGoat batch 3",
-  "trainSize": 64,
-  "validationSize": 17,
+  "trainSize": 20,
+  "validationSize": 6,
   "testSize": 40,
   "testPositives": 24,
   "severityBaseline": {
@@ -13,34 +13,34 @@
     "positives": 24
   },
   "uncalibrated": {
-    "precision": 1.0,
-    "recall": 0.8333,
-    "f1": 0.9091,
-    "ece": 0.1771,
-    "brier": 0.0983
+    "precision": 0.6471,
+    "recall": 0.9167,
+    "f1": 0.7586,
+    "ece": 0.3563,
+    "brier": 0.2916
   },
   "temperature": {
-    "precision": 1.0,
-    "recall": 0.8333,
-    "f1": 0.9091,
-    "ece": 0.31,
-    "brier": 0.1827
+    "precision": 0.6471,
+    "recall": 0.9167,
+    "f1": 0.7586,
+    "ece": 0.347,
+    "brier": 0.2754
   },
   "platt": {
     "precision": 0.0,
     "recall": 0.0,
     "f1": 0.0,
-    "ece": 0.3423,
-    "brier": 0.2336
+    "ece": 0.5876,
+    "brier": 0.5804
   },
   "isotonic": {
-    "precision": 0.6316,
-    "recall": 1.0,
-    "f1": 0.7742,
-    "ece": 0.2241,
-    "brier": 0.1484
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "ece": 0.35,
+    "brier": 0.3625
   },
-  "temperatureValue": 4.8882,
-  "plattA": 0.1299,
-  "plattB": -0.341
+  "temperatureValue": 1.4842,
+  "plattA": -1.3515,
+  "plattB": -4.163
 }

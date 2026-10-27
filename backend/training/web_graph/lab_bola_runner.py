@@ -6,6 +6,7 @@ written to disk. Every record is PENDING_HUMAN_REVIEW.
 from __future__ import annotations
 
 import json
+import os
 import urllib.error
 import urllib.request
 import uuid
@@ -32,7 +33,9 @@ def post(path: str, payload: dict) -> tuple[int, dict]:
 
 def create_account(tag: str) -> dict:
     email = f"sentrix.{tag}.{uuid.uuid4().hex[:10]}@example.com"
-    password = "SentrixLab123!"
+    password = os.environ.get("SENTRIX_LAB_PASSWORD", "")
+    if not password:
+        raise SystemExit("set SENTRIX_LAB_PASSWORD for disposable lab accounts")
     status, body = post(
         "/api/Users",
         {
